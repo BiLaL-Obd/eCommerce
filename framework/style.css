@@ -1,0 +1,105 @@
+:root {
+  --main: #27ae60;
+  --light-gray: #f6f6f7;
+  --transition: 0.3s;
+  --bg-dark: #111;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* Component */
+.main-title h3 {
+  width: fit-content;
+  border: 1px solid #777;
+  user-select: none;
+}
+.btn-shop {
+  background-color: #333;
+  color: white;
+  transition: var(--transition);
+}
+.btn-shop:hover {
+  font-weight: 600;
+  background-color: var(--main);
+  transform: scale(1.1);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--main);
+}
+.swiper-pagination-bullet-active {
+  background: var(--main);
+}
+/* width */
+.w-fit-content {
+  width: fit-content;
+}
+/* Font Size */
+.font-size-12 {
+  font-size: 0.75rem;
+}
+.font-size-14 {
+  font-size: 0.875rem;
+}
+.font-size-16 {
+  font-size: 1rem;
+}
+.font-size-17 {
+  font-size: 1.0625rem;
+}
+.font-size-18px {
+  font-size: 1.125rem;
+}
+.font-size-20 {
+  font-size: 1.25rem;
+}
+.font-size-22 {
+  font-size: 1.375rem;
+}
+.font-size-24 {
+  font-size: 1.5rem;
+}
+.font-size-26 {
+  font-size: 1.625rem;
+}
+.font-size-28 {
+  font-size: 1.75rem;
+}
+.font-size-30 {
+  font-size: 1.875rem;
+}
+.font-size-32 {
+  font-size: 2rem;
+}
+/* Background Color  */
+.bg-main {
+  background-color: var(--main);
+}
+.bg-main-dark {
+  background-color: var(--bg-dark);
+}
+.bg-main-light {
+  background-color: var(--light-gray);
+}
+
+/* Text Color */
+.text-color-main {
+  color: var(--main);
+}
+
+/* Border */
+.border-color-main {
+  border-color: var(--main) !important;
+}
+
+/* cursor */
+.cursor-pointer {
+  cursor: pointer;
+}
