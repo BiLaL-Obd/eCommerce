@@ -145,7 +145,8 @@
   border-radius: 0.25rem;
   border: 1px solid var(--dark);
 }
-.products .product-list li.active {
+.products .product-list li.active,
+.products .product-list li:hover{
   border: 1px solid var(--main);
   color: var(--main);
 }
