@@ -19,21 +19,43 @@ function manageProduct() {
     ele.style.display = "block";
   });
 }
+
 // Swiper
 var swiper = new Swiper(".myLanding", {
   spaceBetween: 30,
   centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  grabCursor: true,
+});
+
+var swiper = new Swiper(".myOfferes", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
   },
 });

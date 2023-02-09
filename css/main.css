@@ -98,19 +98,7 @@
 /* End Header */
 /* Start Landing */
 .landing .myLanding {
-  height: 100vh;
-}
-.landing .myLanding .img img {
-  max-height: 450px;
-}
-.landing .content h5 {
-  color: var(--main);
-}
-.landing .price .new {
-  color: var(--main);
-}
-.landing .price .old {
-  text-decoration: line-through;
+  height: calc(100vh - 110px);
 }
 /* End Landing */
 /* Start category */
