@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store Legend</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <!-- Bootstrap 5 -->
+    <!-- BoxIcon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -24,203 +23,28 @@
 
 <body>
     <!-- Start Header 1 -->
-    <nav class="navbar navbar-expand-lg bg-main-light">
+    <nav class="navbar bg-main-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-    <!-- End Header 1 -->
-    <!-- Start Header 2 -->
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand fs-4" href="#"><i class="fa-solid fa-shop me-1"></i><span
-                    class="logo">S</span>tore<span class="logo">L</span>egend</a>
+            <a class="navbar-brand fs-4 d-flex align-items-center" href="#"><i
+                    class="bx bxs-store font-size-18 me-1"></i><span class="logo">S</span>tore<span
+                    class="logo">L</span>egend</a>
             <div class="container-panel d-flex align-items-center">
-                <!-- Start Menu -->
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu"
-                    aria-controls="offcanvasNavbar">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="menu"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header position-relative justify-content-center">
-                        <img src="images/user.webp" style="width: 130px" class="rounded-circle" alt="" />
-                        <button type="button" class="btn-header-close position-absolute bg-transparent border-0 fa-2x"
-                            data-bs-dismiss="offcanvas" aria-label="Close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link active" aria-current="page" href="#"><i
-                                        class="fa-solid fa-angle-right me-2"></i>Home</a>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-angle-right me-2"></i>Arrivals</a>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-angle-right me-2"></i>Products</a>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-angle-right me-2"></i>About Us</a>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-angle-right me-2"></i>Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End Menu -->
-                <!-- Start Bookmark -->
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#bookmark" aria-controls="offcanvasNavbar">
-                    <i class="fa-solid fa-heart"></i>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="bookmark"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header position-relative justify-content-center">
-                        <h5 class="mb-0">Your Likes</h5>
-                        <button type="button" class="btn-header-close position-absolute bg-transparent border-0 fa-2x"
-                            data-bs-dismiss="offcanvas" aria-label="Close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav flex-grow-1 justify-content-center">
-                            <li class="nav-item d-flex justify-content-center align-items-center">
-                                <div class="box bg-white rounded-2 w-100">
-                                    <div class="icons d-flex justify-content-evenly align-items-center p-1">
-                                        <a href="#"><i class="fa-solid fa-comment"></i></a>
-                                        <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                        <a href="#"><i class="fa-solid fa-eye"></i></a>
-                                    </div>
-                                    <div class="content p-2">
-                                        <div class="image text-center">
-                                            <img src="images/product-7.jpg" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="info text-dark text-center">
-                                            <h5>Hp Headphone</h5>
-                                            <div class="price d-flex justify-content-center align-items-center">
-                                                <p class="newPrice fs-6 me-2 mb-0">$100</p>
-                                                <p
-                                                    class="oldPrice text-decoration-line-through text-black-50 me-2 mb-0">
-                                                    $150
-                                                </p>
-                                                <input type="number" name="" id="" value="1" min="1" max="1000"
-                                                    class="form-control">
-                                            </div>
-                                            <a href="#" class="btn btn-success mt-2">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End Bookmark -->
                 <!-- Start shop -->
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#shop"
-                    aria-controls="offcanvasNavbar">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="shop"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header position-relative justify-content-center">
-                        <h5 class="mb-0">Your Shopping</h5>
-                        <button type="button" class="btn-header-close position-absolute bg-transparent border-0 fa-2x"
-                            data-bs-dismiss="offcanvas" aria-label="Close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="tab-content" id="nav-tabContent">
-
-                            <ul class="navbar-nav flex-grow-1 justify-content-center">
-                                <li class="nav-item d-flex justify-content-center align-items-center">
-                                    <div class="box bg-white rounded-2 w-100 position-relative">
-                                        <div class="icons d-flex justify-content-evenly align-items-center p-1">
-                                            <a href="#"><i class="fa-solid fa-comment"></i></a>
-                                            <a href="#"><i class="fa-solid fa-eye"></i></a>
-                                        </div>
-                                        <div class="content p-2">
-                                            <div class="image text-center">
-                                                <img src="images/product-7.jpg" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="info text-dark text-center">
-                                                <h5>Hp Headphone</h5>
-                                                <div class="price d-flex justify-content-center align-items-end">
-                                                    <p class="newPrice fs-6 me-2 mb-0">$100</p>
-                                                    <p
-                                                        class="oldPrice text-decoration-line-through text-black-50 me-2 mb-0">
-                                                        $150
-                                                    </p>
-                                                    <a href="#"
-                                                        class="text-danger d-flex justify-content-center align-items-center"><span
-                                                            class="number me-1">1</span><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                </div>
-                                                <a href="#" class="btn btn-danger mt-1">Cancel Shopping</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <!-- End Tab Old Shop -->
-                        </div>
-
-                    </div>
-                </div>
+                <a href="#" class="text-black-50">
+                    <i class='bx bx-cart font-size-30'></i>
+                </a>
                 <!-- End shop -->
                 <!-- Start profile -->
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#profile" aria-controls="offcanvasNavbar">
                     <img src="images/user.webp" style="width: 32px" class="rounded-circle" alt="" />
                 </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="profile"
-                    aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="profile" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header position-relative justify-content-center">
-                        <img src="images/user.webp" style="width: 130px" class="rounded-circle" alt="" />
+                        <img src="images/user.webp" style="width: 100px" class="rounded-circle" alt="" />
                         <button type="button" class="btn-header-close position-absolute bg-transparent border-0 fa-2x"
                             data-bs-dismiss="offcanvas" aria-label="Close">
-                            <i class="fa-solid fa-xmark"></i>
+                            <i class='bx bx-x font-size-30'></i>
                         </button>
                     </div>
                     <div class="offcanvas-body">
@@ -237,7 +61,8 @@
                             </li>
                             <li class="nav-item d-flex align-items-center">
                                 <a class="nav-link" aria-current="page" href="#"><i
-                                        class="fa-solid fa-angle-right me-2"></i>Change Photo</a>
+                                        class="fa-solid fa-angle-right me-2"></i>Change
+                                    Photo</a>
                             </li>
                             <li class="nav-item d-flex align-items-center">
                                 <a class="nav-link" href="#"><i class="fa-solid fa-angle-right me-2"></i>Login</a>
@@ -250,6 +75,52 @@
                 </div>
                 <!-- End profile -->
             </div>
+
+        </div>
+    </nav>
+    <!-- End Header 1 -->
+    <!-- Start Header 2 -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <ul class="navbar-nav flex-row justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active p-2 d-flex align-items-center" aria-current="page" href="#"><i
+                            class='bx bx-home font-size-30 d-block d-sm-none'></i><span
+                            class="d-none d-sm-block">Home</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle p-2 d-flex align-items-center" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class='bx bx-purchase-tag font-size-30 d-block d-sm-none'></i>
+                        <span class="d-none d-sm-block">Arrivals</span>
+                    </a>
+                    <ul class="dropdown-menu position-absolute">
+                        <li><a class="dropdown-item" href="#">Tech</a></li>
+                        <li><a class="dropdown-item" href="#">Books</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle p-2 d-flex align-items-center" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class='bx bx-list-ul font-size-30 d-block d-sm-none'></i>
+                        <span class="d-none d-sm-block">Products</span>
+                    </a>
+                    <ul class="dropdown-menu position-absolute">
+                        <li><a class="dropdown-item" href="#">Tech</a></li>
+                        <li><a class="dropdown-item" href="#">Books</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link p-2 d-flex align-items-center" href="#"><i
+                            class='bx bx-carousel font-size-30 d-block d-sm-none'></i>
+                        <span class="d-none d-sm-block">About Us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 d-flex align-items-center" href="#"><i
+                            class='bx bxs-contact font-size-30 d-block d-sm-none'></i>
+                        <span class="d-none d-sm-block">Contact Us</span></a>
+                </li>
+            </ul>
         </div>
     </nav>
     <!-- End Header -->
@@ -679,19 +550,19 @@
                         <a href="mailto:store.legend@gmail.com" target="_blank"
                             class="box d-block text-center py-2 px-4 rounded-4 mb-2" style="border:1px solid #6dc5dc">
                             <h5 class="text-black">Email</h5>
-                            <i class="fa-regular fa-envelope font-size-32 py-2" style="color:#6dc5dc"></i>
+                            <i class='bx bx-envelope font-size-32 py-2' style="color:#6dc5dc"></i>
                             <p class="text-black-50">store.legend@gmail.com</p>
                         </a>
                         <a href="https://api.whatsapp.com/send?phone=+96181781725" target="_blank"
                             class="box d-block text-center border border-1 border-color-main py-2 px-4 rounded-4 mb-2">
                             <h5 class="text-black">Whatsapp</h5>
-                            <i class="fa-brands fa-whatsapp font-size-32 py-2" style="color:#25d366"></i>
+                            <i class='bx bxl-whatsapp font-size-32 py-2' style="color:#25d366"></i>
                             <p class="text-black-50">+123456789</p>
                         </a>
                         <a href="#" target="_blank" class="box d-block text-center py-2 px-4 rounded-4 mb-2"
                             style="border:1px solid #3399ff">
                             <h5 class="text-black">Address</h5>
-                            <i class="fa-solid fa-earth-asia font-size-32 py-2" style="color:#3399ff"></i>
+                            <i class='bx bx-world font-size-32 py-2' style="color:#3399ff"></i>
                             <p class="text-black-50">Bakhoun - Sir El Denieh</p>
                         </a>
 
@@ -725,26 +596,26 @@
                 <div class="col-md-4 col-lg-3">
                     <h4>Menu</h4>
                     <ul class="list-unstyled">
-                        <li class="py-1">
-                            <a href="#" class="a-angle-hover text-white-50"><span><i
-                                        class="fa-solid fa-angle-right me-2"></i></span>Home</a>
+                        <li class="py-1 d-flex align-items-center text-white-50">
+                            <span><i class='bx bx-right-arrow-alt font-size-18 me-1'></i></span>
+                            <a href="#" class="a-angle-hover text-white-50">Home</a>
                         </li>
-                        <li class="py-1">
-                            <a href="#" class="a-angle-hover text-white-50"><i
-                                    class="fa-solid fa-angle-right me-2"></i></span>Arrivals</a>
+                        <li class="py-1 d-flex align-items-center text-white-50">
+                            <span><i class='bx bx-right-arrow-alt font-size-18 me-1'></i></span>
+                            <a href="#" class="a-angle-hover text-white-50">Arrivals</a>
                         </li>
-                        <li class="py-1">
-                            <a href="#" class="a-angle-hover text-white-50"><i
-                                    class="fa-solid fa-angle-right me-2"></i></span>Products</a>
+                        <li class="py-1 d-flex align-items-center text-white-50">
+                            <span><i class='bx bx-right-arrow-alt font-size-18 me-1'></i></span>
+                            <a href="#" class="a-angle-hover text-white-50">Products</a>
                         </li>
-                        <li class="py-1">
-                            <a href="#" class="a-angle-hover text-white-50"><i
-                                    class="fa-solid fa-angle-right me-2"></i></span>About
+                        <li class="py-1 d-flex align-items-center text-white-50">
+                            <span><i class='bx bx-right-arrow-alt font-size-18 me-1'></i></span>
+                            <a href="#" class="a-angle-hover text-white-50">About
                                 Us</a>
                         </li>
-                        <li class="py-1">
-                            <a href="#" class="a-angle-hover text-white-50"><i
-                                    class="fa-solid fa-angle-right me-2"></i></span>Contact
+                        <li class="py-1 d-flex align-items-center text-white-50">
+                            <span><i class='bx bx-right-arrow-alt font-size-18 me-1'></i></span>
+                            <a href="#" class="a-angle-hover text-white-50">Contact
                                 Us</a>
                         </li>
                     </ul>
@@ -753,21 +624,24 @@
                     <h4>Follow Us</h4>
                     <ul class="list-unstyled social">
                         <li class="py-1 facebook">
-                            <a href="#"><span class="me-2"><i class="fa-brands fa-facebook-f"></i></span>Facebook</a>
+                            <a href="#"><span class="me-2"><i
+                                        class='bx bxl-facebook font-size-20'></i></span>Facebook</a>
                         </li>
                         <li class="py-1 linkedin">
-                            <a href="#"><span class="me-2"><i class="fa-brands fa-linkedin"></i></span>Linkedin</a>
+                            <a href="#"><span class="me-2"><i
+                                        class='bx bxl-linkedin font-size-20'></i></span>Linkedin</a>
                         </li>
                         <li class="py-1 instagram">
-                            <a href="#"><span class="me-2"><i class="fa-brands fa-instagram"></i></span>Instagram</a>
+                            <a href="#"><span class="me-2"><i
+                                        class='bx bxl-instagram font-size-20'></i></span>Instagram</a>
                         </li>
                         <li class="py-1 twitter">
                             <a href="#" class="text-color-main d-flex align-items-center"><span class="me-2"><i
-                                        class="fa-brands fa-twitter"></i></span>Twitter</a>
+                                        class='bx bxl-twitter font-size-20'></i></span>Twitter</a>
                         </li>
                         <li class="py-1 telegram">
                             <a href="#" class="text-color-main d-flex align-items-center"><span class="me-2"><i
-                                        class="fa-brands fa-telegram"></i></span>Telegram</a>
+                                        class='bx bxl-telegram font-size-20'></i></span>Telegram</a>
                         </li>
                     </ul>
                 </div>
@@ -788,7 +662,8 @@
                     </ul>
                 </div>
                 <div class="col-md-4 col-lg-3">
-                    <h4><a href="#" class="text-white"><i class="fa-solid fa-shop me-1"></i><span
+                    <h4><a href="#" class="text-white d-flex align-items-center"><i
+                                class='bx bxs-store font-size-18 me-1'></i><span
                                 class="text-color-main">S</span>tore<span class="text-color-main">L</span>egend</a></h4>
                     <p class="text-white-50 font-size-15">This Program Name's eCommerece project to improve my backend
                         language all
