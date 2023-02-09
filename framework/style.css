@@ -20,15 +20,24 @@ a {
   border: 1px solid #777;
   user-select: none;
 }
-.btn-shop {
+.btn-main {
   background-color: #333;
   color: white;
   transition: var(--transition);
 }
-.btn-shop:hover {
+.btn-main:hover,
+.btn-main-alt:hover {
   font-weight: 600;
   background-color: var(--main);
   transform: scale(1.1);
+}
+.btn-main-alt {
+  background-color: var(--light-gray);
+  color: #333;
+  transition: var(--transition);
+}
+.btn-main-alt:hover {
+  color: #fff !important;
 }
 .swiper-button-next,
 .swiper-button-prev {
