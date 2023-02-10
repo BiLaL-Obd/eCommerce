@@ -101,14 +101,47 @@
   height: calc(100vh - 110px);
 }
 /* End Landing */
-/* Start category */
-.category .content .title {
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-  left: 15px;
+/* Start offers */
+.offers .swiper-slide .row {
+  border: 1px solid #fff;
+  padding: 5px;
+  margin: 5px;
+  color: #fff;
 }
-/* End category */
+.offers .swiper-slide img {
+  height: 140px;
+}
+/* .offers h4 {
+  border: 4px solid var(--main);
+  width: fit-content;
+  padding: 3px 8px;
+}
+.offers h4::before,
+.offers h4::after {
+  content: "";
+  width: 10px;
+  height: 18px;
+  position: absolute;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  transform: rotate(50deg);
+}
+.offers h4::before {
+  right: -7px;
+  top: -10px;
+}
+.offers h4::after {
+  left: -7px;
+  bottom: -10px;
+} */
+/* End offers */
 /* Start Arrival */
+.arrivals .nav-pills .nav-link.active,
+.arrivals .nav-pills .show > .nav-link {
+  background-color: var(--main);
+}
+.arrivals .nav-link:hover {
+  color: var(--dark);
+}
 .arrivals .arv {
   border: 1px solid var(--main);
   box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.15);
@@ -118,8 +151,27 @@
   transform: translateY(-5px);
   box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.35);
 }
+.arrivals .tab-content img {
+  height: 140px;
+}
+.arrivals .price-only {
+  text-transform: uppercase;
+}
+.arrivals .price-offer {
+  text-decoration: line-through;
+}
 /* End Arrival */
 /* Start Product */
+.products .nav-pills .nav-link.active,
+.products .nav-pills .show > .nav-link {
+  background-color: var(--main);
+}
+.products .nav-link:hover {
+  color: #fff;
+}
+.products .tab-content img {
+  height: 205px;
+}
 .products .product-items .box {
   box-shadow: 0px -3px 12px 0px inset rgba(39, 174, 95, 0.65);
 }
