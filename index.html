@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store Legend</title>
     <!-- BoxIcon -->
@@ -27,12 +28,14 @@
     <!-- Start Header 1 -->
     <nav class="navbar bg-main-light">
         <div class="container">
-            <a class="navbar-brand fs-4 d-flex align-items-center" href="#"><i
+            <a class="navbar-brand fs-4 d-flex align-items-center" href="index.html"><i
                     class="bx bxs-store font-size-18 me-1"></i><span class="logo">S</span>tore<span
                     class="logo">L</span>egend</a>
             <div class="container-panel d-flex align-items-center">
                 <!-- Start shop -->
-                <a href="#" class="text-black-50">
+                <a href="#" class="text-black-50 position-relative">
+                    <span
+                        class="purchase-count font-size-10 d-flex align-items-center justify-content-center text-white bg-main end-0 rounded-circle position-absolute">5</span>
                     <i class='bx bx-cart font-size-30'></i>
                 </a>
                 <!-- End shop -->
@@ -55,22 +58,26 @@
                                 <p>Welcome <span class="username">Bilal</span></p>
                             </li>
                             <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-angle-right me-2"></i>My Orders</a>
+                                <i class='bx bx-right-arrow-alt font-size-18 me-1'></i>
+                                <a class="nav-link" href="#">My Orders</a>
                             </li>
                             <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-angle-right me-2"></i>Edit
+                                <i class='bx bx-right-arrow-alt font-size-18 me-1'></i>
+                                <a class="nav-link" href="#">Edit
                                     Profile</a>
                             </li>
                             <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link" aria-current="page" href="#"><i
-                                        class="fa-solid fa-angle-right me-2"></i>Change
+                                <i class='bx bx-right-arrow-alt font-size-18 me-1'></i>
+                                <a class="nav-link" aria-current="page" href="#">Change
                                     Photo</a>
                             </li>
                             <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-angle-right me-2"></i>Login</a>
+                                <i class='bx bx-right-arrow-alt font-size-18 me-1'></i>
+                                <a class="nav-link" href="#">Login</a>
                             </li>
                             <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-angle-right me-2"></i>Logout</a>
+                                <i class='bx bx-right-arrow-alt font-size-18 me-1'></i>
+                                <a class="nav-link" href="#">Logout</a>
                             </li>
                         </ul>
                     </div>
@@ -82,7 +89,7 @@
     </nav>
     <!-- End Header 1 -->
     <!-- Start Header 2 -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-main-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-main-dark sticky-top header-2">
         <div class="container">
             <ul class="navbar-nav flex-row justify-content-center flex-grow-1 pe-3">
                 <li class="nav-item">
@@ -107,7 +114,7 @@
                     </ul>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link p-2 d-flex align-items-center" href="#"><i
+                    <a class="nav-link p-2 d-flex align-items-center" href="about.html"><i
                             class='bx bx-carousel font-size-30 d-block d-sm-none'></i>
                         <span class="d-none d-sm-block">About Us</span></a>
                 </li>
@@ -130,7 +137,7 @@
                             <div class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center"
                                 data-aos="fade-up" data-aos-duration="1000">
                                 <div class="content text-start pt-3 pb-3">
-                                    <h3 class="text-color-main mb-md-3">Technologies</h3>
+                                    <h1 class="text-color-main mb-md-3">Technologies</h1>
                                     <p class="text-black-50">
                                         At <b>Store Legend</b>, we are dedicated to providing you with the <b>best
                                             technology</b> products and services. Our knowledgeable staff
@@ -173,7 +180,7 @@
                             <div class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center"
                                 data-aos="fade-up" data-aos-duration="1000">
                                 <div class="content text-start pt-3 pb-3">
-                                    <h3 class="text-color-main mb-md-3">Books</h3>
+                                    <h1 class="text-color-main mb-md-3">Books</h1>
                                     <p class="text-black-50">
                                         At <b>Store Legend</b>, we are passionate about books and providing our
                                         customers with the best possible experience. Our
@@ -384,12 +391,13 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-color-main active" id="technologies-arrival-tab" data-bs-toggle="pill"
                         data-bs-target="#technologies-arrival" type="button" role="tab"
-                        aria-controls="technologies-arrival" aria-selected="true">Technologies</button>
+                        aria-controls="technologies-arrival" aria-selected="true" data-aos="zoom-out"
+                        data-aos-duration="500">Technologies</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-color-main" id="books-arrival-tab" data-bs-toggle="pill"
                         data-bs-target="#books-arrival" type="button" role="tab" aria-controls="books-arrival"
-                        aria-selected="false">Books</button>
+                        aria-selected="false" data-aos="zoom-out" data-aos-duration="500">Books</button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -713,12 +721,12 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-color-main active" id="technologies-tab" data-bs-toggle="pill"
                         data-bs-target="#technologies" type="button" role="tab" aria-controls="technologies"
-                        aria-selected="true">Technologies</button>
+                        aria-selected="true" data-aos="zoom-out" data-aos-duration="500">Technologies</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-color-main" id="books-tab" data-bs-toggle="pill"
-                        data-bs-target="#books" type="button" role="tab" aria-controls="books"
-                        aria-selected="false">Books</button>
+                        data-bs-target="#books" type="button" role="tab" aria-controls="books" aria-selected="false"
+                        data-aos="zoom-out" data-aos-duration="500">Books</button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -734,7 +742,8 @@
                                     <span class="text-color-main font-size-18">$249.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2">$279.99</span>
                                 </div>
-                                <button href="#" class="btn btn-success mt-3">Add to Cart</button>
+                                <button href="#" class="btn btn-success mt-3" data-aos="zoom-out"
+                                    data-aos-duration="500">Add to Cart</button>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 text-white">
@@ -746,7 +755,8 @@
                                     <span class="text-color-main font-size-18">$319.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2">$499.99</span>
                                 </div>
-                                <button href="#" class="btn btn-success mt-3">Add to Cart</button>
+                                <button href="#" class="btn btn-success mt-3" data-aos="zoom-out"
+                                    data-aos-duration="500">Add to Cart</button>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 text-white">
@@ -758,7 +768,8 @@
                                     <span class="text-color-main font-size-18">$349.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2">$599.99</span>
                                 </div>
-                                <button href="#" class="btn btn-success mt-3">Add to Cart</button>
+                                <button href="#" class="btn btn-success mt-3" data-aos="zoom-out"
+                                    data-aos-duration="500">Add to Cart</button>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 text-white">
@@ -770,7 +781,8 @@
                                     <span class="text-color-main font-size-18">$119.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2">$159.99</span>
                                 </div>
-                                <button href="#" class="btn btn-success mt-3">Add to Cart</button>
+                                <button href="#" class="btn btn-success mt-3" data-aos="zoom-out"
+                                    data-aos-duration="500">Add to Cart</button>
                             </div>
                         </div>
                         <div class="col-12 text-center mt-3">
@@ -790,7 +802,8 @@
                                     <span class="text-color-main font-size-18">$249.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2">$279.99</span>
                                 </div>
-                                <button href="#" class="btn btn-success mt-3">Add to Cart</button>
+                                <button href="#" class="btn btn-success mt-3" data-aos="zoom-out"
+                                    data-aos-duration="500">Add to Cart</button>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 text-white">
@@ -802,7 +815,8 @@
                                     <span class="text-color-main font-size-18">$319.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2">$499.99</span>
                                 </div>
-                                <button href="#" class="btn btn-success mt-3">Add to Cart</button>
+                                <button href="#" class="btn btn-success mt-3" data-aos="zoom-out"
+                                    data-aos-duration="500">Add to Cart</button>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 text-white">
@@ -814,7 +828,8 @@
                                     <span class="text-color-main font-size-18">$349.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2">$599.99</span>
                                 </div>
-                                <button href="#" class="btn btn-success mt-3">Add to Cart</button>
+                                <button href="#" class="btn btn-success mt-3" data-aos="zoom-out"
+                                    data-aos-duration="500">Add to Cart</button>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 text-white">
@@ -826,7 +841,8 @@
                                     <span class="text-color-main font-size-18">$119.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2">$159.99</span>
                                 </div>
-                                <button href="#" class="btn btn-success mt-3">Add to Cart</button>
+                                <button href="#" class="btn btn-success mt-3" data-aos="zoom-out"
+                                    data-aos-duration="500">Add to Cart</button>
                             </div>
                         </div>
                         <div class="col-12 text-center mt-3">
@@ -886,7 +902,8 @@
                                 placeholder="Enter Your Message"></textarea>
                         </div>
                         <div class="col-12">
-                            <input type="submit" value="Send Message" class="btn btn-success">
+                            <input type="submit" value="Send Message" class="btn btn-success" data-aos="zoom-out"
+                                data-aos-duration="500">
                         </div>
                     </form>
                 </div>
@@ -915,7 +932,7 @@
                         </li>
                         <li class="py-1 d-flex align-items-center text-white-50">
                             <span><i class='bx bx-right-arrow-alt font-size-18 me-1'></i></span>
-                            <a href="#" class="a-angle-hover text-white-50">About
+                            <a href="about.html" class="a-angle-hover text-white-50">About
                                 Us</a>
                         </li>
                         <li class="py-1 d-flex align-items-center text-white-50">
@@ -982,7 +999,7 @@
             <div class="container pt-2">
                 <div class="row">
                     <div class="col-md-6 mb-3 mb-md-0 text-center text-md-start">
-                        Copyright &copy; 2023 <a href="#" class="text-success font-size-14">Store Legend</a>, All right
+                        Copyright &copy; 2023 <a href="#" class="text-white font-size-14">Store Legend</a>, All right
                         reserved
                     </div>
                     <div class="col-md-6">
@@ -1006,6 +1023,14 @@
         </div>
     </div>
     <!-- End Footer -->
+    <!-- Start Scroll -->
+    <div class="scroll position-fixed d-flex flex-column gap-3" style="bottom: 20px;right:10px">
+        <a href="#" class="rounded-circle bg-main text-white d-flex align-items-center justify-content-center"><i
+                class='bx bx-cart font-size-24'></i></a>
+        <a href="#" class="rounded-circle bg-main text-white d-flex align-items-center justify-content-center"><i
+                class='bx bx-up-arrow-alt font-size-24'></i></a>
+    </div>
+    <!-- End Scroll -->
     <!-- Start Script -->
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

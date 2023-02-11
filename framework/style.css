@@ -46,11 +46,18 @@ a {
 .swiper-pagination-bullet-active {
   background: var(--main);
 }
+.scroll a {
+  width: 35px;
+  height: 35px;
+}
 /* width */
 .w-fit-content {
   width: fit-content;
 }
 /* Font Size */
+.font-size-10 {
+  font-size: 0.625rem;
+}
 .font-size-12 {
   font-size: 0.75rem;
 }

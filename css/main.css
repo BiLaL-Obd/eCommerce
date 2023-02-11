@@ -19,8 +19,16 @@
   padding-left: 10px;
 }
 /* Start Header */
+.header-2 {
+  box-shadow: 2px 7px 20px #6a6a6a91;
+}
 .navbar {
   height: 55px;
+}
+.navbar .purchase-count {
+  width: 15px;
+  height: 15px;
+  top: -8px;
 }
 .navbar-brand .logo,
 .navbar-nav .username,
@@ -96,6 +104,8 @@
 }
 
 /* End Header */
+
+/****************   Index   ****************/
 /* Start Landing */
 .landing .myLanding {
   height: calc(100vh - 110px);
@@ -137,6 +147,7 @@
 /* Start Arrival */
 .arrivals .nav-pills .nav-link.active,
 .arrivals .nav-pills .show > .nav-link {
+  color: var(--dark);
   background-color: var(--main);
 }
 .arrivals .nav-link:hover {
@@ -275,3 +286,29 @@
   color: var(--main);
 }
 /* End Footer */
+
+/****************   About   ****************/
+.about-pg h3 {
+  width: fit-content;
+  border-bottom: 2px solid var(--main);
+  padding-bottom: 5px;
+}
+.about-header .square {
+  width: 130px;
+  height: 130px;
+  background-color: var(--main);
+  display: block;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button::after {
+  background-image: url("/images/plus.png");
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("/images/minus.png");
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: var(--main);
+}
