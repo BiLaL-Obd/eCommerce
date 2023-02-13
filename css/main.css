@@ -3,21 +3,6 @@
   --transition: 0.3s;
   --dark: #333;
 }
-.form-control {
-  border: 1px solid rgba(39, 174, 95, 0.5);
-}
-.form-control:focus {
-  box-shadow: 0 0 0 0.12rem rgba(39, 174, 95, 0.25) !important;
-}
-.modal-header {
-  border-color: var(--main) !important;
-}
-.a-angle-hover {
-  transition: var(--transition);
-}
-.a-angle-hover:hover {
-  padding-left: 10px;
-}
 /* Start Header */
 .header-2 {
   box-shadow: 2px 7px 20px #6a6a6a91;
@@ -182,7 +167,7 @@
   background-color: var(--main);
 }
 .products .nav-link:hover {
-  color: #fff;
+  color: var(--main);
 }
 .products .tab-content img {
   height: 205px;
@@ -201,21 +186,6 @@
   color: var(--main);
 }
 /* End Product */
-/* Start Website */
-.website {
-  background-image: linear-gradient(130deg, var(--main), var(--dark));
-}
-.website .main-title h3 {
-  border-color: #fff;
-}
-.website .btn-visite {
-  transition: var(--transition);
-}
-.website .btn-visite:hover {
-  transform: scale(1.1);
-  color: var(--main);
-}
-/* End Website */
 /* Start Footer */
 .footer .social a {
   color: var(--main);
