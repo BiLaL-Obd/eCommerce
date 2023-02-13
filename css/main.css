@@ -15,7 +15,7 @@
   height: 15px;
   top: -8px;
 }
-.navbar.header-2 .purchse-count {
+.navbar.header-2 .purchase-count {
   top: -1px;
 }
 .navbar-brand .logo,
@@ -165,9 +165,10 @@
 .products .nav-pills .nav-link.active,
 .products .nav-pills .show > .nav-link {
   background-color: var(--main);
+  color: #fff !important;
 }
 .products .nav-link:hover {
-  color: var(--main);
+  color: var(--main) !important;
 }
 .products .tab-content img {
   height: 205px;
