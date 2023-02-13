@@ -54,6 +54,7 @@ a {
   width: 35px;
   height: 35px;
   opacity: 0.7;
+  transition: var(--transition);
 }
 .scroll a:hover {
   opacity: 1;
