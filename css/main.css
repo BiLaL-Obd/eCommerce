@@ -148,7 +148,7 @@
 /* Start Arrival */
 .arrivals .nav-pills .nav-link.active,
 .arrivals .nav-pills .show > .nav-link {
-  color: var(--dark);
+  color: #fff;
   background-color: var(--main);
 }
 .arrivals .nav-link:hover {
