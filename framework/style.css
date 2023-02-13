@@ -64,6 +64,9 @@ a {
   width: fit-content;
 }
 /* Font Size */
+.font-size-8 {
+  font-size: 0.5rem;
+}
 .font-size-10 {
   font-size: 0.625rem;
 }
