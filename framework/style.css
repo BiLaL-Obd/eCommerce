@@ -10,6 +10,21 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+.form-control {
+  border: 1px solid rgba(39, 174, 95, 0.5);
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.12rem rgba(39, 174, 95, 0.25) !important;
+}
+.modal-header {
+  border-color: var(--main) !important;
+}
+.a-angle-hover {
+  transition: var(--transition);
+}
+.a-angle-hover:hover {
+  padding-left: 10px;
+}
 a {
   text-decoration: none;
 }
