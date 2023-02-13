@@ -20,6 +20,9 @@
   right: 5px;
 }
 @media(max-width: 767px) {
+  .navbar.header-2 .purchase-count {
+    top: -2px;
+  }
   .navbar.header-2 .purchase-count + i {
     font-size: 30px !important;
   }
