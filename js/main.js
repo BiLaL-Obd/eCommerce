@@ -1,24 +1,13 @@
-//Product
-let products = document.querySelectorAll(".products .product-list li");
-let productBox = document.querySelectorAll(".products .product-items .all");
-products.forEach((li) => {
-  li.addEventListener("click", activeClass);
-  li.addEventListener("click", manageProduct);
+// Windows Scroll
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= 400) {
+      $(".scroll").css({ right: "10px",opacity: "1" });
+    } else if ($(window).scrollTop() < 500) {
+      $(".scroll").css({ right: "-200%",opacity: "0.5" });
+    }
+  });
 });
-function activeClass() {
-  products.forEach((li) => {
-    li.classList.remove("active");
-    this.classList.add("active");
-  });
-}
-function manageProduct() {
-  productBox.forEach((product) => {
-    product.style.display = "none";
-  });
-  document.querySelectorAll(this.dataset.product).forEach((ele) => {
-    ele.style.display = "block";
-  });
-}
 
 // Swiper
 var swiper = new Swiper(".myLanding", {
