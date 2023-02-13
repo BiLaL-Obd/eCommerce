@@ -107,7 +107,7 @@
 /* Start offers */
 .offers .swiper-slide .row {
   background-color:#fff;
-  border: 1px solid #000;
+  border: 2px solid var(--main);
   padding: 5px;
   margin: 5px;
   color: #000;
