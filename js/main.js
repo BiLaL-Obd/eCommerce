@@ -1,7 +1,7 @@
 // Windows Scroll
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(window).scrollTop() >= 400) {
+    if ($(window).scrollTop() >= 450) {
       $(".scroll").css({ right: "10px"});
     } else if ($(window).scrollTop() < 500) {
       $(".scroll").css({ right: "-200%"});
