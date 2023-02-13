@@ -2,9 +2,9 @@
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(window).scrollTop() >= 400) {
-      $(".scroll").css({ right: "10px",opacity: "1" });
+      $(".scroll").css({ right: "10px"});
     } else if ($(window).scrollTop() < 500) {
-      $(".scroll").css({ right: "-200%",opacity: "0.5" });
+      $(".scroll").css({ right: "-200%"});
     }
   });
 });
