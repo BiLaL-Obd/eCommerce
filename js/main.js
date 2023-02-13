@@ -48,11 +48,11 @@ var swiper = new Swiper(".myOfferes", {
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 20,
     },
   },
 });
