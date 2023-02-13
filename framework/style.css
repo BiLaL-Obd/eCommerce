@@ -29,15 +29,13 @@ a {
 .btn-main-alt:hover {
   font-weight: 600;
   background-color: var(--main);
-  transform: scale(1.1);
+  letter-spacing: 1px;
+  color: #fff !important;
 }
 .btn-main-alt {
   background-color: var(--light-gray);
   color: #333;
   transition: var(--transition);
-}
-.btn-main-alt:hover {
-  color: #fff !important;
 }
 .swiper-button-next,
 .swiper-button-prev {
