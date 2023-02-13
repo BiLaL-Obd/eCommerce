@@ -7,6 +7,14 @@ $(document).ready(function () {
       $(".scroll").css({ right: "-200%"});
     }
   });
+  
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= 50) {
+      $(".purchase-show").removeClass("d-none");
+    } else if ($(window).scrollTop() < 500) {
+      $(".purchase-show").addClass("d-none");
+    }
+  });
 });
 
 // Swiper
