@@ -16,7 +16,8 @@
   top: -8px;
 }
 .navbar.header-2 .purchase-count {
-  top: -2px;
+  top: -4px;
+  right: 5px;
 }
 @media(max-width: 767px) {
   .navbar .purchase-count i {
