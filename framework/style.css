@@ -16,6 +16,22 @@
 .form-control:focus {
   box-shadow: 0 0 0 0.12rem rgba(39, 174, 95, 0.25) !important;
 }
+.form-check-input[type=checkbox] {
+  border-raduis: 50%;
+}
+.form-check-input {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: transparent;
+  box-shadow: 0 0 4px 0.15rem rgb(25 135 84 / 25%);
+  border: none;
+}
+.form-check-input:checked {
+  background-color: rgb(25 135 84 / 70%);
+}
+.form-check-input:focus {
+  box-shadow: 0 0 4px 0.15rem rgb(25 135 84 / 25%);
+}
 .modal-header {
   border-color: var(--main) !important;
 }
