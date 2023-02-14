@@ -19,7 +19,7 @@
   top: -4px;
   right: 5px;
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .navbar.header-2 .purchase-count {
     top: -2px;
   }
@@ -110,7 +110,7 @@
 /* End Landing */
 /* Start offers */
 .offers .swiper-slide .row {
-  background-color:#fff;
+  background-color: #fff;
   border: 2px solid var(--main);
   padding: 5px;
   margin: 5px;
@@ -297,10 +297,10 @@
   box-shadow: none;
 }
 .accordion-button::after {
-  background-image: url("/images/plus.png");
+  background-image: url("https://bilal-obd.github.io/eCommerce/images/plus.png");
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url("/images/minus.png");
+  background-image: url("https://bilal-obd.github.io/eCommerce/images/minus.png");
 }
 .accordion-button:not(.collapsed) {
   box-shadow: none;
