@@ -196,6 +196,16 @@
   color: var(--main);
 }
 /* End Product */
+/* Start Contact */
+@media (min-width: 768px) {
+  .contact {
+    background-image: url("https://bilal-obd.github.io/eCommerce/images/contact-sect.svg");
+    background-repeat: no-repeat;
+    background-position: 0 70%;
+    background-size: 34% auto;
+  }
+}
+/* End Contact */
 /* Start Footer */
 .footer .social a {
   color: var(--main);
