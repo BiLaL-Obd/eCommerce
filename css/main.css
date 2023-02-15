@@ -7,6 +7,9 @@
   --transition: 0.3s;
   --dark: #333;
 }
+.select-selected {
+  background-color: DodgerBlue;
+}
 .a-angle-hover {
   transition: var(--transition);
 }
@@ -14,6 +17,11 @@
   padding-left: 10px;
 }
 /* Start Header */
+.navbar.header-2 .form-select {
+  background-color: transparent;
+  color: #fff;
+  border-color: var(--main);
+}
 .navbar .btn-header-close {
   top: 5px;
   right: 15px;
@@ -23,6 +31,10 @@
 }
 .navbar {
   height: 55px;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: var(--main);
 }
 .navbar .purchase-count {
   width: 15px;

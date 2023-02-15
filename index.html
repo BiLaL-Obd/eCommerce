@@ -4,27 +4,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="">
+    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legend Store</title>
     <!-- BoxIcon -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/style-bootstrap.css">
-
+    <link rel="stylesheet" href="css/style-bootstrap.css" />
 </head>
 
 <body class="bg-main-light">
     <!-- Start Header 1 -->
     <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand fs-4 d-flex align-items-center" href="index.html"><i
+            <a class="navbar-brand fs-4 d-flex align-items-center fw-700" href="index.html"><i
                     class="bx bxs-store font-size-18 me-1"></i><span class="logo">L</span>egend<span
                     class="logo">S</span>tore</a>
             <ul class="navbar-nav flex-row justify-content-end flex-grow-1 pe-3">
@@ -32,54 +32,55 @@
                     <a href="#" class="nav-link p-2 d-flex align-items-end position-relative">
                         <span
                             class="purchase-count font-size-10 d-flex align-items-center justify-content-center text-white bg-main end-0 rounded-circle position-absolute">5</span>
-                        <i class='bx bx-heart font-size-30'></i>
-                        <span class="d-none d-sm-block">Favorite</span>
+                        <i class="bx bx-heart font-size-30"></i> <span class="d-none d-sm-block">Favorite</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link p-2 d-flex align-items-end position-relative">
                         <span
                             class="purchase-count font-size-10 d-flex align-items-center justify-content-center text-white bg-main end-0 rounded-circle position-absolute">5</span>
-                        <i class='bx bx-shopping-bag font-size-30'></i>
+                        <i class="bx bx-shopping-bag font-size-30"></i>
                         <span class="d-none d-sm-block">Cart</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link p-2 d-flex align-items-end" href="#">
-                        <i class='bx bx-user font-size-30'></i>
+                        <i class="bx bx-user font-size-30"></i>
                         <span class="d-none d-sm-block">Account</span>
                     </a>
                 </li>
             </ul>
-
         </div>
     </nav>
     <!-- End Header 1 -->
     <!-- Start Header 2 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-main-dark header-2">
-        <div class="container">
+        <div class="container align-items-start align-items-lg-center">
             <ul class="navbar-nav flex-row justify-content-start flex-grow-1 pe-3">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle p-2 text-uppercase d-flex align-items-center" href="#"
-                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class='bx bx-dialpad-alt font-size-30'></i>
-                        <span class="d-none d-lg-block ps-2 pe-4">Shop Categories</span>
-                    </a>
-                    <ul class="dropdown-menu position-absolute">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation" style="height:fit-content;">
+                    aria-expanded="false" aria-label="Toggle navigation" style="height: fit-content">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse bg-main-dark" style="z-index:99;" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse bg-main-dark p-3 p-lg-0 rounded-4" style="z-index: 99"
+                    id="navbarSupportedContent">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle p-2 text-uppercase d-flex align-items-center" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bx bx-dialpad-alt d-none d-lg-block font-size-30"></i>
+                            <span class="ps-lg-2 pe-4">Shop Categories</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active p-2 text-uppercase d-flex align-items-center" aria-current="page"
                             href="index.html">Home</a>
@@ -94,7 +95,7 @@
                             Books
                         </a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link p-2 text-uppercase d-flex align-items-center" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
@@ -103,19 +104,16 @@
                 </div>
 
             </ul>
-            <!-- <form class="d-flex" role="search">
-                <select class="form-select" name="" id="">
-                    <option value="">En</option>
-                    <option value="">Ar</option>
-                </select>
-            </form> -->
+            <form class="d-flex" role="search">
+
+            </form>
         </div>
     </nav>
     <!-- End Header -->
     <!-- Start Landing -->
     <div class="landing">
         <div class="swiper mySwiper myLanding">
-            <div class="swiper-wrapper ">
+            <div class="swiper-wrapper">
                 <div class="swiper-slide d-flex justify-content-center align-items-center">
                     <div class="container">
                         <div class="row">
@@ -124,12 +122,14 @@
                                 <div class="content text-start pt-3 pb-3">
                                     <h1 class="text-color-main mb-md-3">Technologies</h1>
                                     <p class="text-black-50">
-                                        At <b>Store Legend</b>, we are dedicated to providing you with the <b>best
-                                            technology</b> products and services. Our knowledgeable staff
-                                        is always here to answer any questions you may have and help you find the
-                                        perfect solution for your needs.<br>
-                                        Shop with confidence, knowing that we offer a 30-day return policy and a 1-year
-                                        warranty on all of our products.
+                                        At <b>Store Legend</b>, we are dedicated to providing you
+                                        with the <b>best technology</b> products and services. Our
+                                        knowledgeable staff is always here to answer any questions
+                                        you may have and help you find the perfect solution for
+                                        your needs.<br />
+                                        Shop with confidence, knowing that we offer a 30-day
+                                        return policy and a 1-year warranty on all of our
+                                        products.
                                     </p>
                                     <a href="#" class="btn mt-md-3 btn-main">Explore more</a>
                                 </div>
@@ -139,23 +139,21 @@
                                     <div class="col-12" data-aos="zoom-in" data-aos-duration="1000">
                                         <div class="row justify-content-center">
                                             <div class="col-4">
-                                                <img src="images/home-img-1.jpg" class="img-fluid" alt="">
+                                                <img src="images/home-img-1.jpg" class="img-fluid" alt="" />
                                             </div>
                                             <div class="col-4">
-                                                <img src="images/home-img-2.jpg" class="img-fluid" alt="">
+                                                <img src="images/home-img-2.jpg" class="img-fluid" alt="" />
                                             </div>
                                             <div class="col-4">
-                                                <img src="images/home-img-3.jpg" class="img-fluid" alt="">
+                                                <img src="images/home-img-3.jpg" class="img-fluid" alt="" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <img src="images/stand.png" class="img-fluid" alt="">
+                                        <img src="images/stand.png" class="img-fluid" alt="" />
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -167,12 +165,14 @@
                                 <div class="content text-start pt-3 pb-3">
                                     <h1 class="text-color-main mb-md-3">Books</h1>
                                     <p class="text-black-50">
-                                        At <b>Store Legend</b>, we are passionate about books and providing our
-                                        customers with the best possible experience. Our
-                                        knowledgeable staff is always here to help you find the <b>perfect book</b> and
-                                        answer any questions you may have.<br>
-                                        We offer a 14-day return policy and a satisfaction guarantee on all of our
-                                        books, so you can shop with confidence.
+                                        At <b>Store Legend</b>, we are passionate about books and
+                                        providing our customers with the best possible experience.
+                                        Our knowledgeable staff is always here to help you find
+                                        the <b>perfect book</b> and answer any questions you may
+                                        have.<br />
+                                        We offer a 14-day return policy and a satisfaction
+                                        guarantee on all of our books, so you can shop with
+                                        confidence.
                                     </p>
                                     <a href="#" class="btn mt-md-3 btn-main">Explore more</a>
                                 </div>
@@ -182,23 +182,21 @@
                                     <div class="col-12" data-aos="zoom-in" data-aos-duration="1000">
                                         <div class="row justify-content-center">
                                             <div class="col-4">
-                                                <img src="images/book-1.png" class="img-fluid" alt="">
+                                                <img src="images/book-1.png" class="img-fluid" alt="" />
                                             </div>
                                             <div class="col-4">
-                                                <img src="images/book-2.png" class="img-fluid" alt="">
+                                                <img src="images/book-2.png" class="img-fluid" alt="" />
                                             </div>
                                             <div class="col-4">
-                                                <img src="images/book-3.png" class="img-fluid" alt="">
+                                                <img src="images/book-3.png" class="img-fluid" alt="" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <img src="images/stand.png" class="img-fluid" alt="">
+                                        <img src="images/stand.png" class="img-fluid" alt="" />
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -208,20 +206,22 @@
     </div>
     <!-- End Landing -->
     <!-- Start Offers -->
-    <div class="offers py-5" style="overflow-x: hidden;">
+    <div class="offers py-5" style="overflow-x: hidden">
         <div class="container-fluid">
             <div class="main-title mb-5">
                 <h3 class="m-auto py-1 px-2 text-uppercase">Offers</h3>
             </div>
             <div class="row">
                 <div class="col-12 mb-3 py-3">
-                    <h5 class=" mb-2 d-flex align-items-center position-relative">Technologies Offers</h5>
+                    <h5 class="mb-2 d-flex align-items-center position-relative">
+                        Technologies Offers
+                    </h5>
                     <div class="swiper myOfferes">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="row rounded-2 overflow-hidden">
                                     <div class="col-6">
-                                        <img src="images/arrival-3.jpg" class="img-fluid" alt="">
+                                        <img src="images/arrival-3.jpg" class="img-fluid" alt="" />
                                     </div>
                                     <div class="col-6 d-flex flex-column justify-content-center">
                                         <p>4K Telivision</p>
@@ -229,15 +229,16 @@
                                             <span>$199.99</span><span
                                                 class="font-size-14 text-decoration-line-through">$209.99</span>
                                         </div>
-                                        <button class="btn btn-danger mt-3" data-aos="zoom-out"
-                                            data-aos-duration="500">Add to cart</button>
+                                        <button class="btn btn-danger mt-3" data-aos="zoom-out" data-aos-duration="500">
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="row rounded-2 overflow-hidden">
                                     <div class="col-6">
-                                        <img src="images/arrival-2.jpg" class="img-fluid" alt="">
+                                        <img src="images/arrival-2.jpg" class="img-fluid" alt="" />
                                     </div>
                                     <div class="col-6 d-flex flex-column justify-content-center">
                                         <p class="font-size-20">4K Telivision</p>
@@ -245,15 +246,16 @@
                                             <span>$199.99</span><span
                                                 class="font-size-14 text-decoration-line-through">$209.99</span>
                                         </div>
-                                        <button class="btn btn-danger mt-3" data-aos="zoom-out"
-                                            data-aos-duration="500">Add to cart</button>
+                                        <button class="btn btn-danger mt-3" data-aos="zoom-out" data-aos-duration="500">
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="row rounded-2 overflow-hidden">
                                     <div class="col-6">
-                                        <img src="images/arrival-1.jpg" class="img-fluid" alt="">
+                                        <img src="images/arrival-1.jpg" class="img-fluid" alt="" />
                                     </div>
                                     <div class="col-6 d-flex flex-column justify-content-center">
                                         <p class="font-size-20">4K Telivision</p>
@@ -261,15 +263,16 @@
                                             <span>$199.99</span><span
                                                 class="font-size-14 text-decoration-line-through">$209.99</span>
                                         </div>
-                                        <button class="btn btn-danger mt-3" data-aos="zoom-out"
-                                            data-aos-duration="500">Add to cart</button>
+                                        <button class="btn btn-danger mt-3" data-aos="zoom-out" data-aos-duration="500">
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="row rounded-2 overflow-hidden">
                                     <div class="col-6">
-                                        <img src="images/arrival-1.jpg" class="img-fluid" alt="">
+                                        <img src="images/arrival-1.jpg" class="img-fluid" alt="" />
                                     </div>
                                     <div class="col-6 d-flex flex-column justify-content-center">
                                         <p class="font-size-20">4K Telivision</p>
@@ -277,8 +280,9 @@
                                             <span>$199.99</span><span
                                                 class="font-size-14 text-decoration-line-through">$209.99</span>
                                         </div>
-                                        <button class="btn btn-danger mt-3" data-aos="zoom-out"
-                                            data-aos-duration="500">Add to cart</button>
+                                        <button class="btn btn-danger mt-3" data-aos="zoom-out" data-aos-duration="500">
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -286,14 +290,15 @@
                     </div>
                 </div>
                 <div class="col-12 mb-3 py-3">
-                    <h5 class="mb-2 d-flex align-items-center position-relative">Books Offers
+                    <h5 class="mb-2 d-flex align-items-center position-relative">
+                        Books Offers
                     </h5>
                     <div class="swiper myOfferes">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="row rounded-2 overflow-hidden">
                                     <div class="col-6">
-                                        <img src="images/book-1.png" class="img-fluid" alt="">
+                                        <img src="images/book-1.png" class="img-fluid" alt="" />
                                     </div>
                                     <div class="col-6 d-flex flex-column justify-content-center">
                                         <p class="font-size-20">Book 1</p>
@@ -301,15 +306,16 @@
                                             <span>$15.99</span><span
                                                 class="font-size-14 text-decoration-line-through">$20.99</span>
                                         </div>
-                                        <button class="btn btn-danger mt-3" data-aos="zoom-out"
-                                            data-aos-duration="500">Add to cart</button>
+                                        <button class="btn btn-danger mt-3" data-aos="zoom-out" data-aos-duration="500">
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="row rounded-2 overflow-hidden">
                                     <div class="col-6">
-                                        <img src="images/book-2.png" class="img-fluid" alt="">
+                                        <img src="images/book-2.png" class="img-fluid" alt="" />
                                     </div>
                                     <div class="col-6 d-flex flex-column justify-content-center">
                                         <p class="font-size-20">Book 1</p>
@@ -317,15 +323,16 @@
                                             <span>$15.99</span><span
                                                 class="font-size-14 text-decoration-line-through">$20.99</span>
                                         </div>
-                                        <button class="btn btn-danger mt-3" data-aos="zoom-out"
-                                            data-aos-duration="500">Add to cart</button>
+                                        <button class="btn btn-danger mt-3" data-aos="zoom-out" data-aos-duration="500">
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="row rounded-2 overflow-hidden">
                                     <div class="col-6">
-                                        <img src="images/book-3.png" class="img-fluid" alt="">
+                                        <img src="images/book-3.png" class="img-fluid" alt="" />
                                     </div>
                                     <div class="col-6 d-flex flex-column justify-content-center">
                                         <p class="font-size-20">Book 1</p>
@@ -333,15 +340,16 @@
                                             <span>$15.99</span><span
                                                 class="font-size-14 text-decoration-line-through">$20.99</span>
                                         </div>
-                                        <button class="btn btn-danger mt-3" data-aos="zoom-out"
-                                            data-aos-duration="500">Add to cart</button>
+                                        <button class="btn btn-danger mt-3" data-aos="zoom-out" data-aos-duration="500">
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="row rounded-2 overflow-hidden">
                                     <div class="col-6">
-                                        <img src="images/book-4.png" class="img-fluid" alt="">
+                                        <img src="images/book-4.png" class="img-fluid" alt="" />
                                     </div>
                                     <div class="col-6 d-flex flex-column justify-content-center">
                                         <p class="font-size-20">Book 1</p>
@@ -349,8 +357,9 @@
                                             <span>$15.99</span><span
                                                 class="font-size-14 text-decoration-line-through">$20.99</span>
                                         </div>
-                                        <button class="btn btn-danger mt-3" data-aos="zoom-out"
-                                            data-aos-duration="500">Add to cart</button>
+                                        <button class="btn btn-danger mt-3" data-aos="zoom-out" data-aos-duration="500">
+                                            Add to cart
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -362,10 +371,11 @@
     </div>
     <!-- End Offers -->
     <!-- Start Arrivals -->
-    <div class="arrivals pt-5 pb-5" style="overflow-x: hidden;">
+    <div class="arrivals pt-5 pb-5" style="overflow-x: hidden">
         <div class="container">
             <div class="main-title mb-5">
-                <h3 class="m-auto py-1 px-2 text-uppercase"><span class="text-color-main fw-bold">New</span> Arrivals
+                <h3 class="m-auto py-1 px-2 text-uppercase">
+                    <span class="text-color-main fw-bold">New</span> Arrivals
                 </h3>
             </div>
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -373,12 +383,16 @@
                     <button class="nav-link text-color-main active" id="technologies-arrival-tab" data-bs-toggle="pill"
                         data-bs-target="#technologies-arrival" type="button" role="tab"
                         aria-controls="technologies-arrival" aria-selected="true" data-aos="zoom-out"
-                        data-aos-duration="500">Technologies</button>
+                        data-aos-duration="500">
+                        Technologies
+                    </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link text-color-main" id="books-arrival-tab" data-bs-toggle="pill"
                         data-bs-target="#books-arrival" type="button" role="tab" aria-controls="books-arrival"
-                        aria-selected="false" data-aos="zoom-out" data-aos-duration="500">Books</button>
+                        aria-selected="false" data-aos="zoom-out" data-aos-duration="500">
+                        Books
+                    </button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -390,7 +404,7 @@
                                 <div class="arv bg-white rounded-2 overflow-hidden py-2">
                                     <div class="row">
                                         <div class="col-md-6 text-center">
-                                            <img src="images/arrival-1.jpg" class="img-fluid" alt="">
+                                            <img src="images/arrival-1.jpg" class="img-fluid" alt="" />
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                                             <div class="info">
@@ -412,7 +426,7 @@
                                 <div class="arv bg-white rounded-2 overflow-hidden py-2">
                                     <div class="row">
                                         <div class="col-md-6 text-center">
-                                            <img src="images/arrival-2.jpg" class="img-fluid" alt="">
+                                            <img src="images/arrival-2.jpg" class="img-fluid" alt="" />
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                                             <div class="info">
@@ -434,7 +448,7 @@
                                 <div class="arv bg-white rounded-2 overflow-hidden py-2">
                                     <div class="row">
                                         <div class="col-md-6 text-center">
-                                            <img src="images/arrival-3.jpg" class="img-fluid" alt="">
+                                            <img src="images/arrival-3.jpg" class="img-fluid" alt="" />
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                                             <div class="info">
@@ -456,7 +470,7 @@
                                 <div class="arv bg-white rounded-2 overflow-hidden py-2">
                                     <div class="row">
                                         <div class="col-md-6 text-center">
-                                            <img src="images/arrival-4.jpg" class="img-fluid" alt="">
+                                            <img src="images/arrival-4.jpg" class="img-fluid" alt="" />
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                                             <div class="info">
@@ -478,7 +492,7 @@
                                 <div class="arv bg-white rounded-2 overflow-hidden py-2">
                                     <div class="row">
                                         <div class="col-md-6 text-center">
-                                            <img src="images/arrival-5.jpg" class="img-fluid" alt="">
+                                            <img src="images/arrival-5.jpg" class="img-fluid" alt="" />
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                                             <div class="info">
@@ -500,7 +514,7 @@
                                 <div class="arv bg-white rounded-2 overflow-hidden py-2">
                                     <div class="row">
                                         <div class="col-md-6 text-center">
-                                            <img src="images/arrival-6.jpg" class="img-fluid" alt="">
+                                            <img src="images/arrival-6.jpg" class="img-fluid" alt="" />
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                                             <div class="info">
@@ -526,7 +540,7 @@
                                 <div class="arv bg-white rounded-2 overflow-hidden py-2">
                                     <div class="row">
                                         <div class="col-md-6 text-center">
-                                            <img src="images/book-1.png" class="img-fluid" alt="">
+                                            <img src="images/book-1.png" class="img-fluid" alt="" />
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                                             <div class="info">
@@ -548,7 +562,7 @@
                                 <div class="arv bg-white rounded-2 overflow-hidden py-2">
                                     <div class="row">
                                         <div class="col-md-6 text-center">
-                                            <img src="images/book-2.png" class="img-fluid" alt="">
+                                            <img src="images/book-2.png" class="img-fluid" alt="" />
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                                             <div class="info">
@@ -570,7 +584,7 @@
                                 <div class="arv bg-white rounded-2 overflow-hidden py-2">
                                     <div class="row">
                                         <div class="col-md-6 text-center">
-                                            <img src="images/book-3.png" class="img-fluid" alt="">
+                                            <img src="images/book-3.png" class="img-fluid" alt="" />
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                                             <div class="info">
@@ -592,7 +606,7 @@
                                 <div class="arv bg-white rounded-2 overflow-hidden py-2">
                                     <div class="row">
                                         <div class="col-md-6 text-center">
-                                            <img src="images/book-4.png" class="img-fluid" alt="">
+                                            <img src="images/book-4.png" class="img-fluid" alt="" />
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                                             <div class="info">
@@ -614,7 +628,7 @@
                                 <div class="arv bg-white rounded-2 overflow-hidden py-2">
                                     <div class="row">
                                         <div class="col-md-6 text-center">
-                                            <img src="images/book-5.png" class="img-fluid" alt="">
+                                            <img src="images/book-5.png" class="img-fluid" alt="" />
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                                             <div class="info">
@@ -636,7 +650,7 @@
                                 <div class="arv bg-white rounded-2 overflow-hidden py-2">
                                     <div class="row">
                                         <div class="col-md-6 text-center">
-                                            <img src="images/book-7.png" class="img-fluid" alt="">
+                                            <img src="images/book-7.png" class="img-fluid" alt="" />
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                                             <div class="info">
@@ -657,31 +671,33 @@
                 </div>
             </div>
 
-
             <!-- Modal -->
             <div class="modal fade" id="arrival-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                 aria-labelledby="arrivals" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="arrival-title">Arrival Info</h1>
+                            <h1 class="modal-title fs-5" id="arrival-title">
+                                Arrival Info
+                            </h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body modal-dialog-centered">
                             <div class="card border-0">
                                 <div class="row">
                                     <div class="col-6">
-                                        <img src="images/arrival-1.jpg" class="card-img-top" alt="arrival-img">
+                                        <img src="images/arrival-1.jpg" class="card-img-top" alt="arrival-img" />
                                     </div>
                                     <div class="col-6">
-                                        <img src="images/arrival-1-hover.jpg" class="card-img-top" alt="arrival-img">
+                                        <img src="images/arrival-1-hover.jpg" class="card-img-top" alt="arrival-img" />
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">4K Smart TV</h5>
-                                    <p class="card-text text-black-50">This is best tv in this year it's has many things
-                                        help you to
-                                        buy it and we have special price in this world</p>
+                                    <p class="card-text text-black-50">
+                                        This is best tv in this year it's has many things help you
+                                        to buy it and we have special price in this world
+                                    </p>
                                     <button href="#" class="btn btn-danger">Add to Cart</button>
                                 </div>
                             </div>
@@ -693,7 +709,7 @@
     </div>
     <!-- End Arrivals -->
     <!-- Start Products -->
-    <div class="products pt-5 pb-5" style="overflow-x: hidden;">
+    <div class="products pt-5 pb-5" style="overflow-x: hidden">
         <div class="container">
             <div class="main-title mb-5">
                 <h3 class="m-auto py-1 px-2 text-uppercase">Products</h3>
@@ -702,12 +718,16 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="technologies-tab" data-bs-toggle="pill"
                         data-bs-target="#technologies" type="button" role="tab" aria-controls="technologies"
-                        aria-selected="true" data-aos="zoom-out" data-aos-duration="500">Technologies</button>
+                        aria-selected="true" data-aos="zoom-out" data-aos-duration="500">
+                        Technologies
+                    </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="books-tab" data-bs-toggle="pill" data-bs-target="#books" type="button"
                         role="tab" aria-controls="books" aria-selected="false" data-aos="zoom-out"
-                        data-aos-duration="500">Books</button>
+                        data-aos-duration="500">
+                        Books
+                    </button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -717,59 +737,66 @@
                         <div class="col-md-4 col-lg-3">
                             <div
                                 class="box text-center border border-1 border-danger rounded-2 overflow-hidden p-3 mt-2">
-                                <img class="img-fluid" src="images/product-1.jpg" alt="">
+                                <img class="img-fluid" src="images/product-1.jpg" alt="" />
                                 <h5 class="my-2">Oppo</h5>
                                 <div class="price">
                                     <span class="font-size-18">$249.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2 text-color-main">$279.99</span>
                                 </div>
                                 <button href="#" class="btn btn-danger mt-3" data-aos="zoom-out"
-                                    data-aos-duration="500">Add to Cart</button>
+                                    data-aos-duration="500">
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3">
                             <div
                                 class="box text-center border border-1 border-danger rounded-2 overflow-hidden p-3 mt-2">
-                                <img class="img-fluid" src="images/product-2.jpg" alt="">
+                                <img class="img-fluid" src="images/product-2.jpg" alt="" />
                                 <h5 class="my-2">Camera Zone</h5>
                                 <div class="price">
                                     <span class="font-size-18">$319.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2 text-color-main">$499.99</span>
                                 </div>
                                 <button href="#" class="btn btn-danger mt-3" data-aos="zoom-out"
-                                    data-aos-duration="500">Add to Cart</button>
+                                    data-aos-duration="500">
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3">
                             <div
                                 class="box text-center border border-1 border-danger rounded-2 overflow-hidden p-3 mt-2">
-                                <img class="img-fluid" src="images/product-3.jpg" alt="">
+                                <img class="img-fluid" src="images/product-3.jpg" alt="" />
                                 <h5 class="my-2">Telivision Zone</h5>
                                 <div class="price">
                                     <span class="font-size-18">$349.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2 text-color-main">$599.99</span>
                                 </div>
                                 <button href="#" class="btn btn-danger mt-3" data-aos="zoom-out"
-                                    data-aos-duration="500">Add to Cart</button>
+                                    data-aos-duration="500">
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3">
                             <div
                                 class="box text-center border border-1 border-danger rounded-2 overflow-hidden p-3 mt-2">
-                                <img class="img-fluid" src="images/product-4.jpg" alt="">
+                                <img class="img-fluid" src="images/product-4.jpg" alt="" />
                                 <h5 class="my-2">Speaker Zone</h5>
                                 <div class="price">
                                     <span class="font-size-18">$119.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2 text-color-main">$159.99</span>
                                 </div>
                                 <button href="#" class="btn btn-danger mt-3" data-aos="zoom-out"
-                                    data-aos-duration="500">Add to Cart</button>
+                                    data-aos-duration="500">
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 text-center mt-3">
                             <a href="#" class="btn btn-main">View all</a>
                         </div>
-
                     </div>
                 </div>
                 <div class="tab-pane fade" id="books" role="tabpanel" aria-labelledby="books-tab">
@@ -777,63 +804,69 @@
                         <div class="col-md-4 col-lg-3">
                             <div
                                 class="box text-center border border-1 border-danger rounded-2 overflow-hidden p-3 mt-2">
-                                <img class="img-fluid" src="images/book-1.png" alt="">
+                                <img class="img-fluid" src="images/book-1.png" alt="" />
                                 <h5 class="my-2">Oppo</h5>
                                 <div class="price">
                                     <span class="font-size-18">$249.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2 text-color-main">$279.99</span>
                                 </div>
                                 <button href="#" class="btn btn-danger mt-3" data-aos="zoom-out"
-                                    data-aos-duration="500">Add to Cart</button>
+                                    data-aos-duration="500">
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3">
                             <div
                                 class="box text-center border border-1 border-danger rounded-2 overflow-hidden p-3 mt-2">
-                                <img class="img-fluid" src="images/book-2.png" alt="">
+                                <img class="img-fluid" src="images/book-2.png" alt="" />
                                 <h5 class="my-2">Camera Zone</h5>
                                 <div class="price">
                                     <span class="font-size-18">$319.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2 text-color-main">$499.99</span>
                                 </div>
                                 <button href="#" class="btn btn-danger mt-3" data-aos="zoom-out"
-                                    data-aos-duration="500">Add to Cart</button>
+                                    data-aos-duration="500">
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3">
                             <div
                                 class="box text-center border border-1 border-danger rounded-2 overflow-hidden p-3 mt-2">
-                                <img class="img-fluid" src="images/book-3.png" alt="">
+                                <img class="img-fluid" src="images/book-3.png" alt="" />
                                 <h5 class="my-2">Telivision Zone</h5>
                                 <div class="price">
                                     <span class="font-size-18">$349.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2 text-color-main">$599.99</span>
                                 </div>
                                 <button href="#" class="btn btn-danger mt-3" data-aos="zoom-out"
-                                    data-aos-duration="500">Add to Cart</button>
+                                    data-aos-duration="500">
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3">
                             <div
                                 class="box text-center border border-1 border-danger rounded-2 overflow-hidden p-3 mt-2">
-                                <img class="img-fluid" src="images/book-4.png" alt="">
+                                <img class="img-fluid" src="images/book-4.png" alt="" />
                                 <h5 class="my-2">Speaker Zone</h5>
                                 <div class="price">
                                     <span class="font-size-18">$119.99</span><span
                                         class="text-decoration-line-through font-size-14 ms-2 text-color-main">$159.99</span>
                                 </div>
                                 <button href="#" class="btn btn-danger mt-3" data-aos="zoom-out"
-                                    data-aos-duration="500">Add to Cart</button>
+                                    data-aos-duration="500">
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 text-center mt-3">
                             <a href="#" class="btn btn-main">View all</a>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- End Products -->
@@ -845,15 +878,17 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-7">
-                    <h4>Any questions? Fill In The Form and We Will be in Contact Soon!</h4>
+                    <h4>
+                        Any questions? Fill In The Form and We Will be in Contact Soon!
+                    </h4>
                 </div>
                 <div class="col-md-6 col-lg-5">
                     <form action="" class="row d-flex">
                         <div class="col-lg-12 mb-3">
-                            <input type="text" class="form-control" name="" id="" placeholder="Enter Your Name">
+                            <input type="text" class="form-control" name="" id="" placeholder="Enter Your Name" />
                         </div>
                         <div class="col-lg-12 mb-3">
-                            <input type="email" class="form-control " name="" id="" placeholder="Enter Your Email">
+                            <input type="email" class="form-control" name="" id="" placeholder="Enter Your Email" />
                         </div>
                         <div class="col-12 mb-3">
                             <textarea name="" id="" cols="30" class="form-control" rows="10"
@@ -861,7 +896,7 @@
                         </div>
                         <div class="col-12">
                             <input type="submit" value="Send Message" class="btn btn-danger" data-aos="zoom-out"
-                                data-aos-duration="500">
+                                data-aos-duration="500" />
                         </div>
                     </form>
                 </div>
@@ -988,7 +1023,7 @@
     <!-- Start Scroll -->
     <div class="scroll position-fixed d-flex flex-column gap-3">
         <a href="#" class="rounded-circle bg-main text-white d-flex align-items-center justify-content-center"><i
-                class='bx bx-up-arrow-alt font-size-24'></i></a>
+                class="bx bx-up-arrow-alt font-size-24"></i></a>
     </div>
     <!-- End Scroll -->
     <!-- Start Script -->
