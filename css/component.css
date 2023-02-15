@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 :root {
-  --main: #198754;
+  --main: #d11616;
   --light-gray: #f6f6f7;
   --transition: 0.3s;
   --bg-dark: #111;
@@ -11,26 +12,26 @@
   font-family: "Open Sans", sans-serif;
 }
 .form-control {
-  border: 1px solid rgba(39, 174, 95, 0.5);
+  border: 1px solid rgba(209, 22, 22, 0.5);
 }
 .form-control:focus {
-  box-shadow: 0 0 0 0.12rem rgba(39, 174, 95, 0.25) !important;
+  box-shadow: 0 0 0 0.12rem rgba(209, 22, 22, 0.25) !important;
 }
-.form-check-input[type=checkbox] {
-  border-raduis: 50%;
+.form-check-input[type="checkbox"] {
+  border-radius: 50%;
 }
 .form-check-input {
   width: 1.3em;
   height: 1.3em;
   background-color: transparent;
-  box-shadow: 0 0 4px 0.15rem rgb(25 135 84 / 25%);
+  box-shadow: 0 0 4px 0.15rem rgba(209, 22, 22, 0.25);
   border: none;
 }
 .form-check-input:checked {
-  background-color: rgb(25 135 84 / 70%);
+  background-color: rgba(209, 22, 22, 0.75);
 }
 .form-check-input:focus {
-  box-shadow: 0 0 4px 0.15rem rgb(25 135 84 / 25%);
+  box-shadow: 0 0 4px 0.15rem rgba(209, 22, 22, 0.25);
 }
 .modal-header {
   border-color: var(--main) !important;

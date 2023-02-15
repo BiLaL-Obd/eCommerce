@@ -14,13 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="framework/style.css">
+    <link rel="stylesheet" href="css/component.css">
 
 </head>
 
@@ -36,7 +32,7 @@
                 <a href="#" class="text-black-50 position-relative">
                     <span
                         class="purchase-count font-size-10 d-flex align-items-center justify-content-center text-white bg-main end-0 rounded-circle position-absolute">5</span>
-                    <i class='bx bx-cart font-size-30'></i>
+                    <i class='bx bx-shopping-bag font-size-30'></i>
                 </a>
                 <!-- End shop -->
                 <!-- Start profile -->
@@ -98,8 +94,8 @@
                             class="d-none d-sm-block">Home</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle p-2 d-flex align-items-center" href="#" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle p-2 d-flex align-items-center" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         <i class='bx bxs-offer font-size-30 d-block d-sm-none'></i>
                         <span class="d-none d-sm-block">Offers</span>
                     </a>
@@ -131,12 +127,11 @@
                 </li>
                 <li class="nav-item position-relative d-flex align-items-center">
                     <a href="#" class="purchase-show nav-link p-2 py-md-0 d-none">
-                      <span
-                        class="purchase-count font-size-8 d-flex align-items-center justify-content-center text-white bg-main rounded-circle position-absolute"
-                        >5</span>
-                      <i class="bx bx-cart font-size-26"></i>
+                        <span
+                            class="purchase-count font-size-8 d-flex align-items-center justify-content-center text-white bg-main rounded-circle position-absolute">5</span>
+                        <i class='bx bx-shopping-bag font-size-26'></i>
                     </a>
-                  </li>
+                </li>
             </ul>
         </div>
     </nav>
@@ -386,7 +381,7 @@
                         </div>
                     </div>
                 </div>
-<!--                 <div class="col-12 mt-2 d-flex justify-content-center">
+                <!--                 <div class="col-12 mt-2 d-flex justify-content-center">
                     <a href="#" class="btn btn-main-alt">View all</a>
                 </div> -->
             </div>
@@ -736,9 +731,9 @@
                         aria-selected="true" data-aos="zoom-out" data-aos-duration="500">Technologies</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link text-white" id="books-tab" data-bs-toggle="pill"
-                        data-bs-target="#books" type="button" role="tab" aria-controls="books" aria-selected="false"
-                        data-aos="zoom-out" data-aos-duration="500">Books</button>
+                    <button class="nav-link text-white" id="books-tab" data-bs-toggle="pill" data-bs-target="#books"
+                        type="button" role="tab" aria-controls="books" aria-selected="false" data-aos="zoom-out"
+                        data-aos-duration="500">Books</button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -901,159 +896,119 @@
     </div>
     <!-- End Contact -->
     <!-- Start Footer -->
-   <div class="footer pt-5 bg-main-dark text-white">
-      <div class="container pb-5">
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 col-xl-3">
-            <h4>Menu</h4>
-            <ul class="list-unstyled">
-              <li class="py-1 d-flex align-items-center text-white-50">
-                <span
-                  ><i class="bx bx-right-arrow-alt font-size-18 me-1"></i
-                ></span>
-                <a href="#" class="a-angle-hover text-white-50">Home</a>
-              </li>
-              <li class="py-1 d-flex align-items-center text-white-50">
-                <span
-                  ><i class="bx bx-right-arrow-alt font-size-18 me-1"></i
-                ></span>
-                <a href="#" class="a-angle-hover text-white-50">Offers</a>
-              </li>
-              <li class="py-1 d-flex align-items-center text-white-50">
-                <span
-                  ><i class="bx bx-right-arrow-alt font-size-18 me-1"></i
-                ></span>
-                <a href="#" class="a-angle-hover text-white-50">Products</a>
-              </li>
-              <li class="py-1 d-flex align-items-center text-white-50">
-                <span
-                  ><i class="bx bx-right-arrow-alt font-size-18 me-1"></i
-                ></span>
-                <a href="about.html" class="a-angle-hover text-white-50"
-                  >About Us</a
-                >
-              </li>
-              <li class="py-1 d-flex align-items-center text-white-50">
-                <span
-                  ><i class="bx bx-right-arrow-alt font-size-18 me-1"></i
-                ></span>
-                <a href="#contact" class="a-angle-hover text-white-50"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3">
-            <h4>Follow Us</h4>
-            <ul class="list-unstyled social">
-              <li class="py-1 facebook">
-                <a href="#"
-                  ><span class="me-2"
-                    ><i class="bx bxl-facebook font-size-20"></i></span
-                  >Facebook</a
-                >
-              </li>
-              <li class="py-1 linkedin">
-                <a href="#"
-                  ><span class="me-2"
-                    ><i class="bx bxl-linkedin font-size-20"></i></span
-                  >Linkedin</a
-                >
-              </li>
-              <li class="py-1 instagram">
-                <a href="#"
-                  ><span class="me-2"
-                    ><i class="bx bxl-instagram font-size-20"></i></span
-                  >Instagram</a
-                >
-              </li>
-              <li class="py-1 twitter">
-                <a href="#" class="text-color-main d-flex align-items-center"
-                  ><span class="me-2"
-                    ><i class="bx bxl-twitter font-size-20"></i></span
-                  >Twitter</a
-                >
-              </li>
-              <li class="py-1 telegram">
-                <a href="#" class="text-color-main d-flex align-items-center"
-                  ><span class="me-2"
-                    ><i class="bx bxl-telegram font-size-20"></i></span
-                  >Telegram</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3">
-            <h4>How To Reach Us</h4>
-            <ul class="list-unstyled reach">
-              <li class="text-white-50 py-1">
-                <span><i class="bx bxs-phone-call font-size-18 me-1"></i></span
-                >+123456789
-              </li>
-              <li class="text-white-50 py-1">
-                <a
-                  href="mailto:info.sotrelegend@gmail.com"
-                  class="text-color-main"
-                >
-                  <span><i class="bx bxl-gmail font-size-18 me-1"></i></span>
-                  info.storelegend@gmail.com
-                </a>
-              </li>
-              <li class="d-flex text-white-50 py-1">
-                <span><i class="bx bx-world font-size-18 me-1"></i></span
-                >Bakhoun - Sir El Denieh
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-xl-3">
-            <h4>
-              <a href="#" class="text-white d-flex align-items-center"
-                ><i class="bx bxs-store font-size-18 me-1"></i
-                ><span class="text-color-main">L</span>egend<span
-                  class="text-color-main"
-                  >S</span
-                >tore</a
-              >
-            </h4>
-            <p class="text-white-50 font-size-15">
-              This Program name's <b>Legend Store</b> project , I make this
-              program to improve my <b>Backend</b> language I already know
-              <b>Frontend</b> very well. This Program eCommerce program help me
-              to be <b>Fullstack</b> and to improve my Portfolio
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="copyright font-size-10">
-        <span class="border-top border-success d-block w-100"></span>
-        <div class="container py-2">
-          <div class="row">
-            <div class="col-md-6 mb-3 mb-md-0 text-center text-md-start">
-              Copyright &copy; 2023
-              <a href="#" class="text-white font-size-12">Legend Store</a>, All
-              right reserved
+    <div class="footer pt-5 bg-main-dark text-white">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <h4>Menu</h4>
+                    <ul class="list-unstyled">
+                        <li class="py-1 d-flex align-items-center text-white-50">
+                            <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
+                            <a href="#" class="a-angle-hover text-white-50">Home</a>
+                        </li>
+                        <li class="py-1 d-flex align-items-center text-white-50">
+                            <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
+                            <a href="#" class="a-angle-hover text-white-50">Offers</a>
+                        </li>
+                        <li class="py-1 d-flex align-items-center text-white-50">
+                            <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
+                            <a href="#" class="a-angle-hover text-white-50">Products</a>
+                        </li>
+                        <li class="py-1 d-flex align-items-center text-white-50">
+                            <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
+                            <a href="about.html" class="a-angle-hover text-white-50">About Us</a>
+                        </li>
+                        <li class="py-1 d-flex align-items-center text-white-50">
+                            <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
+                            <a href="#contact" class="a-angle-hover text-white-50">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <h4>Follow Us</h4>
+                    <ul class="list-unstyled social">
+                        <li class="py-1 facebook">
+                            <a href="#"><span class="me-2"><i
+                                        class="bx bxl-facebook font-size-20"></i></span>Facebook</a>
+                        </li>
+                        <li class="py-1 linkedin">
+                            <a href="#"><span class="me-2"><i
+                                        class="bx bxl-linkedin font-size-20"></i></span>Linkedin</a>
+                        </li>
+                        <li class="py-1 instagram">
+                            <a href="#"><span class="me-2"><i
+                                        class="bx bxl-instagram font-size-20"></i></span>Instagram</a>
+                        </li>
+                        <li class="py-1 twitter">
+                            <a href="#" class="text-color-main d-flex align-items-center"><span class="me-2"><i
+                                        class="bx bxl-twitter font-size-20"></i></span>Twitter</a>
+                        </li>
+                        <li class="py-1 telegram">
+                            <a href="#" class="text-color-main d-flex align-items-center"><span class="me-2"><i
+                                        class="bx bxl-telegram font-size-20"></i></span>Telegram</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <h4>How To Reach Us</h4>
+                    <ul class="list-unstyled reach">
+                        <li class="text-white-50 py-1">
+                            <span><i class="bx bxs-phone-call font-size-18 me-1"></i></span>+123456789
+                        </li>
+                        <li class="text-white-50 py-1">
+                            <a href="mailto:info.sotrelegend@gmail.com" class="text-color-main">
+                                <span><i class="bx bxl-gmail font-size-18 me-1"></i></span>
+                                info.storelegend@gmail.com
+                            </a>
+                        </li>
+                        <li class="d-flex text-white-50 py-1">
+                            <span><i class="bx bx-world font-size-18 me-1"></i></span>Bakhoun - Sir El Denieh
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <h4>
+                        <a href="#" class="text-white d-flex align-items-center"><i
+                                class="bx bxs-store font-size-18 me-1"></i><span
+                                class="text-color-main">L</span>egend<span class="text-color-main">S</span>tore</a>
+                    </h4>
+                    <p class="text-white-50 font-size-15">
+                        This Program name's <b>Legend Store</b> project , I make this
+                        program to improve my <b>Backend</b> language I already know
+                        <b>Frontend</b> very well. This Program eCommerce program help me
+                        to be <b>Fullstack</b> and to improve my Portfolio
+                    </p>
+                </div>
             </div>
-            <div class="col-md-6">
-              <ul
-                class="list-unstyled d-flex justify-content-between align-items-center mb-0"
-              >
-                <li>
-                  <a href="#" class="text-white">General Terms</a>
-                </li>
-                <li>
-                  <a href="#" class="text-white">Events Terms</a>
-                </li>
-                <li>
-                  <a href="#" class="text-white">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#" class="text-white">Disclamer</a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="copyright font-size-10">
+            <span class="border-top border-success d-block w-100"></span>
+            <div class="container py-2">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0 text-center text-md-start">
+                        Copyright &copy; 2023
+                        <a href="#" class="text-white font-size-12">Legend Store</a>, All
+                        right reserved
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled d-flex justify-content-between align-items-center mb-0">
+                            <li>
+                                <a href="#" class="text-white">General Terms</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Events Terms</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Disclamer</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- End Footer -->
     <!-- Start Scroll -->
