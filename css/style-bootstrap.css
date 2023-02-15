@@ -49,23 +49,6 @@ a {
   border: 1px solid #777;
   user-select: none;
 }
-.btn-main {
-  background-color: #333;
-  color: white;
-  transition: var(--transition);
-}
-.btn-main:hover,
-.btn-main-alt:hover {
-  font-weight: 600;
-  background-color: var(--main);
-  letter-spacing: 1px;
-  color: #fff !important;
-}
-.btn-main-alt {
-  background-color: var(--light-gray);
-  color: #333;
-  transition: var(--transition);
-}
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--main);
@@ -162,7 +145,34 @@ a {
 .border-color-main {
   border-color: var(--main) !important;
 }
+.border-danger {
+  border-color: var(--main);
+}
 
+/* Button */
+.btn-main {
+  background-color: #333;
+  color: white;
+  transition: var(--transition);
+}
+.btn-main:hover {
+  font-weight: 600;
+  background-color: var(--main);
+  letter-spacing: 1px;
+  color: #fff !important;
+}
+.btn-main-alt {
+  background-color: var(--main);
+  color: #fff;
+  transition: var(--transition);
+}
+.btn-main-alt:hover {
+  color: #fff;
+  background-color: var(--bg-dark);
+}
+.btn-danger {
+  background-color: var(--main);
+}
 /* cursor */
 .cursor-pointer {
   cursor: pointer;
