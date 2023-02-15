@@ -311,10 +311,10 @@
   box-shadow: none;
 }
 .accordion-button::after {
-  background-image: url("https://bilal-obd.github.io/eCommerce/images/plus.png");
+  background-image: url("https://bilal-obd.github.io/eCommerce/images/svg/plus.png");
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url("https://bilal-obd.github.io/eCommerce/images/minus.png");
+  background-image: url("https://bilal-obd.github.io/eCommerce/images/svg/minus.png");
 }
 .accordion-button:not(.collapsed) {
   box-shadow: none;
