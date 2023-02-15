@@ -1,9 +1,27 @@
 :root {
   --main: #d11616;
+  --main-opacity-25: rgba(209, 22, 22, 0.25);
+  --main-opacity-50: rgba(209, 22, 22, 0.5);
+  --main-opacity-65: rgba(209, 22, 22, 0.65);
+  --main-opacity-75: rgba(209, 22, 22, 0.75);
   --transition: 0.3s;
   --dark: #333;
 }
+.a-angle-hover {
+  transition: var(--transition);
+}
+.a-angle-hover:hover {
+  padding-left: 10px;
+}
 /* Start Header */
+.navbar.header-2 .purchase-count {
+  top: -4px;
+  right: 5px;
+}
+.navbar .btn-header-close {
+  top: 5px;
+  right: 15px;
+}
 .header-2 {
   box-shadow: 2px 7px 20px #6a6a6a91;
 }
@@ -14,10 +32,6 @@
   width: 15px;
   height: 15px;
   top: -8px;
-}
-.navbar.header-2 .purchase-count {
-  top: -4px;
-  right: 5px;
 }
 @media (max-width: 767px) {
   .navbar.header-2 .purchase-count {
@@ -49,17 +63,9 @@
 .navbar-toggler:focus {
   box-shadow: none;
 }
-.navbar .btn-header-close {
-  top: 5px;
-  right: 15px;
-}
 .navbar-nav .nav-link {
   font-size: 15px;
   transition: var(--transition);
-}
-#profile .nav-link:focus,
-#profile .nav-link:hover {
-  padding-left: 10px;
 }
 .navbar-brand .logo,
 .navbar-nav .username {
@@ -91,13 +97,17 @@
 .navbar .nav-tabs .nav-link:hover:not(.active) {
   color: #fff;
 }
+#profile .nav-link:focus,
+#profile .nav-link:hover {
+  padding-left: 10px;
+}
 .navbar .offcanvas-body input[type="number"] {
   width: 50px;
   padding: 1px;
   padding-left: 4px;
 }
 .navbar .offcanvas-body input[type="number"]:focus {
-  box-shadow: 0 0 0 0.15rem rgba(39, 174, 95, 0.4);
+  box-shadow: 0 0 0 0.15rem var(--main-opacity-50);
 }
 
 /* End Header */
@@ -183,7 +193,7 @@
   height: 205px;
 }
 .products .product-items .box {
-  box-shadow: 0px -3px 12px 0px inset rgba(39, 174, 95, 0.65);
+  box-shadow: 0px -3px 12px 0px inset var(--main-opacity-65);
 }
 .products .product-list li {
   padding: 0.125rem 0.5rem;

@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 :root {
   --main: #d11616;
+  --main-opacity-25: rgba(209, 22, 22, 0.25);
+  --main-opacity-50: rgba(209, 22, 22, 0.5);
+  --main-opacity-75: rgba(209, 22, 22, 0.75);
   --light-gray: #f6f6f7;
   --transition: 0.3s;
   --bg-dark: #111;
@@ -12,10 +15,10 @@
   font-family: "Montserrat", sans-serif;
 }
 .form-control {
-  border: 1px solid rgba(209, 22, 22, 0.5);
+  border: 1px solid var(--main-opacity-50);
 }
 .form-control:focus {
-  box-shadow: 0 0 0 0.12rem rgba(209, 22, 22, 0.25) !important;
+  box-shadow: 0 0 0 0.12rem var(--main-opacity-25) !important;
 }
 .form-check-input[type="checkbox"] {
   border-radius: 50%;
@@ -24,23 +27,17 @@
   width: 1.3em;
   height: 1.3em;
   background-color: transparent;
-  box-shadow: 0 0 4px 0.15rem rgba(209, 22, 22, 0.25);
+  box-shadow: 0 0 4px 0.15rem var(--main-opacity-25);
   border: none;
 }
 .form-check-input:checked {
-  background-color: rgba(209, 22, 22, 0.75);
+  background-color: var(--main-opacity-75);
 }
 .form-check-input:focus {
-  box-shadow: 0 0 4px 0.15rem rgba(209, 22, 22, 0.25);
+  box-shadow: 0 0 4px 0.15rem var(--main-opacity-25);
 }
 .modal-header {
   border-color: var(--main) !important;
-}
-.a-angle-hover {
-  transition: var(--transition);
-}
-.a-angle-hover:hover {
-  padding-left: 10px;
 }
 a {
   text-decoration: none;
