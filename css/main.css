@@ -36,7 +36,7 @@
 }
 @media (max-width: 991px) {
   .navbar.header-2 .dropdown-menu {
-    border-color: var(--main);
+    border-color: var(--main-opacity-50);
   }
 }
 .navbar.header-2 .dropdown-item {
