@@ -57,8 +57,12 @@
 .offcanvas.offcanvas-end {
   width: 275px;
 }
-.navbar .navbar-toggler:hover img {
+.navbar .navbar-toggler img {
   border: 2px solid var(--main);
+  transition: var(--transition);
+}
+.navbar .navbar-toggler:hover img {
+  box-shadow: 0 0 4px 0.2rem var(--main-opacity-25);
 }
 .navbar-toggler:focus {
   box-shadow: none;
