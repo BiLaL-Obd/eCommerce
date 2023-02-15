@@ -1,18 +1,10 @@
 // Windows Scroll
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(window).scrollTop() >= 450) {
-      $(".scroll").css({ right: "10px"});
+    if ($(window).scrollTop() >= 500) {
+      $(".scroll").css({ right: "10px" });
     } else if ($(window).scrollTop() < 500) {
-      $(".scroll").css({ right: "-200%"});
-    }
-  });
-  
-  $(window).scroll(function () {
-    if ($(window).scrollTop() >= 50) {
-      $(".purchase-show").removeClass("d-none");
-    } else if ($(window).scrollTop() < 500) {
-      $(".purchase-show").addClass("d-none");
+      $(".scroll").css({ right: "-200%" });
     }
   });
 });

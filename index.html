@@ -27,102 +27,88 @@
             <a class="navbar-brand fs-4 d-flex align-items-center" href="index.html"><i
                     class="bx bxs-store font-size-18 me-1"></i><span class="logo">L</span>egend<span
                     class="logo">S</span>tore</a>
-            <div class="container-panel d-flex align-items-end">
-                <!-- Start shop -->
-                <a href="#" class="text-black-50 position-relative">
-                    <span
-                        class="purchase-count font-size-10 d-flex align-items-center justify-content-center text-white bg-main end-0 rounded-circle position-absolute">5</span>
-                    <i class='bx bx-shopping-bag font-size-30'></i>
-                </a>
-                <!-- End shop -->
-                <!-- Start profile -->
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#profile" aria-controls="offcanvasNavbar">
-                    <img src="images/user.webp" style="width: 32px" class="rounded-circle" alt="" />
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="profile" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header position-relative justify-content-center">
-                        <img src="images/user.webp" style="width: 100px" class="rounded-circle" alt="" />
-                        <button type="button" class="btn-header-close position-absolute bg-transparent border-0 fa-2x"
-                            data-bs-dismiss="offcanvas" aria-label="Close">
-                            <i class='bx bx-x font-size-30'></i>
-                        </button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <p>Welcome <span class="username">Bilal</span></p>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <i class='bx bx-right-arrow-alt font-size-18 me-1'></i>
-                                <a class="nav-link" href="#">My Orders</a>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <i class='bx bx-right-arrow-alt font-size-18 me-1'></i>
-                                <a class="nav-link" href="#">Edit
-                                    Profile</a>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <i class='bx bx-right-arrow-alt font-size-18 me-1'></i>
-                                <a class="nav-link" aria-current="page" href="#">Change
-                                    Photo</a>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <i class='bx bx-right-arrow-alt font-size-18 me-1'></i>
-                                <a class="nav-link" href="#">Login</a>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <i class='bx bx-right-arrow-alt font-size-18 me-1'></i>
-                                <a class="nav-link" href="#">Logout</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End profile -->
-            </div>
+            <ul class="navbar-nav flex-row justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a href="#" class="nav-link p-2 d-flex align-items-end position-relative">
+                        <span
+                            class="purchase-count font-size-10 d-flex align-items-center justify-content-center text-white bg-main end-0 rounded-circle position-absolute">5</span>
+                        <i class='bx bx-heart font-size-30'></i>
+                        <span class="d-none d-sm-block">Favorite</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link p-2 d-flex align-items-end position-relative">
+                        <span
+                            class="purchase-count font-size-10 d-flex align-items-center justify-content-center text-white bg-main end-0 rounded-circle position-absolute">5</span>
+                        <i class='bx bx-shopping-bag font-size-30'></i>
+                        <span class="d-none d-sm-block">Cart</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 d-flex align-items-end" href="#">
+                        <i class='bx bx-user font-size-30'></i>
+                        <span class="d-none d-sm-block">Account</span>
+                    </a>
+                </li>
+            </ul>
 
         </div>
     </nav>
     <!-- End Header 1 -->
     <!-- Start Header 2 -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-main-dark sticky-top header-2">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-main-dark header-2">
         <div class="container">
-            <ul class="navbar-nav flex-row justify-content-center flex-grow-1 pe-3">
-                <li class="nav-item">
-                    <a class="nav-link active p-2 d-flex align-items-center" aria-current="page" href="index.html"><i
-                            class='bx bx-home font-size-30 d-block d-sm-none'></i><span
-                            class="d-none d-sm-block">Home</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 d-flex align-items-center" href="#">
-                        <i class='bx bxs-offer font-size-30 d-block d-sm-none'></i>
-                        <span class="d-none d-sm-block">Technologies</span>
+            <ul class="navbar-nav flex-row justify-content-start flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle p-2 text-uppercase d-flex align-items-center" href="#"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class='bx bx-dialpad-alt font-size-30'></i>
+                        <span class="d-none d-lg-block ps-2 pe-4">Shop Categories</span>
                     </a>
+                    <ul class="dropdown-menu position-absolute">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 d-flex align-items-center" href="#">
-                        <i class='bx bx-list-ul font-size-30 d-block d-sm-none'></i>
-                        <span class="d-none d-sm-block">Books</span>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link p-2 d-flex align-items-center" href="about.html"><i
-                            class='bx bx-carousel font-size-30 d-block d-sm-none'></i>
-                        <span class="d-none d-sm-block">About Us</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 d-flex align-items-center" href="#contact"><i
-                            class='bx bxs-contact font-size-30 d-block d-sm-none'></i>
-                        <span class="d-none d-sm-block">Contact Us</span></a>
-                </li>
-                <li class="nav-item position-relative d-flex align-items-center">
-                    <a href="#" class="purchase-show nav-link p-2 py-md-0 d-none">
-                        <span
-                            class="purchase-count font-size-8 d-flex align-items-center justify-content-center text-white bg-main rounded-circle position-absolute">5</span>
-                        <i class='bx bx-shopping-bag font-size-26'></i>
-                    </a>
-                </li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" style="height:fit-content;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-main-dark" style="z-index:99;" id="navbarSupportedContent">
+                    <li class="nav-item">
+                        <a class="nav-link active p-2 text-uppercase d-flex align-items-center" aria-current="page"
+                            href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 text-uppercase d-flex align-items-center" href="#">
+                            Technologies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 text-uppercase d-flex align-items-center" href="#">
+                            Books
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link p-2 text-uppercase d-flex align-items-center" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 d-flex text-uppercase align-items-center" href="#contact">Contact Us</a>
+                    </li>
+                </div>
+
             </ul>
+            <!-- <form class="d-flex" role="search">
+                <select class="form-select" name="" id="">
+                    <option value="">En</option>
+                    <option value="">Ar</option>
+                </select>
+            </form> -->
         </div>
     </nav>
     <!-- End Header -->
