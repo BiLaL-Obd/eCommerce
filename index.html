@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legend Store</title>
+    <title>LegendStore</title>
     <!-- BoxIcon -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <!-- Bootstrap 5 -->
@@ -57,13 +57,13 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-main-dark header-2">
         <div class="container ps-1">
             <ul class="navbar-nav flex-row justify-content-start flex-grow-1 pe-3">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation" style="height: fit-content">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerMenu"
+                    aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation"
+                    style="height: fit-content">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse bg-main-dark p-3 p-lg-0 rounded-3" style="z-index: 99"
-                    id="navbarSupportedContent">
+                    id="headerMenu">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle p-2 ps-lg-0 px-lg-3 text-uppercase d-flex align-items-center"
                             href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -117,9 +117,23 @@
                 </div>
 
             </ul>
-            <form class="d-flex" role="search">
+            <div class="position-relative">
 
-            </form>
+                <button class="btn btn-language" type="button" data-bs-toggle="collapse" data-bs-target="#languageMenu"
+                    aria-controls="languageMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text-white">En</span>
+                </button>
+                <div class="collapse position-absolute" id="languageMenu">
+                    <ul class="list-unstyled languageDropdown-menu">
+                        <li>
+                            <a href="#" value="En">En</a>
+                        </li>
+                        <li>
+                            <a href="#" value="En">Ar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- End Header -->

@@ -51,6 +51,27 @@
 .navbar.header-2 .nav-link:hover {
   color: var(--main);
 }
+.navbar.header-2 #languageMenu {
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 999;
+}
+.navbar.header-2 .btn-language {
+  border-color: var(--main);
+}
+.navbar.header-2 .languageDropdown-menu li a {
+  font-weight: 600;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  background-color: var(--main);
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+}
 /*************************/
 .navbar .btn-header-close {
   top: 5px;
