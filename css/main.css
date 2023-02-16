@@ -126,8 +126,27 @@
 
 /****************   Index   ****************/
 /* Start Landing */
+.landing {
+  padding: 20px;
+  padding-bottom: 20px;
+}
 .landing .myLanding {
-  height: calc(100vh - 110px);
+  height: calc(100vh - 150px);
+}
+.landing .myLanding .box img {
+  background-color: #bcbcc6;
+}
+.landing .myLanding .info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  left: 20px;
+}
+.landing .info-banner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
 }
 /* End Landing */
 /* Start offers */
