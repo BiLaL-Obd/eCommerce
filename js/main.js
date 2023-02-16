@@ -10,25 +10,11 @@ $(document).ready(function () {
 });
 
 // Swiper
-var swiper = new Swiper(".myLanding", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  loop: true,
-  // autoplay: {
-  //   delay: 4000,
-  //   disableOnInteraction: false,
-  // },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
-var swiper = new Swiper(".myOfferes", {
+var swiper = new Swiper(".myFeatures", {
   slidesPerView: 1,
   spaceBetween: 10,
   autoplay: {
-    delay: 3000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   loop: true,
@@ -43,6 +29,14 @@ var swiper = new Swiper(".myOfferes", {
     },
     1024: {
       slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
+    1800: {
+      slidesPerView: 5,
       spaceBetween: 20,
     },
   },

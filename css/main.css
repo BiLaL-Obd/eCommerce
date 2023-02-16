@@ -5,7 +5,7 @@
   --main-opacity-65: rgba(209, 22, 22, 0.65);
   --main-opacity-75: rgba(209, 22, 22, 0.75);
   --transition: 0.3s;
-  --dark: #333;
+  --dark: #111;
 }
 .a-angle-hover {
   padding-left: 0;
@@ -169,72 +169,46 @@
   z-index: 8;
 }
 /* End Landing */
-/* Start offers */
-.offers .swiper-slide .row {
-  background-color: #fff;
-  border: 2px solid var(--main);
-  padding: 5px;
-  margin: 5px;
-  color: #000;
+/* Start Features */
+.features .container .box {
+  box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 20%);
 }
-.offers .swiper-slide img {
-  height: 140px;
-}
-/* End offers */
-/* Start Arrival */
-.arrivals .nav-pills .nav-link.active,
-.arrivals .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: var(--main);
-}
-.arrivals .nav-link:hover {
-  color: var(--dark);
-}
-.arrivals .arv {
-  border: 1px solid var(--main);
-  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.15);
+.features .container .box a {
+  color: black;
   transition: var(--transition);
 }
-.arrivals a:hover .arv {
-  transform: translateY(-5px);
-  box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.35);
+.features .container .box a:hover {
+  color: var(--main);
+  text-decoration: underline;
 }
-.arrivals .tab-content img {
-  height: 140px;
+.features .container .box img {
+  width: 180px;
+  height: 180px;
 }
-.arrivals .price-only {
+.features .container .box .stars i {
+  font-size: 18px;
+}
+.features .container .box .stars i.checked {
+  color: var(--main);
+  font-weight: 700;
+}
+.features .container .box .btn-main {
+  right: -100%;
+}
+.features .container .box:hover .btn-main {
+  right: 15px;
+}
+.features .container .box .price-only {
   text-transform: uppercase;
 }
-.arrivals .price-offer {
+.features .container .box .price-offer {
   text-decoration: line-through;
-}
-/* End Arrival */
-/* Start Product */
-.products .nav-pills .nav-link.active,
-.products .nav-pills .show > .nav-link {
-  background-color: var(--main);
-  color: #fff !important;
-}
-.products .nav-link:hover {
-  color: var(--main) !important;
-}
-.products .tab-content img {
-  height: 205px;
-}
-.products .product-items .box {
-  box-shadow: 0px -3px 12px 0px inset var(--main-opacity-65);
-}
-.products .product-list li {
-  padding: 0.125rem 0.5rem;
-  border-radius: 0.25rem;
-  border: 1px solid var(--dark);
-}
-.products .product-list li.active,
-.products .product-list li:hover {
-  border: 1px solid var(--main);
   color: var(--main);
+  font-size: 15px;
 }
-/* End Product */
+/* End Features */
+
+/************** Compoents **************/
 /* Start Contact */
 @media (min-width: 768px) {
   .contact {
