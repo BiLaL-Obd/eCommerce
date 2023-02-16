@@ -133,6 +133,13 @@
 .landing .myLanding {
   height: calc(100vh - 150px);
 }
+@media (max-width: 767px) {
+  .landing .myLanding .box {
+    /* background-color: #bcbcc6; */
+    background-image: linear-gradient(125deg, var(--dark), var(--main));
+    border-radius: 1rem;
+  }
+}
 .landing .myLanding .box img {
   background-color: #bcbcc6;
 }
@@ -141,6 +148,11 @@
   top: 50%;
   transform: translateY(-70%);
   left: 20px;
+}
+@media (max-width: 767px) {
+  .landing .myLanding .info {
+    color: #fff;
+  }
 }
 .landing .info-banner {
   position: absolute;
