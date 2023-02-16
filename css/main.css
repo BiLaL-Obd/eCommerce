@@ -26,7 +26,7 @@
 }
 @media (min-width: 992px) {
   .navbar.header-2 .nav-item.dropdown {
-    border-right: 1px solid var(--main-opacity-75);
+    border-right: 1px solid var(--main-opacity-50);
     padding-right: 5px;
     margin-right: 5px;
   }
