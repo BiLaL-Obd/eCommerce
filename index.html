@@ -143,7 +143,7 @@
     <!-- Start Landing -->
     <div class="landing">
         <div class="container rounded-5">
-            <div class="image w-100 h-100 position-relative" style="background-image: url('images/image1.png')">
+            <div class="image h-100 position-relative" style="background-image: url('images/image1.png')">
                 <a href="#" class="btn btn-main-alt rounded-pill position-absolute">Shop By Categories</a>
             </div>
             <h1>
@@ -158,7 +158,10 @@
     <!------------------ Put the limit 10 ---------------->
     <div class="features py-5">
         <div class="container">
-            <h5 class="main-title fw-600 mb-4">Features Collections</h5>
+            <div class="main-title">
+                <h5 class="fw-600 mb-4">Features Collections</h5>
+
+            </div>
             <div class="swiper myFeatures">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -168,7 +171,13 @@
                                     <button type="submit" class="bg-transparent border-0">
                                         <i class='bx bxs-heart font-size-24 cursor-pointer'></i>
                                     </button>
-                                    <span class="rounded-pill bg-main text-white px-2 p-1 d-none">-33%</span>
+                                    <div class="sales d-flex align-items-center gap-2">
+                                        <span class="rounded-pill bg-main text-white px-2 p-1 d-">-33%</span>
+                                        <a href="#"
+                                            class="rounded-pill border-0 text-decoration-none bg-main d-flex align-items-center justify-content-center text-white px-2 p-1">
+                                            <i class='bx bx-cart-add font-size-22'></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="image text-center mb-2">
                                     <img src="images/el_img1.jpg" class="img-fluid" alt="">
@@ -185,7 +194,9 @@
                                         <i class='bx bx-star'></i>
                                         <i class='bx bx-star'></i>
                                         <button href="#"
-                                            class="btn btn-main rounded-pill font-size-14 position-absolute">Add to
+                                            class="btn btn-main rounded-pill font-size-14 position-absolute"
+                                            disabled>Add
+                                            to
                                             Cart</button>
                                     </div>
                                     <div class="price d-flex align-items-center gap-2">
@@ -409,9 +420,7 @@
     <!-- Start Contact -->
     <div class="contact py-5" id="contact">
         <div class="container">
-            <div class="main-title mb-5">
-                <h3 class="m-auto py-1 px-2 text-uppercase">Contact Us</h3>
-            </div>
+            <h5 class="main-title fw-600 mb-4">Contact Us</h5>
             <div class="row">
                 <div class="col-md-6 col-lg-7">
                     <h4>

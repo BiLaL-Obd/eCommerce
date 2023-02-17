@@ -44,8 +44,10 @@ a {
 }
 
 /* Component */
-.main-title h3 {
-  user-select: none;
+.main-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -147,7 +149,7 @@ a {
   border-color: var(--main) !important;
 }
 .border-danger {
-  border-color: var(--main);
+  border-color: var(--main) !important;
 }
 
 /* Button */
@@ -157,6 +159,7 @@ a {
     var(--main) 50%,
     var(--bg-dark) 50%
   );
+  font-weight: 500;
   background-size: 220% 120%;
   background-position: right bottom;
   color: #fff;
@@ -173,6 +176,7 @@ a {
     var(--bg-dark) 50%,
     var(--main) 50%
   );
+  font-weight: 500;
   background-size: 220% 120%;
   background-position: right bottom;
   color: #fff;
@@ -184,7 +188,7 @@ a {
   background-position: left bottom;
 }
 .btn-danger {
-  background-color: var(--main);
+  background-color: var(--main) !important;
 }
 /* cursor */
 .cursor-pointer {

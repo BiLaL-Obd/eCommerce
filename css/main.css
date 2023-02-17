@@ -150,10 +150,10 @@
   display: block;
 }
 .landing .container h1 .head-1 {
-  font-size: calc(45px + 1.5vw);
+  font-size: calc(40px + 1.5vw);
 }
 .landing .container h1 .head-2 {
-  font-size: calc(80px + 1.5vw);
+  font-size: calc(75px + 1.5vw);
 }
 @media (max-width: 767px) {
   .landing .container h1 .head-1 {
@@ -167,6 +167,11 @@
   bottom: 10%;
   left: 15%;
   z-index: 8;
+}
+@media (max-width: 991px) {
+  .landing .container .btn {
+    left: 0;
+  }
 }
 /* End Landing */
 /* Start Features */
@@ -195,8 +200,13 @@
 .features .container .box .btn-main {
   right: -100%;
 }
+.features .container .box .btn-main:disabled,
 .features .container .box:hover .btn-main {
   right: 15px;
+}
+.features .container .box .btn-main:disabled {
+  opacity: 0.85;
+  color: #fff;
 }
 .features .container .box .price-only {
   text-transform: uppercase;
