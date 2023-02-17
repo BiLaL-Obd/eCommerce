@@ -127,8 +127,12 @@
   padding-left: 10px;
 }
 .navbar .form {
+  position: absolute;
+  top: calc(100% + 15px);
+  right: 0;
   width: 350px;
-  background-color: #bcbcc6;
+  background-color: #dfdfdf;
+  transition: var(--transition);
 }
 /* End Header */
 
