@@ -216,6 +216,15 @@
   color: var(--main);
   font-size: 15px;
 }
+.features .swiper-button-next,
+.features .swiper-button-prev {
+  position: static;
+}
+.features .swiper-button-next:after,
+.features .swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: 800;
+}
 /* End Features */
 
 /************** Compoents **************/
