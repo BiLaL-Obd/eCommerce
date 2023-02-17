@@ -291,11 +291,11 @@
 .footer .reach li {
   overflow: hidden;
 }
-.footer .reach a {
+.footer .reach .a-hover {
   position: relative;
   width: fit-content;
 }
-.footer .reach a::before {
+.footer .reach .a-hover::before {
   content: "";
   width: 100%;
   height: 1px;
@@ -305,10 +305,10 @@
   left: -100%;
   transition: var(--transition);
 }
-.footer .reach a:hover::before {
+.footer .reach .a-hover:hover::before {
   left: 0;
 }
-.footer .reach a:hover {
+.footer .reach .a-hover:hover {
   color: var(--main);
 }
 /* End Footer */
