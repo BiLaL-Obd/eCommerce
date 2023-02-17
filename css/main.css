@@ -202,7 +202,7 @@
 }
 .features .container .box .btn-main:disabled,
 .features .container .box:hover .btn-main {
-  right: 15px;
+  right: 10px;
 }
 .features .container .box .btn-main:disabled {
   opacity: 0.85;

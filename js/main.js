@@ -35,9 +35,9 @@ var swiper = new Swiper(".myFeatures", {
       slidesPerView: 4,
       spaceBetween: 0,
     },
-    1800: {
+    1650: {
       slidesPerView: 5,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
   },
   navigation: {
