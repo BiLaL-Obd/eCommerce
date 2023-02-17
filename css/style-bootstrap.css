@@ -16,8 +16,13 @@
 }
 .form-control {
   border: 1px solid var(--main-opacity-50);
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 .form-control:focus {
+  border: none;
   box-shadow: 0 0 0 0.12rem var(--main-opacity-25) !important;
 }
 .form-check-input[type="checkbox"] {

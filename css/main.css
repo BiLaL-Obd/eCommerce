@@ -25,6 +25,10 @@
   border-color: var(--main);
 }
 @media (min-width: 767px) {
+  .navbar.header-2 .nav-item {
+    display: flex;
+    align-items: center;
+  }
   .navbar.header-2 .nav-item.dropdown {
     border-right: 1px solid var(--main-opacity-50);
     padding-right: 5px;
@@ -122,6 +126,10 @@
 #profile .nav-link:hover {
   padding-left: 10px;
 }
+.navbar .form {
+  width: 350px;
+  background-color: #bcbcc6;
+}
 /* End Header */
 
 /****************   Index   ****************/
@@ -165,12 +173,12 @@
 }
 .landing .container .btn {
   bottom: 10%;
-  left: 15%;
+  left: 20%;
   z-index: 8;
 }
 @media (max-width: 991px) {
   .landing .container .btn {
-    left: 0;
+    left: 5%;
   }
 }
 /* End Landing */
