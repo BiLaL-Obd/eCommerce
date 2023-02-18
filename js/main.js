@@ -89,10 +89,6 @@ var swiper = new Swiper(".myProducts", {
       spaceBetween: 15,
     },
     1200: {
-      slidesPerView: 2,
-      spaceBetween: 5,
-    },
-    1450: {
       slidesPerView: 3,
       spaceBetween: 0,
     },

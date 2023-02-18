@@ -289,12 +289,15 @@
   border: 1px solid rgba(17, 17, 17, 0.212);
   box-shadow: 0 0 8px 0.1rem rgb(17 17 17 / 20%);
   border-radius: 1rem;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 .products .box .show-image img {
   width: 200px;
   height: 200px;
+}
+.products .container .box-info a {
+  font-size: 14px;
 }
 .products .container .box-info a:hover {
   color: var(--main) !important;
@@ -310,6 +313,9 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+.products .container .box-info .btn {
+  font-size: 14px !important;
 }
 /* End Products */
 
