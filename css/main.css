@@ -289,12 +289,18 @@
   border: 1px solid rgba(17, 17, 17, 0.212);
   box-shadow: 0 0 8px 0.1rem rgb(17 17 17 / 20%);
   border-radius: 1rem;
+  width: 100px;
+  height: 100px;
 }
-.products .container .box a:hover {
+.products .box .show-image img {
+  width: 200px;
+  height: 200px;
+}
+.products .container .box-info a:hover {
   color: var(--main) !important;
   text-decoration: underline;
 }
-.products .box .day-remain span {
+.products .box-info .day-remain span {
   background-color: var(--main);
   color: #fff;
   width: 30px;
