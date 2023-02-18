@@ -137,6 +137,11 @@
   background-color: #dfdfdf;
   transition: var(--transition);
 }
+@media (max-width: 767px) {
+  .navbar .form {
+    width: 320px;
+  }
+}
 .navbar .form.active {
   right: 0;
 }
