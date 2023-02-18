@@ -14,9 +14,16 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-body {
-  overflow-x: hidden;
+/************* Progress ***************/
+.progress {
+  height: 3px;
+  color: var(--main);
+  background-color: #bcbcc6;
 }
+.progress-bar {
+  background-color: var(--main);
+}
+/************* Form Control **********************/
 .form-control {
   border: 1px solid var(--main-opacity-50);
   background: transparent;
@@ -52,20 +59,14 @@ body {
 }
 a {
   text-decoration: none;
+  transition: var(--transition) !important;
 }
 
-/* Component */
+/************** Component ***************/
 .main-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  color: var(--main);
-}
-.swiper-pagination-bullet-active {
-  background: var(--main);
 }
 .scroll {
   z-index: 999;
@@ -82,11 +83,47 @@ a {
 .scroll a:hover {
   opacity: 1;
 }
-/* width */
+.box .price-only {
+  text-transform: uppercase;
+}
+.box .price-offer {
+  text-decoration: line-through;
+  color: var(--main);
+  font-size: 15px;
+}
+
+/*************** Swiper ******************/
+.inline-swiper .swiper-button-next,
+.inline-swiper .swiper-button-prev {
+  position: static;
+}
+.inline-swiper .swiper-button-next:after,
+.inline-swiper .swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: 800;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--main);
+}
+.swiper-pagination-bullet-active {
+  background: var(--main);
+}
+
+/**************** Stars **************/
+.box .stars i {
+  font-size: 19px;
+}
+.box .stars i.checked {
+  color: var(--main);
+  font-weight: 700;
+}
+
+/********* width ************/
 .w-fit-content {
   width: fit-content;
 }
-/* Font Size */
+/************** Font Size ***********/
 .font-size-8 {
   font-size: 0.5rem;
 }
@@ -132,7 +169,7 @@ a {
 .font-size-32 {
   font-size: 2rem;
 }
-/* Font Weight */
+/************** Font Weight **************8*/
 .fw-500 {
   font-weight: 500;
 }
@@ -153,12 +190,12 @@ a {
   background-color: var(--light-gray);
 }
 
-/* Text Color */
+/********** Text Color ****************/
 .text-color-main {
   color: var(--main);
 }
 
-/* Border */
+/************ Border ***********/
 .border-color-main {
   border-color: var(--main) !important;
 }
@@ -166,7 +203,7 @@ a {
   border-color: var(--main) !important;
 }
 
-/* Button */
+/************** Button *************/
 .btn-main {
   background-image: linear-gradient(
     to right,
@@ -204,7 +241,15 @@ a {
 .btn-danger {
   background-color: var(--main) !important;
 }
-/* cursor */
+/************* cursor ******************/
 .cursor-pointer {
   cursor: pointer;
+}
+
+/************** line-clamp ***************/
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

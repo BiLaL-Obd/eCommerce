@@ -22,6 +22,14 @@ $(document).ready(function () {
   });
 });
 
+// Image Product
+$(".products .box .click-image img").each((i, el) => {
+  $(el).on("click", () => {
+    let imgGetSrc = $(el).attr("src");
+    $(el).parent().siblings(".show-image").children().attr("src", imgGetSrc);
+  });
+});
+
 // Swiper
 var swiper = new Swiper(".myFeatures", {
   slidesPerView: 1,
@@ -50,6 +58,42 @@ var swiper = new Swiper(".myFeatures", {
     },
     1650: {
       slidesPerView: 5,
+      spaceBetween: 0,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper = new Swiper(".myProducts", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1450: {
+      slidesPerView: 3,
       spaceBetween: 0,
     },
   },
