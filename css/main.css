@@ -279,6 +279,11 @@
 .products .box {
   box-shadow: 0 0 8px 0.1rem rgb(17 17 17 / 20%);
 }
+@media (max-width: 767px) {
+  .products .box .click-image {
+    display: none;
+  }
+}
 .products .box .click-image img {
   cursor: pointer;
   border: 1px solid rgba(17, 17, 17, 0.212);
