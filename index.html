@@ -44,54 +44,60 @@
                     </a>
                 </li>
                 <li class="nav-item position-relative">
-                    <div class="nav-link cursor-pointer p-2 d-flex align-items-end" href="#">
+                    <div class="nav-link account-menu cursor-pointer p-2 d-flex align-items-end" href="#">
                         <i class="bx bx-user font-size-30"></i>
                         <span class="d-none d-sm-block">Account</span>
                     </div>
-                    <div class="form rounded-5 p-4 px-5">
+                    <div class="form rounded-5 p-2 py-3">
                         <nav>
-                            <div class="nav nav-tabs mb-3 border-0 justify-content-center gap-2" id="nav-tab"
+                            <div class="nav nav-tabs my-4 border-0 justify-content-center gap-2" id="nav-tab"
                                 role="tablist">
-                                <button class="border-0 active" id="login-tab" data-bs-toggle="tab"
-                                    data-bs-target="#login" type="button" role="tab" aria-controls="login"
-                                    aria-selected="true">Login</button>
-                                <button class="border-0" id="registration-tab" data-bs-toggle="tab"
-                                    data-bs-target="#registration" type="button" role="tab" aria-controls="registration"
-                                    aria-selected="false">Registration</button>
+                                <button class="form-button border-0  bg-transparent text-uppercase active"
+                                    id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab"
+                                    aria-controls="login" aria-selected="true">Login</button>
+                                <button class="form-button border-0 bg-transparent text-uppercase" id="registration-tab"
+                                    data-bs-toggle="tab" data-bs-target="#registration" type="button" role="tab"
+                                    aria-controls="registration" aria-selected="false">Signup</button>
                             </div>
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="login" role="tabpanel"
                                 aria-labelledby="login-tab" tabindex="0">
                                 <form action="" class="row">
-                                    <div class="col-12 mb-3">
-                                        <input type="text" class="form-control rounded-0" placeholder="Username*">
+                                    <div class="col-12 mb-4">
+                                        <input type="text" class="form-control" placeholder="Username*">
                                     </div>
-                                    <div class="col-12 mb-3">
-                                        <input type="password" class="form-control rounded-0" name="" id=""
+                                    <div class="col-12 mb-4">
+                                        <input type="password" class="form-control" name="" id=""
                                             placeholder="Password*">
                                     </div>
-                                    <div class="col-12">
-                                        <input type="submit" class="btn btn-main-alt rounded-pill" value="Send">
+                                    <div class="col-12 mb-4">
+                                        <a href="#" class="text-black-50 text-start font-size-14">Forget Password?</a>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <input type="submit" class="btn btn-main-alt rounded-pill" value="LogIn">
                                     </div>
                                 </form>
                             </div>
-                            <div class="tab-pane fade" id="registration" role="tabpanel"
+                            <div class="tab-pane text-center fade" id="registration" role="tabpanel"
                                 aria-labelledby="registration-tab" tabindex="0">
                                 <form action="" class="row">
-                                    <div class="col-12 mb-3">
-                                        <input type="text" class="form-control rounded-0" placeholder="Username*">
+                                    <div class="col-12 mb-4">
+                                        <input type="text" class="form-control" placeholder="Username*">
                                     </div>
-                                    <div class="col-12 mb-3">
-                                        <input type="password" class="form-control rounded-0" name="" id=""
+                                    <div class="col-12 mb-4">
+                                        <input type="email" class="form-control" placeholder="Email*">
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <input type="password" class="form-control" name="" id=""
                                             placeholder="Password*">
                                     </div>
-                                    <div class="col-12 mb-3">
-                                        <input type="password" class="form-control rounded-0" name="" id=""
+                                    <div class="col-12 mb-4">
+                                        <input type="password" class="form-control" name="" id=""
                                             placeholder="Confirm Password*">
                                     </div>
                                     <div class="col-12">
-                                        <input type="submit" class="btn btn-main rounded-pill" value="Register">
+                                        <input type="submit" class="btn btn-main rounded-pill" value="SignUp">
                                     </div>
                                 </form>
                             </div>
@@ -104,7 +110,7 @@
     </nav>
     <!-- End Header 1 -->
     <!-- Start Header 2 -->
-    <!-- <nav class="navbar navbar-expand-md navbar-dark bg-main-dark header-2">
+    <nav class="navbar navbar-expand-md navbar-dark bg-main-dark header-2">
         <div class="container ps-1">
             <div class="position-relative">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerMenu"
@@ -188,10 +194,10 @@
                 </div>
             </div>
         </div>
-    </nav> -->
+    </nav>
     <!-- End Header -->
     <!-- Start Landing -->
-    <!-- <div class="landing">
+    <div class="landing">
         <div class="container px-0 rounded-5">
             <div class="image h-100 position-relative" style="background-image: url('images/image1.png')">
                 <a href="#" class="btn btn-main-alt rounded-pill position-absolute">Shop By Categories</a>
@@ -202,11 +208,11 @@
                 <span class="head-2 text-white text-uppercase">HeadPhones</span>
             </h1>
         </div>
-    </div> -->
+    </div>
     <!-- End Landing -->
     <!-- Start Features -->
     <!------------------ Put the limit 10 ---------------->
-    <!-- <div class="features py-5">
+    <div class="features py-5">
         <div class="container">
             <div class="swiper myFeatures">
                 <div class="main-title">
@@ -468,7 +474,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- End Features -->
     <!-- Start Contact -->
     <!-- <div class="contact py-5" id="contact">
@@ -488,7 +494,7 @@
                         <div class="col-lg-12 mb-3">
                             <input type="email" class="form-control" name="" id="" placeholder="Enter Your Email" />
                         </div>
-                        <div class="col-12 mb-3">
+                        <div class="col-12 mb-4">
                             <textarea name="" id="" cols="30" class="form-control" rows="10"
                                 placeholder="Enter Your Message"></textarea>
                         </div>
@@ -503,7 +509,7 @@
     </div> -->
     <!-- End Contact -->
     <!-- Start Footer -->
-    <!-- <div class="footer pt-5 bg-main-dark text-white">
+    <div class="footer pt-5 bg-main-dark text-white">
         <div class="container pb-5">
             <div class="row">
                 <div class="col-sm-6 col-lg-4 col-xl-3">
@@ -631,7 +637,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- End Footer -->
     <!-- Start Scroll -->
     <div class="scroll position-fixed d-flex flex-column gap-3">

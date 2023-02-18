@@ -128,11 +128,23 @@
 }
 .navbar .form {
   position: absolute;
-  top: calc(100% + 15px);
-  right: 0;
+  /* top: calc(100% + 5px); */
+  top: 100%;
+  right: -1000%;
+  /* right: 0; */
   width: 350px;
+  z-index: 999;
   background-color: #dfdfdf;
   transition: var(--transition);
+}
+.navbar .form.active {
+  right: 0;
+}
+.navbar .form .form-button {
+  font-weight: 600;
+}
+.navbar .form .form-button.active {
+  color: var(--main);
 }
 /* End Header */
 

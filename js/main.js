@@ -1,3 +1,16 @@
+//Account Menu
+$(".account-menu").click((e) => {
+  $(".navbar .form").toggleClass("active");
+  e.stopPropagation();
+});
+$(".navbar .form").click((e) => {
+  e.stopPropagation();
+});
+$(document).click((e) => {
+  if (e.target !== ".account-menu" && $(".navbar .form").hasClass("active")) {
+    $(".navbar .form").removeClass("active");
+  }
+});
 // Windows Scroll
 $(document).ready(function () {
   $(window).scroll(function () {
