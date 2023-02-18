@@ -298,7 +298,7 @@
   height: 200px;
 }
 .products .container .box-info a {
-  font-size: 14px;
+  font-size: 13px;
 }
 .products .container .box-info a:hover {
   color: var(--main) !important;
@@ -314,6 +314,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+.products .box-info .price {
+  font-size: 14px !important;
+}
+.products .box-info .price-offer {
+  font-size: 12px !important;
 }
 .products .container .box-info .btn {
   font-size: 14px !important;
