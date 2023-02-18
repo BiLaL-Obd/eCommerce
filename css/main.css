@@ -81,6 +81,7 @@
   display: flex;
   background-color: var(--main);
   margin: 10px;
+  font-size: 14px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -119,7 +120,7 @@
   box-shadow: none;
 }
 .navbar-nav .nav-link {
-  font-size: 15px;
+  font-size: 14px;
   transition: var(--transition);
 }
 #profile .nav-link:focus,
