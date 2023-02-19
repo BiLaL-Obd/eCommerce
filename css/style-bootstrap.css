@@ -173,6 +173,9 @@ a {
   font-size: 2rem;
 }
 /************** Font Weight **************8*/
+.fw-400 {
+  font-weight: 400;
+}
 .fw-500 {
   font-weight: 500;
 }

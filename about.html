@@ -25,7 +25,7 @@
 
 <body>
   <!-- Start Header 1 -->
-  <nav class="navbar">
+  <nav class="navbar" style="overflow-x: hidden;">
     <div class="container">
       <a class="navbar-brand font-size-24 fw-700 me-0" href="index.html">
         <span class="logo">L</span>egend<span class="logo">S</span>tore
@@ -46,13 +46,65 @@
             <span class="d-none d-sm-block">Cart</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link p-2 d-flex align-items-end" href="#">
+        <li class="nav-item position-relative">
+          <div class="nav-link account-menu cursor-pointer p-2 d-flex align-items-end" href="#">
             <i class="bx bx-user font-size-30"></i>
             <span class="d-none d-sm-block">Account</span>
-          </a>
-        </li>
-      </ul>
+          </div>
+          <div class="form rounded-5 p-2 py-4">
+            <nav>
+              <div class="nav nav-tabs my-4 border-0 justify-content-center gap-2" id="nav-tab" role="tablist">
+                <button class="form-button border-0  bg-transparent text-uppercase active" id="login-tab"
+                  data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login"
+                  aria-selected="true">Login</button>
+                <button class="form-button border-0 bg-transparent text-uppercase" id="registration-tab"
+                  data-bs-toggle="tab" data-bs-target="#registration" type="button" role="tab"
+                  aria-controls="registration" aria-selected="false">Signup</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab"
+                tabindex="0">
+                <form action="" class="row">
+                  <div class="col-12 mb-4">
+                    <input type="text" class="form-control" placeholder="Username*">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <input type="password" class="form-control" name="" id="" placeholder="Password*">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <a href="#" class="text-black-50 text-start font-size-14">Forget Password?</a>
+                  </div>
+                  <div class="col-12 text-center">
+                    <input type="submit" class="btn btn-main-alt rounded-pill" value="LogIn">
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane text-center fade" id="registration" role="tabpanel"
+                aria-labelledby="registration-tab" tabindex="0">
+                <form action="" class="row">
+                  <div class="col-12 mb-4">
+                    <input type="text" class="form-control" placeholder="Username*">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <input type="email" class="form-control" placeholder="Email*">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <input type="password" class="form-control" name="" id="" placeholder="Password*">
+                  </div>
+                  <div class="col-12 mb-4">
+                    <input type="password" class="form-control" name="" id="" placeholder="Confirm Password*">
+                  </div>
+                  <div class="col-12">
+                    <input type="submit" class="btn btn-main rounded-pill" value="SignUp">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </div>
+    </li>
+    </ul>
     </div>
   </nav>
   <!-- End Header 1 -->
@@ -74,33 +126,27 @@
               </a>
               <ul class="dropdown-menu bg-main-dark rounded-3">
                 <li class="d-flex align-items-center text-white-50 px-3">
-                  <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
                   <a class="dropdown-item a-angle-hover text-white-50" href="#">Phones</a>
                 </li>
                 <li class="d-flex align-items-center text-white-50 px-3">
-                  <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
                   <a class="dropdown-item a-angle-hover text-white-50" href="#">Earphones</a>
                 </li>
                 <li class="d-flex align-items-center text-white-50 px-3">
-                  <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
                   <a class="dropdown-item a-angle-hover text-white-50" href="#">Television</a>
                 </li>
                 <li class="d-flex align-items-center text-white-50 px-3">
-                  <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
                   <a class="dropdown-item a-angle-hover text-white-50" href="#">Speakers</a>
                 </li>
                 <li class="d-flex align-items-center text-white-50 px-3">
-                  <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
                   <a class="dropdown-item a-angle-hover text-white-50" href="#">Headphones</a>
                 </li>
                 <li class="d-flex align-items-center text-white-50 px-3">
-                  <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
                   <a class="dropdown-item a-angle-hover text-white-50" href="#">Camera</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active p-2 px-lg-3 text-uppercase d-flex align-items-center" aria-current="page"
+              <a class="nav-link p-2 px-lg-3 text-uppercase d-flex align-items-center" aria-current="page"
                 href="index.html">Home</a>
             </li>
             <li class="nav-item">
@@ -113,7 +159,7 @@
                 Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-2 px-lg-3 d-flex text-uppercase align-items-center" href="#contact">Contact
+              <a class="nav-link p-2 px-lg-3 d-flex text-uppercase align-items-center" href="contact.html">Contact
                 Us</a>
             </li>
           </ul>
@@ -123,7 +169,7 @@
 
         <button class="btn btn-language" type="button" data-bs-toggle="collapse" data-bs-target="#languageMenu"
           aria-controls="languageMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="text-white">En</span>
+          <span class="text-white font-size-14">En</span>
         </button>
         <div class="collapse position-absolute" id="languageMenu">
           <ul class="list-unstyled languageDropdown-menu">
@@ -143,9 +189,7 @@
   <!-- Start About Header -->
   <div class="about-pg about-header py-5 bg-main-light">
     <div class="container">
-      <div class="title-page mb-5 text-center">
-        <h1>About Us</h1>
-      </div>
+      <h1 class="text-uppercase text-center mb-5">About Us</h1>
       <h3 class="mb-5">Know About Us</h3>
       <div class="text-black-50">
         <div class="row">
@@ -189,13 +233,13 @@
   </div>
   <!-- End About Header -->
   <!-- Start About Section -->
-  <div class="about-pg about-section py-5 bg-main-dark text-white">
+  <div class="about-pg about-section py-5">
     <div class="container">
       <h3 class="mb-5">Our Teams</h3>
 
       <div class="row mb-5">
         <div class="col-md-6 mb-3">
-          <img src="images/deal-img.png" class="img-fluid" alt="">
+          <img src="images/about-us.png" class="img-fluid rounded-4" alt="">
         </div>
         <div class="col-md-6">
           <div class="accordion accordion-flush" id="our-team">
@@ -208,7 +252,7 @@
                 </button>
               </h2>
               <div id="place-order"
-                class="accordion-collapse collapse bg-main-light text-black-50 font-size-15 rounded-2"
+                class="accordion-collapse collapse bg-main-dark text-white-50 font-size-15 rounded-2"
                 aria-labelledby="flush-headingOne" data-bs-parent="#our-team">
                 <div class="accordion-body">
                   <ol>
@@ -255,7 +299,7 @@
                 </button>
               </h2>
               <div id="order-arrive"
-                class="accordion-collapse collapse bg-main-light text-black-50 font-size-15 rounded-2"
+                class="accordion-collapse collapse bg-main-dark text-white-50 font-size-15 rounded-2"
                 aria-labelledby="flush-headingTwo" data-bs-parent="#our-team">
                 <div class="accordion-body">The processing time of your order can also impact the
                   delivery time. This is the time it takes for the seller to package
@@ -273,8 +317,7 @@
                   How to pay online ?
                 </button>
               </h2>
-              <div id="pay-online"
-                class="accordion-collapse collapse bg-main-light text-black-50 font-size-15 rounded-2"
+              <div id="pay-online" class="accordion-collapse collapse bg-main-dark text-white-50 font-size-15 rounded-2"
                 aria-labelledby="flush-headingThree" data-bs-parent="#our-team">
                 <div class="accordion-body">
                   <ol>
@@ -312,16 +355,16 @@
                   How to contact supplier ?
                 </button>
               </h2>
-              <div id="flush-four"
-                class="accordion-collapse collapse bg-main-light text-black-50 font-size-15 rounded-2"
+              <div id="flush-four" class="accordion-collapse collapse bg-main-dark text-white-50 font-size-15 rounded-2"
                 aria-labelledby="flush-four" data-bs-parent="#our-team">
                 <div class="accordion-body">
                   <p>We many ways to contact supplier:</p>
                   <p>
-                    You can click on <b>Whatsapp</b> link to contact with us in whatsapp, you can
-                    use email link also <br>
+                    You can click on <b>Whatsapp</b> link to contact with us in whatsapp, and you can
+                    use email link also . <br>
                     And we have contact form just you want to put your
-                    <b>Name</b>,<b>Email</b>,<b>Subject</b> and write what do want to ask. <br>
+                    <b>Name</b>, <b>Phone Number</b>, <b>Email</b>, <b>Message</b> and in Message write what do want to
+                    ask. <br>
                     Finally you want to click <b>Send Message</b> to send your objects in contact
                     form
                   </p>
@@ -332,84 +375,54 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-6 col-md-4 col-lg-3 mb-3 text-center">
+        <div class="col-6 col-md-4 col-lg-3 mb-3 text-center fw-400">
           Best Quality
         </div>
-        <div class="col-6 col-md-4 col-lg-3 mb-3 text-center">
+        <div class="col-6 col-md-4 col-lg-3 mb-3 text-center fw-400">
           Fast Delivery
         </div>
-        <div class="col-6 col-md-4 col-lg-3 mb-3 text-center">
-          Secure Payement <span class="info d-block text-white-50">100%
+        <div class="col-6 col-md-4 col-lg-3 mb-3 text-center fw-400">
+          Secure Payement <span class="info d-block text-black-50">100%
             secure payment</span>
         </div>
-        <div class="col-6 col-md-4 col-lg-3 mb-3 text-center">
-          24/7 Support <span class="info d-block text-white-50">Dedicated
+        <div class="col-6 col-md-4 col-lg-3 mb-3 text-center fw-400">
+          24/7 Support <span class="info d-block text-black-50">Dedicated
             support</span>
         </div>
       </div>
     </div>
   </div>
   <!-- End About Section -->
-  <!-- Start Contact -->
-  <div class="contact py-5" id="contact">
-    <div class="container">
-      <div class="main-title mb-5">
-        <h3 class="m-auto py-1 px-2 text-uppercase">Contact Us</h3>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-7">
-          <h4>
-            Any questions? Please Fill Content In The Form and We Will be in Contact Soon!
-          </h4>
-        </div>
-        <div class="col-md-6 col-lg-5">
-          <form action="" class="row d-flex">
-            <div class="col-lg-12 mb-3">
-              <input type="text" class="form-control" name="" id="" placeholder="Enter Your Name" />
-            </div>
-            <div class="col-lg-12 mb-3">
-              <input type="email" class="form-control" name="" id="" placeholder="Enter Your Email" />
-            </div>
-            <div class="col-12 mb-3">
-              <textarea name="" id="" cols="30" class="form-control" rows="10"
-                placeholder="Enter Your Message"></textarea>
-            </div>
-            <div class="col-12">
-              <input type="submit" value="Send Message" class="btn btn-danger" data-aos="zoom-out"
-                data-aos-duration="500" />
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Contact -->
   <!-- Start Footer -->
   <div class="footer pt-5 bg-main-dark text-white">
     <div class="container pb-5">
       <div class="row">
         <div class="col-sm-6 col-lg-4 col-xl-3">
-          <h4>Menu</h4>
+          <h4>Shop By Category</h4>
           <ul class="list-unstyled">
             <li class="py-1 d-flex align-items-center text-white-50">
               <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
-              <a href="#" class="a-angle-hover text-white-50">Home</a>
+              <a href="#" class="a-angle-hover text-white-50">Phones</a>
             </li>
             <li class="py-1 d-flex align-items-center text-white-50">
               <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
-              <a href="#" class="a-angle-hover text-white-50">Offers</a>
+              <a href="#" class="a-angle-hover text-white-50">Earphones</a>
             </li>
             <li class="py-1 d-flex align-items-center text-white-50">
               <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
-              <a href="#" class="a-angle-hover text-white-50">Products</a>
+              <a href="#" class="a-angle-hover text-white-50">Television</a>
             </li>
             <li class="py-1 d-flex align-items-center text-white-50">
               <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
-              <a href="about.html" class="a-angle-hover text-white-50">About Us</a>
+              <a href="about.html" class="a-angle-hover text-white-50">Speakers</a>
             </li>
             <li class="py-1 d-flex align-items-center text-white-50">
               <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
-              <a href="#contact" class="a-angle-hover text-white-50">Contact Us</a>
+              <a href="#contact" class="a-angle-hover text-white-50">Headphones</a>
+            </li>
+            <li class="py-1 d-flex align-items-center text-white-50">
+              <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
+              <a href="#contact" class="a-angle-hover text-white-50">Camera</a>
             </li>
           </ul>
         </div>
@@ -438,17 +451,26 @@
         <div class="col-sm-6 col-lg-4 col-xl-3">
           <h4>How To Reach Us</h4>
           <ul class="list-unstyled reach">
-            <li class="text-white-50 py-1">
-              <span><i class="bx bxs-phone-call font-size-18 me-1"></i></span>+123456789
+            <li class="py-1">
+              <a href="https://api.whatsapp.com/send?phone=+96181781725" target="_blank" class="text-white-50">
+                <span><i class="bx bxs-phone-call font-size-18 me-1"></i></span>+123456789
+              </a>
             </li>
             <li class="text-white-50 py-1">
-              <a href="mailto:info.sotrelegend@gmail.com" class="text-color-main">
+              <a href="mailto:info.sotrelegend@gmail.com" class="underline-hover text-color-main">
                 <span><i class="bx bxl-gmail font-size-18 me-1"></i></span>
                 info.storelegend@gmail.com
               </a>
             </li>
-            <li class="d-flex text-white-50 py-1">
-              <span><i class="bx bx-world font-size-18 me-1"></i></span>Bakhoun - Sir El Denieh
+            <li class="d-flex py-1">
+              <a href="https://www.google.com/maps?q=+34.410539, +36.020574" class="text-white-50" target="_blank">
+                <span><i class='bx bx-map font-size-18 me-1'></i></span>Bakhoun - Sir El Denieh
+              </a>
+            </li>
+            <li class="d-flex py-1">
+              <a href="#" class="underline-hover text-color-main">
+                <span><i class='bx bx-envelope font-size-18 me-1'></i></span>Contact Us
+              </a>
             </li>
           </ul>
         </div>
@@ -473,7 +495,7 @@
         <div class="row">
           <div class="col-md-6 mb-3 mb-md-0 text-center text-md-start">
             Copyright &copy; 2023
-            <a href="#" class="text-white font-size-12">Legend Store</a>, All
+            <a href="#" class="text-white">Legend Store</a>, All
             right reserved
           </div>
           <div class="col-md-6">
