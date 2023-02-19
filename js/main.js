@@ -98,3 +98,12 @@ var swiper = new Swiper(".myProducts", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+var splide = new Splide(".splide", {
+  type: "loop",
+  perPage: 5,
+  perMove: 1,
+  autoplay: true,
+});
+
+splide.mount();

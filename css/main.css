@@ -345,6 +345,25 @@
 /* End Products */
 
 /************** Compoents **************/
+/* Start Clients */
+.clients img {
+  width: 120px;
+  height: 100px;
+  filter: grayscale(100%);
+}
+.clients img:hover {
+  filter: grayscale(0);
+}
+.clients .splide__slide {
+  text-align: center;
+}
+.clients .splide__arrow {
+  display: none;
+}
+.clients .splide__pagination {
+  display: none;
+}
+/* End Clients */
 /* Start Contact */
 @media (min-width: 768px) {
   .contact {
