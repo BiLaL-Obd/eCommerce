@@ -149,10 +149,8 @@
 }
 .navbar .form {
   position: absolute;
-  /* top: calc(100% + 5px); */
   top: 100%;
   right: -1000%;
-  /* right: 0; */
   width: 350px;
   z-index: 999;
   background-color: #dfdfdf;
