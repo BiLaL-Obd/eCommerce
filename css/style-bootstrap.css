@@ -45,8 +45,8 @@ body {
   border-radius: 50%;
 }
 .form-check-input {
-  width: 1.3em;
-  height: 1.3em;
+  width: 1.15em;
+  height: 1.15em;
   background-color: transparent;
   box-shadow: 0 0 1px 0.08rem var(--main-opacity-50);
   border: none;
