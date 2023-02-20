@@ -625,7 +625,8 @@
                                                     aria-valuemax="100"></div>
                                             </div>
                                         </div>
-                                        <input type="submit" class="btn btn-main rounded-pill mt-3" value="Add to Cart">
+                                        <input type="submit" class="btn btn-main rounded-pill mt-3" disabled
+                                            value="Add to Cart">
                                     </div>
                                 </div>
                             </div>
@@ -1242,6 +1243,17 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+
+        var splide = new Splide(".splide", {
+            type: "loop",
+            perPage: 5,
+            perMove: 1,
+            autoplay: true,
+        });
+
+        splide.mount();
+    </script>
 </body>
 
 </html>
