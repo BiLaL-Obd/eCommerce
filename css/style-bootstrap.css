@@ -210,6 +210,9 @@ a {
 }
 
 /************** Button *************/
+.btn:focus {
+  color: #fff !important;
+}
 .btn-main {
   background-image: linear-gradient(
     to right,
