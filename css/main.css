@@ -453,6 +453,14 @@
     background-size: 34% auto;
   }
 }
+@media (min-width: 768px) {
+  .news {
+    background-image: url("https://bilal-obd.github.io/eCommerce/images/svg/newsletter.svg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: calc(100vw - 15%) bottom;
+  }
+}
 /* End Contact */
 
 /****************   About   ****************/
