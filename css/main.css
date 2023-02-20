@@ -452,7 +452,7 @@
 /* Start Contact */
 @media (min-width: 768px) {
   .contact {
-    background-image: url("https://bilal-obd.github.io/eCommerce/images/svg/contact-sect.svg");
+    background-image: url("https://bilal-obd.github.io/eCommerce/admin/images/svg/contact-sect.svg");
     background-repeat: no-repeat;
     background-position: 0 70%;
     background-size: 34% auto;
@@ -483,10 +483,10 @@
   box-shadow: none;
 }
 .accordion-button::after {
-  background-image: url("https://bilal-obd.github.io/eCommerce/images/svg/plus.png");
+  background-image: url("https://bilal-obd.github.io/eCommerce/admin/images/svg/plus.png");
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url("https://bilal-obd.github.io/eCommerce/images/svg/minus.png");
+  background-image: url("https://bilal-obd.github.io/eCommerce/admin/images/svg/minus.png");
 }
 .accordion-button:not(.collapsed) {
   box-shadow: none;
