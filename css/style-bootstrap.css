@@ -16,6 +16,7 @@
 }
 body {
   background-color: var(--light-gray);
+  overflow-x: hidden;
 }
 /************* Form Control **********************/
 ::-webkit-scrollbar {
