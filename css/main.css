@@ -446,6 +446,9 @@
 .blogs .box {
   box-shadow: 0 0 1px 0.05rem var(--shadow);
 }
+.blogs .box img {
+  height: 250px;
+}
 /* End Blogs */
 
 /***************** Contact ******************/
