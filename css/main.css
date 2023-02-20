@@ -163,6 +163,15 @@
 }
 @media (max-width: 767px) {
   .navbar .form {
+    top: -1000%;
+    right: 0;
+  }
+  .navbar .form.active {
+    top: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .navbar .form {
     width: 320px;
   }
   .navbar .form.active {
@@ -284,6 +293,11 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 8;
+}
+@media (max-width: 767px) {
+  .landing .container .btn {
+    width: 75%;
+  }
 }
 /* End Landing */
 /* Start Features */
