@@ -18,7 +18,7 @@ body {
   background-color: var(--light-gray);
   overflow-x: hidden;
 }
-/************* Form Control **********************/
+/************* ScrollBar **********************/
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -43,6 +43,7 @@ body {
 }
 /************* Form Control **********************/
 .form-control {
+  padding: 0.8125rem 0.625rem;
   border: 1px solid var(--main-opacity-50);
   background: transparent;
   border-top: none;
