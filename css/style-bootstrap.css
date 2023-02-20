@@ -17,6 +17,20 @@
 body {
   background-color: var(--light-gray);
 }
+/************* Form Control **********************/
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-dark);
+}
+
 /************* Progress ***************/
 .progress {
   height: 3px;
