@@ -497,7 +497,7 @@
 }
 
 /***************** Categories ***********************/
-.categories .header .form-control {
+.categories .search .form-control {
   border: 1px solid var(--main);
 }
 .categories .search span {
@@ -507,6 +507,10 @@
 }
 .categories .box {
   box-shadow: var(--shadow);
+}
+.categories .box img {
+  width: 180px;
+  height: 180px;
 }
 .categories .content a {
   color: var(--dark);

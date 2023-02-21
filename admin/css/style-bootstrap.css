@@ -160,6 +160,9 @@ a {
 .font-size-14 {
   font-size: 0.875rem;
 }
+.font-size-15 {
+  font-size: 0.9375rem;
+}
 .font-size-16 {
   font-size: 1rem;
 }
@@ -191,6 +194,9 @@ a {
   font-size: 2rem;
 }
 /************** Font Weight **************8*/
+.fw-300 {
+  font-weight: 300;
+}
 .fw-400 {
   font-weight: 400;
 }
