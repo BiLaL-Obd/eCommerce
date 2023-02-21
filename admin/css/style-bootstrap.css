@@ -4,6 +4,7 @@
   --main-opacity-25: rgba(209, 22, 22, 0.25);
   --main-opacity-50: rgba(209, 22, 22, 0.5);
   --main-opacity-75: rgba(209, 22, 22, 0.75);
+  --shadow: 0 0 1px 0.05rem rgb(17 17 17 / 20%);
   --light-gray: #f6f6f7;
   --transition: 0.3s;
   --bg-dark: #111;
@@ -130,10 +131,11 @@ a {
 }
 
 /**************** Stars **************/
-.box .stars i {
+.stars i {
   font-size: 19px;
+  color: var(--bg-dark);
 }
-.box .stars i.checked {
+.stars i.checked {
   color: var(--main);
   font-weight: 700;
 }
@@ -283,4 +285,9 @@ a {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/****************** Box Shadow ***************/
+.box-shadow {
+  box-shadow: var(--shadow);
 }
