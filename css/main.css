@@ -5,7 +5,7 @@
   --main-opacity-50: rgba(209, 22, 22, 0.5);
   --main-opacity-65: rgba(209, 22, 22, 0.65);
   --main-opacity-75: rgba(209, 22, 22, 0.75);
-  --shadow: rgb(17 17 17 / 20%);
+  --shadow: 0 0 1px 0.05rem rgb(17 17 17 / 20%);
   --transition: 0.3s;
   --dark: #111;
 }
@@ -371,7 +371,7 @@
 /* End Services */
 /* Start Products */
 .products .box {
-  box-shadow: 0 0 1px 0.05rem var(--shadow);
+  box-shadow: var(--shadow);
 }
 @media (max-width: 767px) {
   .products .box .click-image {
@@ -380,8 +380,8 @@
 }
 .products .box .click-image img {
   cursor: pointer;
-  border: 1px solid var(--shadow);
-  box-shadow: 0 0 1px 0.05rem var(--shadow);
+  border: 1px solid rgb(17 17 17 / 20%);
+  box-shadow: var(--shadow);
   border-radius: 1rem;
   width: 80px;
   height: 80px;
@@ -444,7 +444,7 @@
 /******************** Blogs ********************/
 /* Start Blogs */
 .blogs .box {
-  box-shadow: 0 0 1px 0.05rem var(--shadow);
+  box-shadow: var(--shadow);
 }
 .blogs .box img {
   height: 250px;
@@ -494,4 +494,24 @@
 .accordion-button:not(.collapsed) {
   box-shadow: none;
   background-color: var(--main);
+}
+
+/***************** Categories ***********************/
+.categories .header .form-control {
+  border: 1px solid var(--main);
+}
+.categories .search span {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+.categories .box {
+  box-shadow: var(--shadow);
+}
+.categories .content a {
+  color: var(--dark);
+}
+.categories .content a:hover {
+  color: var(--main);
+  text-decoration: underline;
 }
