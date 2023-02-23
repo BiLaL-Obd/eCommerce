@@ -112,7 +112,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-main-dark header-2">
         <div class="container ps-1">
             <div class="position-relative">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerMenu"
+                <button class="navbar-toggler py-1" type="button" data-bs-toggle="collapse" data-bs-target="#headerMenu"
                     aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation"
                     style="height: fit-content">
                     <span class="navbar-toggler-icon"></span>
@@ -121,31 +121,11 @@
                     id="headerMenu">
                     <ul class="navbar-nav justify-content-start flex-grow-1">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle p-2 ps-lg-0 px-lg-3 text-uppercase d-flex align-items-center"
-                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link p-2 px-lg-3 text-uppercase d-flex align-items-center" aria-current="page"
+                                href="categories.html">
                                 <i class="bx bx-dialpad-alt d-none d-md-block font-size-30"></i>
-                                <span class="ps-lg-2 pe-4">Shop Categories</span>
+                                <span class="ps-lg-2 pe-4">Shop By Categories</span>
                             </a>
-                            <ul class="dropdown-menu bg-main-dark rounded-3">
-                                <li class="d-flex align-items-center text-white-50 px-3">
-                                    <a class="dropdown-item a-angle-hover text-white-50" href="#">Phones</a>
-                                </li>
-                                <li class="d-flex align-items-center text-white-50 px-3">
-                                    <a class="dropdown-item a-angle-hover text-white-50" href="#">Earphones</a>
-                                </li>
-                                <li class="d-flex align-items-center text-white-50 px-3">
-                                    <a class="dropdown-item a-angle-hover text-white-50" href="#">Television</a>
-                                </li>
-                                <li class="d-flex align-items-center text-white-50 px-3">
-                                    <a class="dropdown-item a-angle-hover text-white-50" href="#">Speakers</a>
-                                </li>
-                                <li class="d-flex align-items-center text-white-50 px-3">
-                                    <a class="dropdown-item a-angle-hover text-white-50" href="#">Headphones</a>
-                                </li>
-                                <li class="d-flex align-items-center text-white-50 px-3">
-                                    <a class="dropdown-item a-angle-hover text-white-50" href="#">Camera</a>
-                                </li>
-                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link p-2 px-lg-3 text-uppercase d-flex align-items-center" aria-current="page"
@@ -171,8 +151,9 @@
             </div>
             <div class="position-relative">
 
-                <button class="btn btn-language" type="button" data-bs-toggle="collapse" data-bs-target="#languageMenu"
-                    aria-controls="languageMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="btn btn-language py-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#languageMenu" aria-controls="languageMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="text-white font-size-14">En</span>
                 </button>
                 <div class="collapse position-absolute" id="languageMenu">
@@ -195,10 +176,16 @@
         <div class="container">
             <h1 class="text-uppercase text-center mb-5">Shop Categories</h1>
             <form class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 menu-filter">
                     <div class="row">
-                        <div class="col-12 mb-3">
-                            <div class="menu box-shadow rounded-4 p-3 px-4 bg-white">
+                        <div class="col-12 mb-1 close d-lg-none">
+                            <div class="p-1 px-4 bg-white d-flex align-items-center justify-content-end cursor-pointer">
+                                close
+                                <i class='bx bx-x font-size-20'></i>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="menu p-3 px-4">
                                 <ul class="list-unstyled">
                                     <li class="text-uppercase py-1">
                                         <h6> shop Categories</h6>
@@ -216,64 +203,65 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-12 mb-3">
-                            <div class="filter bg-white box-shadow p-3 px-4 rounded-4">
+                        <div class="col-12">
+                            <div class="filter  p-3 px-4">
                                 <h6 class="text-uppercase mb-3">Filter By :</h6>
-                                <div class="search mb-3 position-relative">
+                                <div class="search mb-4 position-relative">
                                     <input type="text" class="font-size-14 form-control rounded-pill p-2 px-4"
                                         placeholder="Search Here" name="" id="">
                                     <span class=" position-absolute"><i
                                             class='bx bx-search-alt-2 font-size-24'></i></span>
                                 </div>
-                                <div class="category mb-3">
-                                    <p class="fw-500 font-size-15 mb-1">Category</p>
-                                    <ul class="list-unstyled ps-2">
-                                        <li class="py-1">
-                                            <a href="#" class="font-size-13 a-angle-hover text-black fw-400">
+                                <div class="category mb-4">
+                                    <p class="fw-500 font-size-15 mb-1">Category Tag</p>
+                                    <ul class="list-unstyled d-flex flex-wrap gap-1">
+                                        <li>
+                                            <a href="#" class="font-size-13 text-black fw-400">
                                                 Phones
                                             </a>
                                         </li>
-                                        <li class="py-1">
-                                            <a href="#" class="font-size-13 a-angle-hover text-black fw-400">
-                                                Earphones
+                                        <li>
+                                            <a href="#" class="font-size-13 text-black fw-400">
+                                                Camera
                                             </a>
                                         </li>
-                                        <li class="py-1">
-                                            <a href="#" class="font-size-13 a-angle-hover text-black fw-400">
-                                                Television
-                                            </a>
-                                        </li>
-                                        <li class="py-1">
-                                            <a href="#" class="font-size-13 a-angle-hover text-black fw-400">
+                                        <li>
+                                            <a href="#" class="font-size-13 text-black fw-400">
                                                 Speakers
                                             </a>
                                         </li>
-                                        <li class="py-1">
-                                            <a href="#" class="font-size-13 a-angle-hover text-black fw-400">
-                                                Headphones
+                                        <li>
+                                            <a href="#" class="font-size-13 text-black fw-400">
+                                                Television
                                             </a>
                                         </li>
-                                        <li class="py-1">
-                                            <a href="#" class="font-size-13 a-angle-hover text-black fw-400">
-                                                Camera
+                                        <li>
+                                            <a href="#" class="font-size-13 text-black fw-400">
+                                                Earphones
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="font-size-13 text-black fw-400">
+                                                Headphones
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="price mb-3">
+                                <div class="price mb-4">
                                     <p class="fw-500 font-size-15 mb-1">Price</p>
                                     <div class="d-flex align-items-center gap-2 justify-content-between">
                                         <div class="d-flex align-items-end">
-                                            $ <input type="number" name="" min="1" value="10"
-                                                class="form-control ps-2 p-1 pb-0" placeholder="From" id="">
+                                            $ <input type="number" name="" min="1" class="form-control ps-2 p-1 pb-0"
+                                                placeholder="10.00" id="">
                                         </div>
                                         <div class="d-flex align-items-end">
-                                            $ <input type="number" name="" min="1" class="form-control ps-2 p-1 pb-0"
-                                                placeholder="To" id="">
+                                            $ <input type="number" name="" min="15" step="5"
+                                                class="form-control ps-2 p-1 pb-0" placeholder="To" id="">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="stars mb-3">
+                                <div class="stars mb-4">
                                     <p class="fw-500 font-size-15 mb-1">Stars</p>
                                     <ul class="list-unstyled">
                                         <li class="py-1">
@@ -347,13 +335,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <div
-                        class="header bg-white box-shadow p-1 px-4 mb-3 rounded-4 d-flex align-items-center justify-content-between">
-                        <h6 class="text-uppercase m-0">All</h6>
-                        <a href="categories.html" class="btn btn-main-alt rounded-pill font-size-12">Reset</a>
-                    </div>
+                <div class="col-md-9 list-filter">
                     <div class="row">
+                        <div class="col-12">
+                            <h6 class="text-uppercase ps-3">All</h6>
+                        </div>
+                        <div class="col-12">
+                            <div
+                                class="header bg-white box-shadow p-1 px-4 mb-3 rounded-4 d-flex align-items-center justify-content-between">
+                                <div class="category-filter cursor-pointer w-fit-content">
+                                    <i class='bx bx-slider-alt d-block d-lg-none bx-rotate-90 font-size-24'></i>
+                                </div>
+                                <a href="categories.html" class="btn btn-main-alt rounded-pill font-size-12">Reset</a>
+                            </div>
+                        </div>
                         <div class="col-md-6 col-xl-4 mb-3">
                             <div class="box bg-white rounded-4 p-2 py-3 position-relative overflow-hidden">
                                 <div class="label d-flex align-items-center justify-content-between flex-row-reverse">
@@ -637,7 +632,22 @@
                         <div class="col-12">
                             <div
                                 class="pagination bg-white box-shadow p-2 px-4 rounded-4 d-flex align-items-center justify-content-between">
-                                pagination
+                                <div class="count-products">
+                                    show 7 products from 50
+                                </div>
+                                <ul class="list-unstyled d-flex align-items-center gap-2 m-0">
+                                    <li>
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li class="pagination-next bg-transparent">
+                                        <a href="#" class="d-flex align-items-center justify-content-center">
+                                            <i class='bx bx-chevrons-right font-size-20'></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

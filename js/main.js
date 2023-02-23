@@ -11,6 +11,15 @@ $(document).click((e) => {
     $(".navbar .form").removeClass("active");
   }
 });
+
+// Categories pg
+$(".categories .list-filter .category-filter ").click(() => {
+  $(".categories .menu-filter").addClass("active");
+});
+$(".categories .menu-filter .close ").click(() => {
+  if ($(".categories .menu-filter").hasClass("active"))
+    $(".categories .menu-filter").removeClass("active");
+});
 // Windows Scroll
 $(document).ready(function () {
   $(window).scroll(function () {
