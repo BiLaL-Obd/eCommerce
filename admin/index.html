@@ -2,93 +2,416 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CMS LegendStore</title>
-    <!-- BoxIcon -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Swiper css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <!-- Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
 
-    <link rel="stylesheet" href="css/admin-style.css" />
-    <link rel="stylesheet" href="css/style-bootstrap.css" />
+  <!-- BoxIcon -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/framework.css" />
+  <link rel="stylesheet" href="css/admin-style.css" />
+  <link rel="stylesheet" href="css/style-bootstrap.css" />
 </head>
 
-<body style="height: 1000px;">
-    <!-- Start Header-1 -->
-    <nav class="navbar">
-        <div class="container">
-            <h5 class="navbar-brand m-0">Welcome Bilal</h5>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <i class='bx bx-cog font-size-22'></i>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+<body>
+  <div class="page d-flex">
+    <div class="sidebar bg-white p-2 p-md-4 position-relative">
+      <h3 class="position-relative d-none d-md-block font-size-20 txt-c mt-0">LegendStore</h3>
+      <h3 class="d-block d-md-none text-center">LS</h3>
+      <ul>
+        <li>
+          <a class="active d-flex align-center font-size-14 c-black rad-6 p-10" href="index.html">
+            <i class='bx bx-line-chart font-size-16'></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center font-size-14 c-black rad-6 p-10" href="projects.html">
+            <i class='bx bx-category font-size-16'></i>
+            <span>Categories</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center font-size-14 c-black rad-6 p-10" href="courses.html">
+            <i class='bx bx-store font-size-16'></i>
+            <span>Products</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center font-size-14 c-black rad-6 p-10" href="clients.html">
+            <i class='bx bx-user-circle font-size-16'></i>
+            <span>Clients</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center font-size-14 c-black rad-6 p-10" href="#">
+            <i class='bx bxl-blogger font-size-16'></i>
+            <span>Blogs</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content w-full">
+      <!-- Start Head -->
+      <div class="head bg-white p-3 d-flex align-items-center justify-content-end">
+        <div class="icons d-flex align-items-center gap-2">
+          <a href="#" class="notification position-relative">
+            <i class='bx bx-bell font-size-22'></i>
+          </a>
+          <a href="setting.html">
+            <i class='bx bx-cog font-size-22'></i>
+          </a>
+        </div>
+      </div>
+      <!-- End Head -->
+      <h1 class="position-relative">Dashboard</h1>
+      <div class="wrapper d-grid gap-20">
+        <!-- Start Welcome Widget -->
+        <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
+          <div class="intro p-20 d-flex space-between bg-eee">
+            <div>
+              <h2 class="m-0">Welcome</h2>
+              <p class="c-grey mt-1">Elzero</p>
             </div>
+            <img class="hide-mobile" src="imgs/welcome.png" alt="" />
+          </div>
+          <!-- <img src="imgs/avatar.png" alt="" class="avatar" /> -->
+          <div class="body txt-c d-flex align-items-center p-2 mt-20 mb-20 block-mobile">
+            <div>Osama Elzero</div>
+            <div>80 <span class="d-block c-grey font-size-14 mt-10">Projects</span></div>
+            <div>$8500 <span class="d-block c-grey font-size-14 mt-10">Earned</span></div>
+          </div>
+          <a href="profile.html" class="visit d-block font-size-14 bg-blue c-white w-fit btn-shape">Profile</a>
         </div>
-    </nav>
-    <!-- End Header-1 -->
-    <!-- Start Header-2 -->
-    <nav class="menu-bar navbar ps-2 position-fixed top-0 start-0 h-100">
-        <div class="h-100">
-            <a class="navbar-brand" href="#">Tech LS</a>
-            <ul class="navbar-nav pt-5 flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul>
+        <!-- End Welcome Widget -->
+        <!-- Start Quick Draft Widget -->
+        <div class="quick-draft p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Quick Draft</h2>
+          <p class="mt-0 mb-20 c-grey font-size-15">Write A Draft For Your Ideas</p>
+          <form>
+            <input class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" type="text" placeholder="Title" />
+            <textarea class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" placeholder="Your Thought"></textarea>
+            <input class="save d-block font-size-14 bg-blue c-white b-none w-fit btn-shape" type="submit"
+              value="Save" />
+          </form>
         </div>
-    </nav>
-    <!-- End Header-2 -->
+        <!-- End Quick Draft Widget -->
+      </div>
+      <!-- Start Projects Table -->
+      <div class="projects p-20 bg-white rad-10 m-20">
+        <h2 class="mt-0 mb-20">Projects</h2>
+        <div class="responsive-table">
+          <table class="font-size-15 w-full">
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Finish Date</td>
+                <td>Client</td>
+                <td>Price</td>
+                <td>Team</td>
+                <td>Status</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ministry Wikipedia</td>
+                <td>10 May 2022</td>
+                <td>Ministry</td>
+                <td>$5300</td>
+                <td>
+                  <img src="imgs/team-01.png" alt="" />
+                  <img src="imgs/team-02.png" alt="" />
+                  <img src="imgs/team-03.png" alt="" />
+                  <img src="imgs/team-05.png" alt="" />
+                </td>
+                <td>
+                  <span class="label btn-shape bg-orange c-white">Pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Elzero Shop</td>
+                <td>12 Oct 2021</td>
+                <td>Elzero Company</td>
+                <td>$1500</td>
+                <td>
+                  <img src="imgs/team-01.png" alt="" />
+                  <img src="imgs/team-02.png" alt="" />
+                  <img src="imgs/team-05.png" alt="" />
+                </td>
+                <td><span class="label btn-shape bg-blue c-white">In Progress</span></td>
+              </tr>
+              <tr>
+                <td>Bouba App</td>
+                <td>05 Sep 2021</td>
+                <td>Bouba</td>
+                <td>$800</td>
+                <td>
+                  <img src="imgs/team-02.png" alt="" />
+                  <img src="imgs/team-03.png" alt="" />
+                </td>
+                <td><span class="label btn-shape bg-green c-white">Completed</span></td>
+              </tr>
+              <tr>
+                <td>Mahmoud Website</td>
+                <td>22 May 2021</td>
+                <td>Mahmoud</td>
+                <td>$600</td>
+                <td>
+                  <img src="imgs/team-01.png" alt="" />
+                  <img src="imgs/team-02.png" alt="" />
+                </td>
+                <td><span class="label btn-shape bg-green c-white">Completed</span></td>
+              </tr>
+              <tr>
+                <td>Sayed Website</td>
+                <td>24 May 2021</td>
+                <td>Sayed</td>
+                <td>$300</td>
+                <td>
+                  <img src="imgs/team-01.png" alt="" />
+                  <img src="imgs/team-03.png" alt="" />
+                </td>
+                <td><span class="label btn-shape bg-red c-white">Rejected</span></td>
+              </tr>
+              <tr>
+                <td>Arena Application</td>
+                <td>01 Mar 2021</td>
+                <td>Arena Company</td>
+                <td>$2600</td>
+                <td>
+                  <img src="imgs/team-01.png" alt="" />
+                  <img src="imgs/team-02.png" alt="" />
+                  <img src="imgs/team-03.png" alt="" />
+                  <img src="imgs/team-04.png" alt="" />
+                </td>
+                <td><span class="label btn-shape bg-green c-white">Completed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- End Projects Table -->
+      <div class="wrapper d-grid gap-20">
+        <!-- Start Targets Widget -->
+        <div class="targets p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Yearly Targets</h2>
+          <p class="mt-0 mb-20 c-grey font-size-15">Targets Of The Year</p>
+          <div class="target-row mb-20 blue center-flex">
+            <div class="icon center-flex">
+              <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+            </div>
+            <div class="details">
+              <span class="font-size-14 c-grey">Money</span>
+              <span class="d-block mt-3 mb-10 fw-bold">$20.000</span>
+              <div class="progress position-relative">
+                <span class="bg-blue blue" style="width: 80%">
+                  <span class="bg-blue">80%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="target-row mb-20 center-flex orange">
+            <div class="icon center-flex">
+              <i class="fa-solid fa-code fa-lg c-orange"></i>
+            </div>
+            <div class="details">
+              <span class="font-size-14 c-grey">Projects</span>
+              <span class="d-block mt-3 mb-10 fw-bold">24</span>
+              <div class="progress position-relative">
+                <span class="bg-orange orange" style="width: 55%">
+                  <span class="bg-orange">55%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="target-row mb-20 center-flex green">
+            <div class="icon center-flex">
+              <i class="fa-solid fa-user fa-lg c-green"></i>
+            </div>
+            <div class="details">
+              <span class="font-size-14 c-grey">Team</span>
+              <span class="d-block mt-3 mb-10 fw-bold">12</span>
+              <div class="progress position-relative">
+                <span class="bg-green green" style="width: 75%">
+                  <span class="bg-green">75%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Targets Widget -->
+        <!-- Start Ticket Widget -->
+        <div class="tickets p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Tickets Statistics</h2>
+          <p class="mt-0 mb-20 c-grey font-size-15">Everything About Support Tickets</p>
+          <div class="d-flex txt-c gap-20 f-wrap">
+            <div class="box p-10 rad-10 font-size-13 c-grey">
+              <i class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"></i>
+              <span class="d-block c-black fw-bold font-size-24 mb-3">2500</span>
+              Total
+            </div>
+            <div class="box p-20 rad-10 font-size-13 c-grey">
+              <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+              <span class="d-block c-black fw-bold font-size-24 mb-3">500</span>
+              Pending
+            </div>
+            <div class="box p-20 rad-10 font-size-13 c-grey">
+              <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+              <span class="d-block c-black fw-bold font-size-24 mb-3">1900</span>
+              Closed
+            </div>
+            <div class="box p-20 rad-10 font-size-13 c-grey">
+              <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
+              <span class="d-block c-black fw-bold font-size-24 mb-3">100</span>
+              Deleted
+            </div>
+          </div>
+        </div>
+        <!-- End Ticket Widget -->
+        <!-- Start Latest News Widget -->
+        <div class="latest-news p-20 bg-white rad-10 txt-c-mobile">
+          <h2 class="mt-0 mb-20">Latest News</h2>
+          <div class="news-row d-flex align-center">
+            <img src="imgs/news-01.png" alt="" />
+            <div class="info">
+              <h3>Created SASS Section</h3>
+              <p class="m-0 font-size-14 c-grey">New SASS Examples & Tutorials</p>
+            </div>
+            <div class="btn-shape bg-eee font-size-13 label">3 Days Ago</div>
+          </div>
+          <div class="news-row d-flex align-center">
+            <img src="imgs/news-02.png" alt="" />
+            <div class="info">
+              <h3>Changed The Design</h3>
+              <p class="m-0 font-size-14 c-grey">A Brand New Website Design</p>
+            </div>
+            <div class="btn-shape bg-eee font-size-13 label">5 Days Ago</div>
+          </div>
+          <div class="news-row d-flex align-center">
+            <img src="imgs/news-03.png" alt="" />
+            <div class="info">
+              <h3>Team Increased</h3>
+              <p class="m-0 font-size-14 c-grey">3 Developers Joined The Team</p>
+            </div>
+            <div class="btn-shape bg-eee font-size-13 label">7 Days Ago</div>
+          </div>
+          <div class="news-row d-flex align-center">
+            <img src="imgs/news-04.png" alt="" />
+            <div class="info">
+              <h3>Added Payment Gateway</h3>
+              <p class="m-0 font-size-14 c-grey">Many New Payment Gateways Added</p>
+            </div>
+            <div class="btn-shape bg-eee font-size-13 label">9 Days Ago</div>
+          </div>
+        </div>
+        <!-- End Latest News Widget -->
+        <!-- Start Top Search Word Widget -->
+        <div class="search-items p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-20">Top Search Items</h2>
+          <div class="items-head d-flex space-between c-grey mb-10">
+            <div>Keyword</div>
+            <div>Search Count</div>
+          </div>
+          <div class="items d-flex space-between pt-15 pb-15">
+            <span>Programming</span>
+            <span class="bg-eee font-size-13 btn-shape">220</span>
+          </div>
+          <div class="items d-flex space-between pt-15 pb-15">
+            <span>JavaScript</span>
+            <span class="bg-eee btn-shape font-size-13">180</span>
+          </div>
+          <div class="items d-flex space-between pt-15 pb-15">
+            <span>PHP</span>
+            <span class="bg-eee btn-shape font-size-13">160</span>
+          </div>
+          <div class="items d-flex space-between pt-15 pb-15">
+            <span>Code</span>
+            <span class="bg-eee btn-shape font-size-13">145</span>
+          </div>
+          <div class="items d-flex space-between pt-15 pb-15">
+            <span>Design</span>
+            <span class="bg-eee btn-shape font-size-13">110</span>
+          </div>
+          <div class="items d-flex space-between pt-15 pb-15">
+            <span>Logic</span>
+            <span class="bg-eee btn-shape font-size-13">95</span>
+          </div>
+        </div>
+        <!-- End Top Search Word Widget -->
+        <!-- Start Reminders Widget -->
+        <div class="reminders p-20 bg-white rad-10 position-relative">
+          <h2 class="mt-0 mb-25">Reminders</h2>
+          <ul class="m-0">
+            <li class="d-flex align-center mt-15">
+              <span class="key bg-blue mr-15 d-block rad-half"></span>
+              <div class="pl-15 blue">
+                <p class="font-size-14 fw-bold mt-0 mb-3">Check My Tasks List</p>
+                <span class="font-size-13 c-grey">28/09/2022 - 12:00am</span>
+              </div>
+            </li>
+            <li class="d-flex align-center mt-15">
+              <span class="key bg-green mr-15 d-block rad-half"></span>
+              <div class="pl-15 green">
+                <p class="font-size-14 fw-bold mt-0 mb-3">Check My Projects</p>
+                <span class="font-size-13 c-grey">26/10/2022 - 12:00am</span>
+              </div>
+            </li>
+            <li class="d-flex align-center mt-15">
+              <span class="key bg-orange mr-15 d-block rad-half"></span>
+              <div class="pl-15 orange">
+                <p class="font-size-14 fw-bold mt-0 mb-3">Call All My Clients</p>
+                <span class="font-size-13 c-grey">05/11/2022 - 12:00am</span>
+              </div>
+            </li>
+            <li class="d-flex align-center mt-15">
+              <span class="key bg-red mr-15 d-block rad-half"></span>
+              <div class="pl-15 red">
+                <p class="font-size-14 fw-bold mt-0 mb-3">Finish The Development Workshop</p>
+                <span class="font-size-13 c-grey">20/12/2022 - 12:00am</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- End Reminders Widget -->
+        <!-- Start Latest Post Widget -->
+        <div class="latest-post p-20 bg-white rad-10 position-relative">
+          <h2 class="mt-0 mb-25">Latest Blog</h2>
+          <div class="top d-flex align-center">
+            <img class="avatar mr-15" src="imgs/avatar.png" alt="" />
+            <div class="info">
+              <span class="d-block mb-5 fw-bold">Osama Elzero</span>
+              <span class="c-grey">About 3 Hours Ago</span>
+            </div>
+          </div>
+          <div class="post-content txt-c-mobile pt-20 pb-20 mt-20 mb-20">
+            You can fool all of the people some of the time, and some of the people all of the time, but you can't
+            fool all of the people all of the time.
+          </div>
+          <div class="post-stats between-flex c-grey">
+            <div>
+              <i class="fa-regular fa-heart"></i>
+              <span>1.8K</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-comments"></i>
+              <span>500</span>
+            </div>
+          </div>
+        </div>
+        <!-- End Latest Post Widget -->
+      </div>
 
+    </div>
+  </div>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Script -->
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="js/admin-js.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="js/admin-js.js"></script>
 </body>
 
 </html>
