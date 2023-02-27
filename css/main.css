@@ -67,6 +67,7 @@
     top: 100%;
     border-top-left-radius: 0px !important;
     border-top-right-radius: 0px !important;
+    width: 250px;
   }
 }
 .navbar.header-2 #languageMenu {
