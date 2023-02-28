@@ -88,12 +88,15 @@ ul {
   }
   .sidebar > h3 {
     font-size: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 /*   .sidebar > h3::before,
   .sidebar > h3::after {
     display: none;
   } */
+  .sidebar > h3::before {
+    width: 40px;
+  }
   .sidebar ul li a span {
     display: none;
   }
