@@ -328,7 +328,7 @@ ul {
 }
 @media (max-width: 767px) {
   .latest-news .news-row {
-    display: block;
+    display: block !important;
   }
   .latest-news .news-row .label {
     margin: 10px auto;
