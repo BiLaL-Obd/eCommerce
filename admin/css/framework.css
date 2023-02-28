@@ -247,4 +247,6 @@
 }
 /* End Components */
 /* Start Box Shadow */
-.box-shadow : var(--shadow);
+.box-shadow {
+  box-shadow: var(--shadow)
+}
