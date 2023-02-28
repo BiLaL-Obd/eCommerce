@@ -58,7 +58,7 @@ ul {
   left: 50%;
 }
 .sidebar > h3::before {
-  width: 80px;
+  width: calc(100% - 50px);
   height: 2px;
   bottom: -8px;
 }
@@ -87,13 +87,13 @@ ul {
     padding: 10px;
   }
   .sidebar > h3 {
-    font-size: 13px;
-    margin-bottom: 15px;
+    font-size: 15px;
+    margin-bottom: 40px;
   }
-  .sidebar > h3::before,
+/*   .sidebar > h3::before,
   .sidebar > h3::after {
     display: none;
-  }
+  } */
   .sidebar ul li a span {
     display: none;
   }
