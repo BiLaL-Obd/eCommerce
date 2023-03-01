@@ -23,6 +23,3 @@
 
 		<!-- Summernote JS -->
 		<script src="assets/plugins/summernote/dist/summernote-bs4.min.js"></script>
-
-		<!-- Custom JS -->
-		<script src="assets/js/app.js"></script>

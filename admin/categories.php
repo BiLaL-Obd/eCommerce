@@ -148,6 +148,4 @@
 <!-- /Page Wrapper -->
 
 <?php include('partials/footer.php') ?>
-</body>
-
-</html>
+<?php include('partials/foot.php') ?>
