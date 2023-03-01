@@ -3,31 +3,27 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <h4>Shop By Category</h4>
+                    <h4>Our Menu</h4>
                     <ul class="list-unstyled">
                         <li class="py-1 d-flex align-items-center text-white-50">
                             <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
-                            <a href="#" class="a-angle-hover text-white-50">Phones</a>
+                            <a href="index.php" class="a-angle-hover text-white-50">Home</a>
                         </li>
                         <li class="py-1 d-flex align-items-center text-white-50">
                             <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
-                            <a href="#" class="a-angle-hover text-white-50">Earphones</a>
+                            <a href="categories.php" class="a-angle-hover text-white-50">Shop By Categories</a>
                         </li>
                         <li class="py-1 d-flex align-items-center text-white-50">
                             <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
-                            <a href="#" class="a-angle-hover text-white-50">Television</a>
+                            <a href="blogs.php" class="a-angle-hover text-white-50">Blogs</a>
                         </li>
                         <li class="py-1 d-flex align-items-center text-white-50">
                             <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
-                            <a href="about.php" class="a-angle-hover text-white-50">Speakers</a>
+                            <a href="about.php" class="a-angle-hover text-white-50">About Us</a>
                         </li>
                         <li class="py-1 d-flex align-items-center text-white-50">
                             <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
-                            <a href="#contact" class="a-angle-hover text-white-50">Headphones</a>
-                        </li>
-                        <li class="py-1 d-flex align-items-center text-white-50">
-                            <span><i class="bx bx-right-arrow-alt font-size-18 me-1"></i></span>
-                            <a href="#contact" class="a-angle-hover text-white-50">Camera</a>
+                            <a href="contact.php" class="a-angle-hover text-white-50">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -79,34 +75,8 @@
                 </div>
             </div>
         </div>
-        <div class="copyright font-size-10">
-            <span class="border-top border-danger d-block w-100"></span>
-            <div class="container py-2">
-                <div class="row">
-                    <div class="col-md-6 mb-3 mb-md-0 text-center text-md-start">
-                        Copyright &copy; 2023
-                        <a href="admin/index.php" class="text-white cursor-default">Legend Store</a>, All
-                        right reserved
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="list-unstyled d-flex justify-content-between align-items-center mb-0">
-                            <li>
-                                <a href="#" class="text-white">General Terms</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-white">Events Terms</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-white">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-white">Disclamer</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+        <?php include('copyright.php') ?>
     </div>
     <!-- End Footer -->
     <!-- Start Scroll -->
