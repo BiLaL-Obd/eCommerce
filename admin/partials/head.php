@@ -31,6 +31,9 @@
     <!-- Datatable CSS -->
     <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
 
+    <!-- Summernote CSS -->
+    <link rel="stylesheet" href="assets/plugins/summernote/dist/summernote-bs4.css">
+
     <!-- Datetimepicker CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
 

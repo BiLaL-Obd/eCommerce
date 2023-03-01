@@ -818,3 +818,6 @@
 <!-- /Page Wrapper -->
 
 <?php include('partials/footer.php') ?>
+</body>
+
+</html>

@@ -10,11 +10,6 @@
 		<!-- Slimscroll JS -->
 		<script src="assets/js/jquery.slimscroll.min.js"></script>
 
-		<!-- Chart JS -->
-		<script src="assets/plugins/morris/morris.min.js"></script>
-		<script src="assets/plugins/raphael/raphael.min.js"></script>
-		<script src="assets/js/chart.js"></script>
-
 		<!-- Select2 JS -->
 		<script src="assets/js/select2.min.js"></script>
 
@@ -26,9 +21,8 @@
 		<script src="assets/js/moment.min.js"></script>
 		<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
 
+		<!-- Summernote JS -->
+		<script src="assets/plugins/summernote/dist/summernote-bs4.min.js"></script>
+
 		<!-- Custom JS -->
 		<script src="assets/js/app.js"></script>
-
-		</body>
-
-		</html>
