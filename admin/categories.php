@@ -17,11 +17,11 @@
 					<h3 class="page-title">Categories</h3>
 					<ul class="breadcrumb">
 						<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-						<li class="breadcrumb-item active">Accounts</li>
+						<li class="breadcrumb-item active">Categories</li>
 					</ul>
 				</div>
 				<div class="col-auto float-right ml-auto">
-					<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_categories"><i class="fa fa-plus"></i> Add Categories</a>
+					<a href="#" class="btn add-btn btn-sm" data-toggle="modal" data-target="#add_categories"><i class="fa fa-plus"></i> Add Categories</a>
 				</div>
 			</div>
 		</div>
@@ -35,51 +35,52 @@
 							<tr>
 								<th>#</th>
 								<th>Category Name </th>
-								<th>Sub-Category Name</th>
-								<th class="text-right">Action</th>
+								<th>isActive</th>
+								<th>Quantity</th>
+								<th class="text-right">Manage</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>1</td>
 								<td>Hardware</td>
-								<td>Hardware Expenses</td>
-								<td class="text-right">
-									<div class="dropdown dropdown-action">
-										<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_categories"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-											<a class="dropdown-item" href="sub-category.html"><i class="fa fa-object-ungroup m-r-5"></i> Sub-Category </a>
-										</div>
+								<td>
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="customSwitch1">
+										<label class="custom-control-label" for="customSwitch1"></label>
 									</div>
+								</td>
+								<td>4</td>
+								<td class="text-right">
+									<a class="" href="#" data-toggle="modal" data-target="#edit_categories"><i class="fa fa-pencil"></i> Edit</a>
 								</td>
 							</tr>
 							<tr>
 								<td>2</td>
-								<td>Material</td>
-								<td>Material Expenses</td>
-								<td class="text-right">
-									<div class="dropdown dropdown-action">
-										<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_categories"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-											<a class="dropdown-item" href="sub-category.html"><i class="fa fa-object-ungroup m-r-5"></i> Sub-Category </a>
-										</div>
+								<td>PHones</td>
+								<td>
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+										<label class="custom-control-label" for="customSwitch1"></label>
 									</div>
+								</td>
+								<td>10</td>
+								<td class="text-right">
+									<a class="" href="#" data-toggle="modal" data-target="#edit_categories"><i class="fa fa-pencil"></i> Edit</a>
 								</td>
 							</tr>
 							<tr>
 								<td>3</td>
-								<td>Vehicle</td>
-								<td>Company Vehicle Information</td>
-								<td class="text-right">
-									<div class="dropdown dropdown-action">
-										<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_categories"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-											<a class="dropdown-item" href="sub-category.html"><i class="fa fa-object-ungroup m-r-5"></i> Sub-Category </a>
-										</div>
+								<td>TV</td>
+								<td>
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+										<label class="custom-control-label" for="customSwitch1"></label>
 									</div>
+								</td>
+								<td>15</td>
+								<td class="text-right">
+									<a class="" href="#" data-toggle="modal" data-target="#edit_categories"><i class="fa fa-pencil"></i> Edit</a>
 								</td>
 							</tr>
 						</tbody>

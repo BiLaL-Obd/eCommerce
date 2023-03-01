@@ -1015,6 +1015,18 @@
             perPage: 5,
             perMove: 1,
             autoplay: true,
+            breakpoints: {
+                991: {
+                    perPage: 4,
+                    gap: '.7rem',
+                    height: '6rem',
+                },
+                767: {
+                    perPage: 3,
+                    gap: '.7rem',
+                    height: '6rem',
+                },
+            },
         });
 
         splide.mount();

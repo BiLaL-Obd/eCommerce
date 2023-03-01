@@ -9,13 +9,13 @@
                     <a class="active" href="index.php"><i class="la la-dashboard"></i> <span>
                             Dashboard</span></a>
                 </li>
-                <li>
-                    <a href="clients.php"><i class="la la-users"></i> <span>Clients</span></a>
-                </li>
                 <li><a href="categories.php"><i class="la la-files-o"></i> <span> Categories </span></a></li>
-                <li><a href="projects.php"><i class="la la-rocket"></i> <span> Projects</span></a></li>
+                <li><a href="projects.php"><i class="la la-rocket"></i> <span> Products</span></a></li>
                 <li>
                     <a href="blogs.php"><i class="la la-file-pdf-o"></i> <span>Blogs</span></a>
+                </li>
+                <li>
+                    <a href="clients.php"><i class="la la-users"></i> <span>Clients</span></a>
                 </li>
                 <li class="menu-title">
                     <span>Employees</span>
