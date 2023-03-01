@@ -263,6 +263,7 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="profile.php">My Profile</a>
                         <a class="dropdown-item" href="settings.php">Settings</a>
+                        <a class="dropdown-item" href="../index.php">Visite Webs.</a>
                         <a class="dropdown-item" href="login.php">Logout</a>
                     </div>
                 </li>
