@@ -60,8 +60,8 @@
 								<td>PHones</td>
 								<td>
 									<div class="custom-control custom-switch">
-										<input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-										<label class="custom-control-label" for="customSwitch1"></label>
+										<input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
+										<label class="custom-control-label" for="customSwitch2"></label>
 									</div>
 								</td>
 								<td>10</td>
@@ -74,8 +74,8 @@
 								<td>TV</td>
 								<td>
 									<div class="custom-control custom-switch">
-										<input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-										<label class="custom-control-label" for="customSwitch1"></label>
+										<input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
+										<label class="custom-control-label" for="customSwitch3"></label>
 									</div>
 								</td>
 								<td>15</td>

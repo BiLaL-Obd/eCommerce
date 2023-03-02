@@ -1,0 +1,10 @@
+.custom-switch .custom-control-label::after {
+  width: calc(1rem - 8px);
+  height: calc(1rem - 8px);
+}
+.custom-switch .custom-control-label::before {
+  width: 1.5rem;
+}
+.custom-control-label::before {
+  height: 0.8rem;
+}

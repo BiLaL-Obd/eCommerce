@@ -53,7 +53,7 @@
 						<span class="dash-widget-icon"><i class="fa fa-diamond"></i></span>
 						<div class="dash-widget-info">
 							<h3>37</h3>
-							<span>Tasks</span>
+							<span>Blogs</span>
 						</div>
 					</div>
 				</div>
@@ -259,7 +259,7 @@
 						</h4>
 						<div class="leave-info-box">
 							<div class="media align-items-center">
-								<a href="profile.html" class="avatar"><img alt="" src="assets/img/user.jpg"></a>
+								<a href="profile.php" class="avatar"><img alt="" src="assets/img/user.jpg"></a>
 								<div class="media-body">
 									<div class="text-sm my-0">Martin Lewis</div>
 								</div>
@@ -276,7 +276,7 @@
 						</div>
 						<div class="leave-info-box">
 							<div class="media align-items-center">
-								<a href="profile.html" class="avatar"><img alt="" src="assets/img/user.jpg"></a>
+								<a href="profile.php" class="avatar"><img alt="" src="assets/img/user.jpg"></a>
 								<div class="media-body">
 									<div class="text-sm my-0">Martin Lewis</div>
 								</div>
@@ -320,7 +320,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td><a href="invoice-view.html">#INV-0001</a></td>
+										<td><a href="invoice-view.php">#INV-0001</a></td>
 										<td>
 											<h2><a href="#">Global Technologies</a></h2>
 										</td>
@@ -331,7 +331,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td><a href="invoice-view.html">#INV-0002</a></td>
+										<td><a href="invoice-view.php">#INV-0002</a></td>
 										<td>
 											<h2><a href="#">Delta Infotech</a></h2>
 										</td>
@@ -342,7 +342,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td><a href="invoice-view.html">#INV-0003</a></td>
+										<td><a href="invoice-view.php">#INV-0003</a></td>
 										<td>
 											<h2><a href="#">Cream Inc</a></h2>
 										</td>
@@ -357,7 +357,7 @@
 						</div>
 					</div>
 					<div class="card-footer">
-						<a href="invoices.html">View all invoices</a>
+						<a href="invoices.php">View all invoices</a>
 					</div>
 				</div>
 			</div>
@@ -380,7 +380,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td><a href="invoice-view.html">#INV-0001</a></td>
+										<td><a href="invoice-view.php">#INV-0001</a></td>
 										<td>
 											<h2><a href="#">Global Technologies</a></h2>
 										</td>
@@ -389,7 +389,7 @@
 										<td>$380</td>
 									</tr>
 									<tr>
-										<td><a href="invoice-view.html">#INV-0002</a></td>
+										<td><a href="invoice-view.php">#INV-0002</a></td>
 										<td>
 											<h2><a href="#">Delta Infotech</a></h2>
 										</td>
@@ -398,7 +398,7 @@
 										<td>$500</td>
 									</tr>
 									<tr>
-										<td><a href="invoice-view.html">#INV-0003</a></td>
+										<td><a href="invoice-view.php">#INV-0003</a></td>
 										<td>
 											<h2><a href="#">Cream Inc</a></h2>
 										</td>
@@ -411,7 +411,7 @@
 						</div>
 					</div>
 					<div class="card-footer">
-						<a href="payments.html">View all payments</a>
+						<a href="payments.php">View all payments</a>
 					</div>
 				</div>
 			</div>
@@ -439,7 +439,7 @@
 										<td>
 											<h2 class="table-avatar">
 												<a href="#" class="avatar"><img alt="" src="assets/img/profiles/avatar-19.jpg"></a>
-												<a href="client-profile.html">Barry Cuda <span>CEO</span></a>
+												<a href="client-profile.php">Barry Cuda <span>CEO</span></a>
 											</h2>
 										</td>
 										<td>barrycuda@example.com</td>
@@ -470,7 +470,7 @@
 										<td>
 											<h2 class="table-avatar">
 												<a href="#" class="avatar"><img alt="" src="assets/img/profiles/avatar-19.jpg"></a>
-												<a href="client-profile.html">Tressa Wexler
+												<a href="client-profile.php">Tressa Wexler
 													<span>Manager</span></a>
 											</h2>
 										</td>
@@ -501,8 +501,8 @@
 									<tr>
 										<td>
 											<h2 class="table-avatar">
-												<a href="client-profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-07.jpg"></a>
-												<a href="client-profile.html">Ruby Bartlett <span>CEO</span></a>
+												<a href="client-profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-07.jpg"></a>
+												<a href="client-profile.php">Ruby Bartlett <span>CEO</span></a>
 											</h2>
 										</td>
 										<td>rubybartlett@example.com</td>
@@ -532,8 +532,8 @@
 									<tr>
 										<td>
 											<h2 class="table-avatar">
-												<a href="client-profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-06.jpg"></a>
-												<a href="client-profile.html"> Misty Tison <span>CEO</span></a>
+												<a href="client-profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-06.jpg"></a>
+												<a href="client-profile.php"> Misty Tison <span>CEO</span></a>
 											</h2>
 										</td>
 										<td>mistytison@example.com</td>
@@ -563,8 +563,8 @@
 									<tr>
 										<td>
 											<h2 class="table-avatar">
-												<a href="client-profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-14.jpg"></a>
-												<a href="client-profile.html"> Daniel Deacon
+												<a href="client-profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-14.jpg"></a>
+												<a href="client-profile.php"> Daniel Deacon
 													<span>CEO</span></a>
 											</h2>
 										</td>
@@ -597,7 +597,7 @@
 						</div>
 					</div>
 					<div class="card-footer">
-						<a href="clients.html">View all clients</a>
+						<a href="clients.php">View all clients</a>
 					</div>
 				</div>
 			</div>
@@ -619,7 +619,7 @@
 								<tbody>
 									<tr>
 										<td>
-											<h2><a href="project-view.html">Office Management</a></h2>
+											<h2><a href="project-view.php">Office Management</a></h2>
 											<small class="block text-ellipsis">
 												<span>1</span> <span class="text-muted">open tasks, </span>
 												<span>9</span> <span class="text-muted">tasks completed</span>
@@ -642,7 +642,7 @@
 									</tr>
 									<tr>
 										<td>
-											<h2><a href="project-view.html">Project Management</a></h2>
+											<h2><a href="project-view.php">Project Management</a></h2>
 											<small class="block text-ellipsis">
 												<span>2</span> <span class="text-muted">open tasks, </span>
 												<span>5</span> <span class="text-muted">tasks completed</span>
@@ -665,7 +665,7 @@
 									</tr>
 									<tr>
 										<td>
-											<h2><a href="project-view.html">Video Calling App</a></h2>
+											<h2><a href="project-view.php">Video Calling App</a></h2>
 											<small class="block text-ellipsis">
 												<span>3</span> <span class="text-muted">open tasks, </span>
 												<span>3</span> <span class="text-muted">tasks completed</span>
@@ -688,7 +688,7 @@
 									</tr>
 									<tr>
 										<td>
-											<h2><a href="project-view.html">Hospital Administration</a></h2>
+											<h2><a href="project-view.php">Hospital Administration</a></h2>
 											<small class="block text-ellipsis">
 												<span>12</span> <span class="text-muted">open tasks, </span>
 												<span>4</span> <span class="text-muted">tasks completed</span>
@@ -711,7 +711,7 @@
 									</tr>
 									<tr>
 										<td>
-											<h2><a href="project-view.html">Digital Marketplace</a></h2>
+											<h2><a href="project-view.php">Digital Marketplace</a></h2>
 											<small class="block text-ellipsis">
 												<span>7</span> <span class="text-muted">open tasks, </span>
 												<span>14</span> <span class="text-muted">tasks completed</span>
@@ -738,7 +738,7 @@
 						</div>
 					</div>
 					<div class="card-footer">
-						<a href="projects.html">View all projects</a>
+						<a href="projects.php">View all projects</a>
 					</div>
 				</div>
 			</div>
