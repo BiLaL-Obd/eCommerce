@@ -757,6 +757,5 @@
 <script src="assets/plugins/morris/morris.min.js"></script>
 <script src="assets/plugins/raphael/raphael.min.js"></script>
 <script src="assets/js/chart.js"></script>
-</body>
 
-</html>
+<?php include('partials/foot.php') ?>

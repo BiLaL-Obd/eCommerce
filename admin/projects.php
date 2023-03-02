@@ -14,15 +14,15 @@
 				<div class="col">
 					<h3 class="page-title">Projects</h3>
 					<ul class="breadcrumb">
-						<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+						<li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
 						<li class="breadcrumb-item active">Projects</li>
 					</ul>
 				</div>
 				<div class="col-auto float-right ml-auto">
 					<a href="#" class="btn add-btn" data-toggle="modal" data-target="#create_project"><i class="fa fa-plus"></i> Create Project</a>
 					<div class="view-icons">
-						<a href="projects.html" class="grid-view btn btn-link active"><i class="fa fa-th"></i></a>
-						<a href="project-list.html" class="list-view btn btn-link"><i class="fa fa-bars"></i></a>
+						<a href="projects.php" class="grid-view btn btn-link active"><i class="fa fa-th"></i></a>
+						<a href="project-list.php" class="list-view btn btn-link"><i class="fa fa-bars"></i></a>
 					</div>
 				</div>
 			</div>
@@ -72,7 +72,7 @@
 								<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_project"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 							</div>
 						</div>
-						<h4 class="project-title"><a href="project-view.html">Office Management</a></h4>
+						<h4 class="project-title"><a href="project-view.php">Office Management</a></h4>
 						<small class="block text-ellipsis m-b-15">
 							<span class="text-xs">1</span> <span class="text-muted">open tasks, </span>
 							<span class="text-xs">9</span> <span class="text-muted">tasks completed</span>
@@ -184,7 +184,7 @@
 								<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_project"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 							</div>
 						</div>
-						<h4 class="project-title"><a href="project-view.html">Project Management</a></h4>
+						<h4 class="project-title"><a href="project-view.php">Project Management</a></h4>
 						<small class="block text-ellipsis m-b-15">
 							<span class="text-xs">2</span> <span class="text-muted">open tasks, </span>
 							<span class="text-xs">5</span> <span class="text-muted">tasks completed</span>
@@ -296,7 +296,7 @@
 								<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_project"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 							</div>
 						</div>
-						<h4 class="project-title"><a href="project-view.html">Video Calling App</a></h4>
+						<h4 class="project-title"><a href="project-view.php">Video Calling App</a></h4>
 						<small class="block text-ellipsis m-b-15">
 							<span class="text-xs">3</span> <span class="text-muted">open tasks, </span>
 							<span class="text-xs">3</span> <span class="text-muted">tasks completed</span>
@@ -408,7 +408,7 @@
 								<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_project"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 							</div>
 						</div>
-						<h4 class="project-title"><a href="project-view.html">Hospital Administration</a></h4>
+						<h4 class="project-title"><a href="project-view.php">Hospital Administration</a></h4>
 						<small class="block text-ellipsis m-b-15">
 							<span class="text-xs">12</span> <span class="text-muted">open tasks, </span>
 							<span class="text-xs">4</span> <span class="text-muted">tasks completed</span>
@@ -818,6 +818,5 @@
 <!-- /Page Wrapper -->
 
 <?php include('partials/footer.php') ?>
-</body>
 
-</html>
+<?php include('partials/foot.php') ?>

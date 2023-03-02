@@ -27,6 +27,7 @@
                         <li><a href="holidays.php">Holidays</a></li>
                         <li><a href="leaves-employee.php">Leaves Employee</a></li>
                         <li><a href="overtime.php">Overtime</a></li>
+                        <li><a href="salary.php">Employee Salary</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">

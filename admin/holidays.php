@@ -220,3 +220,4 @@
 <!-- /Page Wrapper -->
 
 <?php include('partials/footer.php') ?>
+<?php include('partials/foot.php') ?>

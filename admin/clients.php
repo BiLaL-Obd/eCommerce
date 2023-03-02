@@ -16,15 +16,15 @@
 				<div class="col">
 					<h3 class="page-title">Clients</h3>
 					<ul class="breadcrumb">
-						<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+						<li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
 						<li class="breadcrumb-item active">Clients</li>
 					</ul>
 				</div>
 				<div class="col-auto float-right ml-auto">
 					<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_client"><i class="fa fa-plus"></i> Add Client</a>
 					<div class="view-icons">
-						<a href="clients.html" class="grid-view btn btn-link active"><i class="fa fa-th"></i></a>
-						<a href="clients-list.html" class="list-view btn btn-link"><i class="fa fa-bars"></i></a>
+						<a href="clients.php" class="grid-view btn btn-link active"><i class="fa fa-th"></i></a>
+						<a href="clients-list.php" class="list-view btn btn-link"><i class="fa fa-bars"></i></a>
 					</div>
 				</div>
 			</div>
@@ -65,7 +65,7 @@
 			<div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
 				<div class="profile-widget">
 					<div class="profile-img">
-						<a href="client-profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-19.jpg"></a>
+						<a href="client-profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-19.jpg"></a>
 					</div>
 					<div class="dropdown profile-action">
 						<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -74,17 +74,17 @@
 							<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_client"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 						</div>
 					</div>
-					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Global Technologies</a></h4>
-					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Barry Cuda</a></h5>
+					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Global Technologies</a></h4>
+					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Barry Cuda</a></h5>
 					<div class="small text-muted">CEO</div>
-					<a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-					<a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+					<a href="chat.php" class="btn btn-white btn-sm m-t-10">Message</a>
+					<a href="client-profile.php" class="btn btn-white btn-sm m-t-10">View Profile</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
 				<div class="profile-widget">
 					<div class="profile-img">
-						<a href="client-profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-29.jpg"></a>
+						<a href="client-profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-29.jpg"></a>
 					</div>
 					<div class="dropdown profile-action">
 						<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -93,17 +93,17 @@
 							<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_client"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 						</div>
 					</div>
-					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Delta Infotech</a></h4>
-					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Tressa Wexler</a></h5>
+					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Delta Infotech</a></h4>
+					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Tressa Wexler</a></h5>
 					<div class="small text-muted">Manager</div>
-					<a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-					<a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+					<a href="chat.php" class="btn btn-white btn-sm m-t-10">Message</a>
+					<a href="client-profile.php" class="btn btn-white btn-sm m-t-10">View Profile</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
 				<div class="profile-widget">
 					<div class="profile-img">
-						<a href="client-profile.html" class="avatar"><img src="assets/img/profiles/avatar-07.jpg" alt=""></a>
+						<a href="client-profile.php" class="avatar"><img src="assets/img/profiles/avatar-07.jpg" alt=""></a>
 					</div>
 					<div class="dropdown profile-action">
 						<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -112,17 +112,17 @@
 							<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_client"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 						</div>
 					</div>
-					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Cream Inc</a></h4>
-					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Ruby Bartlett</a></h5>
+					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Cream Inc</a></h4>
+					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Ruby Bartlett</a></h5>
 					<div class="small text-muted">CEO</div>
-					<a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-					<a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+					<a href="chat.php" class="btn btn-white btn-sm m-t-10">Message</a>
+					<a href="client-profile.php" class="btn btn-white btn-sm m-t-10">View Profile</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
 				<div class="profile-widget">
 					<div class="profile-img">
-						<a href="client-profile.html" class="avatar"><img src="assets/img/profiles/avatar-06.jpg" alt=""></a>
+						<a href="client-profile.php" class="avatar"><img src="assets/img/profiles/avatar-06.jpg" alt=""></a>
 					</div>
 					<div class="dropdown profile-action">
 						<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -131,17 +131,17 @@
 							<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_client"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 						</div>
 					</div>
-					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Wellware Company</a></h4>
-					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Misty Tison</a></h5>
+					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Wellware Company</a></h4>
+					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Misty Tison</a></h5>
 					<div class="small text-muted">CEO</div>
-					<a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-					<a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+					<a href="chat.php" class="btn btn-white btn-sm m-t-10">Message</a>
+					<a href="client-profile.php" class="btn btn-white btn-sm m-t-10">View Profile</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
 				<div class="profile-widget">
 					<div class="profile-img">
-						<a href="client-profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-14.jpg"></a>
+						<a href="client-profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-14.jpg"></a>
 					</div>
 					<div class="dropdown profile-action">
 						<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -150,17 +150,17 @@
 							<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_client"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 						</div>
 					</div>
-					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Mustang Technologies</a></h4>
-					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Daniel Deacon</a></h5>
+					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Mustang Technologies</a></h4>
+					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Daniel Deacon</a></h5>
 					<div class="small text-muted">CEO</div>
-					<a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-					<a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+					<a href="chat.php" class="btn btn-white btn-sm m-t-10">Message</a>
+					<a href="client-profile.php" class="btn btn-white btn-sm m-t-10">View Profile</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
 				<div class="profile-widget">
 					<div class="profile-img">
-						<a href="client-profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-18.jpg"></a>
+						<a href="client-profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-18.jpg"></a>
 					</div>
 					<div class="dropdown profile-action">
 						<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -169,17 +169,17 @@
 							<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_client"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 						</div>
 					</div>
-					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">International Software Inc</a></h4>
-					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Walter Weaver</a></h5>
+					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">International Software Inc</a></h4>
+					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Walter Weaver</a></h5>
 					<div class="small text-muted">CEO</div>
-					<a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-					<a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+					<a href="chat.php" class="btn btn-white btn-sm m-t-10">Message</a>
+					<a href="client-profile.php" class="btn btn-white btn-sm m-t-10">View Profile</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
 				<div class="profile-widget">
 					<div class="profile-img">
-						<a href="client-profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-28.jpg"></a>
+						<a href="client-profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-28.jpg"></a>
 					</div>
 					<div class="dropdown profile-action">
 						<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -188,17 +188,17 @@
 							<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_client"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 						</div>
 					</div>
-					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Mercury Software Inc</a></h4>
-					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Amanda Warren</a></h5>
+					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Mercury Software Inc</a></h4>
+					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Amanda Warren</a></h5>
 					<div class="small text-muted">CEO</div>
-					<a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-					<a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+					<a href="chat.php" class="btn btn-white btn-sm m-t-10">Message</a>
+					<a href="client-profile.php" class="btn btn-white btn-sm m-t-10">View Profile</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
 				<div class="profile-widget">
 					<div class="profile-img">
-						<a href="client-profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-13.jpg"></a>
+						<a href="client-profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-13.jpg"></a>
 					</div>
 					<div class="dropdown profile-action">
 						<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -207,11 +207,11 @@
 							<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_client"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 						</div>
 					</div>
-					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Carlson Tech</a></h4>
-					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.html">Betty Carlson</a></h5>
+					<h4 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Carlson Tech</a></h4>
+					<h5 class="user-name m-t-10 mb-0 text-ellipsis"><a href="client-profile.php">Betty Carlson</a></h5>
 					<div class="small text-muted">CEO</div>
-					<a href="chat.html" class="btn btn-white btn-sm m-t-10">Message</a>
-					<a href="client-profile.html" class="btn btn-white btn-sm m-t-10">View Profile</a>
+					<a href="chat.php" class="btn btn-white btn-sm m-t-10">Message</a>
+					<a href="client-profile.php" class="btn btn-white btn-sm m-t-10">View Profile</a>
 				</div>
 			</div>
 		</div>
@@ -689,3 +689,5 @@
 <!-- /Page Wrapper -->
 
 <?php include('partials/footer.php') ?>
+
+<?php include('partials/foot.php') ?>
