@@ -23,7 +23,7 @@
     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     " rel="stylesheet">
 
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/component-css.css">
-    <link rel="stylesheet" href="css/style-bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/component-css.css">
+    <link rel="stylesheet" href="assets/css/style-bootstrap.css" />
 </head>

@@ -1,3 +1,4 @@
+<?php include('../config/connect.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +16,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -39,6 +42,6 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/admin-style.css">
+    <link rel="stylesheet" href="assets/css/admin-style.css?v=1">
 
 </head>

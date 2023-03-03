@@ -25,6 +25,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- /Page Header -->
 
 		<div class="row">
@@ -41,48 +42,37 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Hardware</td>
-								<td>
-									<div class="custom-control custom-switch">
-										<input type="checkbox" class="custom-control-input" id="customSwitch1">
-										<label class="custom-control-label" for="customSwitch1"></label>
-									</div>
-								</td>
-								<td>4</td>
-								<td class="text-right">
-									<a class="" href="#" data-toggle="modal" data-target="#edit_categories"><i class="fa fa-pencil"></i> Edit</a>
-								</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>PHones</td>
-								<td>
-									<div class="custom-control custom-switch">
-										<input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
-										<label class="custom-control-label" for="customSwitch2"></label>
-									</div>
-								</td>
-								<td>10</td>
-								<td class="text-right">
-									<a class="" href="#" data-toggle="modal" data-target="#edit_categories"><i class="fa fa-pencil"></i> Edit</a>
-								</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>TV</td>
-								<td>
-									<div class="custom-control custom-switch">
-										<input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
-										<label class="custom-control-label" for="customSwitch3"></label>
-									</div>
-								</td>
-								<td>15</td>
-								<td class="text-right">
-									<a class="" href="#" data-toggle="modal" data-target="#edit_categories"><i class="fa fa-pencil"></i> Edit</a>
-								</td>
-							</tr>
+							<?php
+							$sql = "SELECT * FROM categories";
+							$res = mysqli_query($conn, $sql);
+							if ($res) {
+								if (mysqli_num_rows($res) > 0) {
+									$cats = mysqli_fetch_all($res, MYSQLI_ASSOC);
+									mysqli_free_result($res);
+								}
+							}
+
+							?>
+							<?php
+							$sn = 1;
+							foreach ($cats as $cat) { ?>
+								<tr>
+									<td><?= $sn++ ?></td>
+									<td><?= $cat['category_name'] ?></td>
+									<td>
+										<div class="custom-control custom-switch">
+											<input type="checkbox" class="custom-control-input" id="customSwitch1">
+											<label class="custom-control-label" for="customSwitch1"></label>
+										</div>
+									</td>
+									<td><?= $cat['quantity'] ?></td>
+									<td class="d-flex align-items-center justify-content-end gap-2">
+										<a class="" href="#" data-toggle="modal" data-target="#edit-categories-<?= $cat['cat_id'] ?>"><i class="fa fa-pencil me-1"></i> Edit</a>
+										<a href="#" class=""><i class="fa fa-trash me-1"></i>Delete</a>
+									</td>
+								</tr>
+							<?php } ?>
+
 						</tbody>
 					</table>
 				</div>
@@ -90,7 +80,6 @@
 		</div>
 	</div>
 	<!-- /Page Content -->
-
 	<!-- Add Holiday Modal -->
 	<div class="modal custom-modal fade" id="add_categories" role="dialog">
 		<div class="modal-dialog modal-dialog-centered" role="document">
@@ -102,14 +91,18 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<form>
+					<form action="<?= SUBURL . "admin/controller/manage-categories.php" ?>" method="POST">
 						<div class="form-group">
 							<label>Categories Name <span class="text-danger">*</span></label>
-							<input class="form-control" type="text">
+							<input class="form-control" value="" name="cat_name" type="text">
+						</div>
+						<div class="form-group">
+							<label>Quantity <span class="text-danger">*</span></label>
+							<input class="form-control" min="1" name="cat_quantity" value="1" type="number">
 						</div>
 
 						<div class="submit-section">
-							<button class="btn btn-primary submit-btn">Submit</button>
+							<input type="submit" name="add-category" value="Add Category" class="btn btn-primary submit-btn">
 						</div>
 					</form>
 				</div>
@@ -119,30 +112,36 @@
 	<!-- /Add Holiday Modal -->
 
 	<!-- Add Holiday Modal -->
-	<div class="modal custom-modal fade" id="edit_categories" role="dialog">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Edit Categories</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="form-group">
-							<label>Categories Name <span class="text-danger">*</span></label>
-							<input class="form-control" type="text" value="Hardware">
-						</div>
+	<?php foreach ($cats as $cat) { ?>
+		<div class="modal custom-modal fade" id="edit-categories-<?= $cat['cat_id'] ?>" role="dialog">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Edit Categories</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label>Categories Name <span class="text-danger">*</span></label>
+								<input class="form-control" type="text" value="<?= $cat['category_name'] ?>">
+							</div>
+							<div class="form-group">
+								<label>Quantity <span class="text-danger">*</span></label>
+								<input class="form-control" type="text" min="1" value="<?= $cat['quantity'] ?>">
+							</div>
 
-						<div class="submit-section">
-							<button class="btn btn-primary submit-btn">Submit</button>
-						</div>
-					</form>
+							<div class="submit-section">
+								<button class="btn btn-primary submit-btn">Submit</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	<?php } ?>
 	<!-- /Add Holiday Modal -->
 </div>
 <!-- /Page Wrapper -->
