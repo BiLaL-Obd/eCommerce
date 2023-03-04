@@ -20,58 +20,41 @@
 					</ul>
 				</div>
 				<div class="col-auto float-right ml-auto">
-					<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_user"><i class="fa fa-plus"></i> Add User</a>
+					<a href="#" class="btn add-btn btn-sm" data-toggle="modal" data-target="#add_user"><i class="fa fa-plus"></i> Add User</a>
 				</div>
 			</div>
 		</div>
 		<!-- /Page Header -->
 
 		<!-- Search Filter -->
-		<div class="row filter-row">
-			<div class="col-sm-6 col-md-3">
+		<!-- <div class="row">
+			<div class="col-9">
 				<div class="form-group form-focus">
-					<input type="text" class="form-control floating">
+					<input type="text" class="form-control form-control-sm floating">
 					<label class="focus-label">Name</label>
 				</div>
 			</div>
-			<div class="col-sm-6 col-md-3">
-				<div class="form-group form-focus select-focus">
-					<select class="select floating">
-						<option>Select Company</option>
-						<option>Global Technologies</option>
-						<option>Delta Infotech</option>
-					</select>
-					<label class="focus-label">Company</label>
-				</div>
+			<div class="col-2">
+
 			</div>
-			<div class="col-sm-6 col-md-3">
-				<div class="form-group form-focus select-focus">
-					<select class="select floating">
-						<option>Select Roll</option>
-						<option>Web Developer</option>
-						<option>Web Designer</option>
-						<option>Android Developer</option>
-						<option>Ios Developer</option>
-					</select>
-					<label class="focus-label">Role</label>
-				</div>
+
+			<div class="col-1">
+				<a href="#" class="btn btn-sm btn-success btn-block"> Search </a>
 			</div>
-			<div class="col-sm-6 col-md-3">
-				<a href="#" class="btn btn-success btn-block"> Search </a>
-			</div>
-		</div>
+		</div> -->
 		<!-- /Search Filter -->
 
 		<div class="row">
 			<div class="col-md-12">
 				<div class="table-responsive">
-					<table class="table table-striped custom-table datatable">
+					<table class="table table-striped custom-table ">
 						<thead>
 							<tr>
-								<th>Name</th>
-								<th>Email</th>
-								<th>Company</th>
-								<th>Created Date</th>
+								<th>Full Name</th>
+								<th>Username</th>
+								<th>Password</th>
+								<th>Short Name</th>
+								<th>Created Dated</th>
 								<th>Role</th>
 								<th class="text-right">Action</th>
 							</tr>
@@ -80,12 +63,12 @@
 							<tr>
 								<td>
 									<h2 class="table-avatar">
-										<a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-21.jpg" alt=""></a>
 										<a href="profile.html">Daniel Porter <span>Admin</span></a>
 									</h2>
 								</td>
 								<td>danielporter@example.com</td>
 								<td>Dreamguy's Technologies</td>
+								<td>DP</td>
 								<td>1 Jan 2013</td>
 								<td>
 									<span class="badge bg-inverse-danger">Admin</span>
@@ -261,13 +244,7 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>First Name <span class="text-danger">*</span></label>
-									<input class="form-control" type="text">
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Last Name</label>
+									<label>Full Name <span class="text-danger">*</span></label>
 									<input class="form-control" type="text">
 								</div>
 							</div>
@@ -275,12 +252,6 @@
 								<div class="form-group">
 									<label>Username <span class="text-danger">*</span></label>
 									<input class="form-control" type="text">
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Email <span class="text-danger">*</span></label>
-									<input class="form-control" type="email">
 								</div>
 							</div>
 							<div class="col-sm-6">
@@ -303,27 +274,12 @@
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>Role</label>
-									<select class="select">
-										<option>Admin</option>
-										<option>Client</option>
-										<option>Employee</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Company</label>
-									<select class="select">
-										<option>Global Technologies</option>
-										<option>Delta Infotech</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Employee ID <span class="text-danger">*</span></label>
-									<input type="text" class="form-control floating">
+									<label>isAdmin</label>
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="active-1">
+										<label class="custom-control-label" for="active-1"></label>
+									</div>
+
 								</div>
 							</div>
 						</div>
@@ -335,101 +291,89 @@
 										<th class="text-center">Read</th>
 										<th class="text-center">Write</th>
 										<th class="text-center">Create</th>
+										<th class="text-center">Edit</th>
 										<th class="text-center">Delete</th>
-										<th class="text-center">Import</th>
-										<th class="text-center">Export</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
+										<td>Add Categories</td>
+										<td class="text-center">
+											<input type="checkbox">
+										</td>
+										<td class="text-center">
+											<input type="checkbox">
+										</td>
+										<td class="text-center">
+											<input type="checkbox">
+										</td>
+										<td class="text-center">
+											<input type="checkbox">
+										</td>
+										<td class="text-center">
+											<input type="checkbox">
+										</td>
+									</tr>
+									<tr>
 										<td>Employee</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 									</tr>
 									<tr>
 										<td>Holidays</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 									</tr>
 									<tr>
 										<td>Leaves</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-									</tr>
-									<tr>
-										<td>Events</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
+
 									</tr>
 								</tbody>
 							</table>
 						</div>
 						<div class="submit-section">
-							<button class="btn btn-primary submit-btn">Submit</button>
+							<input type="submit" name="add-user" value="Add User" class="btn btn-primary submit-btn">
 						</div>
 					</form>
 				</div>
@@ -453,26 +397,14 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>First Name <span class="text-danger">*</span></label>
+									<label>Full Name <span class="text-danger">*</span></label>
 									<input class="form-control" value="John" type="text">
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Last Name</label>
-									<input class="form-control" value="Doe" type="text">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
 									<label>Username <span class="text-danger">*</span></label>
 									<input class="form-control" value="johndoe" type="text">
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Email <span class="text-danger">*</span></label>
-									<input class="form-control" value="johndoe@example.com" type="email">
 								</div>
 							</div>
 							<div class="col-sm-6">
@@ -495,27 +427,12 @@
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>Role</label>
-									<select class="select">
-										<option>Admin</option>
-										<option>Client</option>
-										<option selected>Employee</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Company</label>
-									<select class="select">
-										<option>Global Technologies</option>
-										<option>Delta Infotech</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label>Employee ID <span class="text-danger">*</span></label>
-									<input type="text" value="FT-0001" class="form-control floating">
+									<label>isAdmin</label>
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="active-1">
+										<label class="custom-control-label" for="active-1"></label>
+									</div>
+
 								</div>
 							</div>
 						</div>
@@ -527,101 +444,89 @@
 										<th class="text-center">Read</th>
 										<th class="text-center">Write</th>
 										<th class="text-center">Create</th>
+										<th class="text-center">Edit</th>
 										<th class="text-center">Delete</th>
-										<th class="text-center">Import</th>
-										<th class="text-center">Export</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
+										<td>Add Categories</td>
+										<td class="text-center">
+											<input type="checkbox">
+										</td>
+										<td class="text-center">
+											<input type="checkbox">
+										</td>
+										<td class="text-center">
+											<input type="checkbox">
+										</td>
+										<td class="text-center">
+											<input type="checkbox">
+										</td>
+										<td class="text-center">
+											<input type="checkbox">
+										</td>
+									</tr>
+									<tr>
 										<td>Employee</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 									</tr>
 									<tr>
 										<td>Holidays</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 									</tr>
 									<tr>
 										<td>Leaves</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
 										<td class="text-center">
-											<input checked="" type="checkbox">
+											<input type="checkbox">
 										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-									</tr>
-									<tr>
-										<td>Events</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
-										<td class="text-center">
-											<input checked="" type="checkbox">
-										</td>
+
 									</tr>
 								</tbody>
 							</table>
 						</div>
 						<div class="submit-section">
-							<button class="btn btn-primary submit-btn">Save</button>
+							<input type="submit" value="Edit User" name="edit-user" class="btn btn-primary submit-btn">
 						</div>
 					</form>
 				</div>

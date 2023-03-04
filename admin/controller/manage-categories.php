@@ -1,27 +1,76 @@
 <?php include("../../config/connect.php") ?>
 <?php
-if (isset($_POST['add-category'])) {
-    $category_name = $_POST['cat_name'];
-    $category_quantity = $_POST['cat_quantity'];
 
-    $sql = "SELECT * FROM categories WHERE category_name = '$category_name'";
+if ($_GET['action'] == "add") {
+    if (isset($_POST['add-category'])) {
+
+
+        $category_name = $_POST['cat_name'];
+        if (isset($_POST['active'])) {
+            $active = 1;
+        } else {
+            $active = 0;
+        }
+
+        $sql = "SELECT * FROM categories WHERE category_name = '$category_name'";
+        $res = mysqli_query($conn, $sql);
+        if ($res) {
+            if (!mysqli_num_rows($res) > 0) {
+
+                $sql2 = "INSERT INTO categories SET 
+                            category_name = '$category_name',
+                            isActive = '$active'
+                        ";
+                $res2 = mysqli_query($conn, $sql2) or die(mysqli_error($conn));
+                if ($res2) {
+                    $_SESSION['add'] = "<div class='text-success'>Category has Added</div>";
+                    header("location:" . SUBURL . "admin/categories.php");
+                } else {
+                    echo 'failed';
+                }
+            } else {
+                $_SESSION['add'] = "<div class='text-danger'>This Category has Exist</div>";
+                header("location:" . SUBURL . "admin/categories.php");
+            }
+        }
+    }
+}
+
+if ($_GET['action'] == "delete") {
+    $id = $_GET['id'];
+    $sql = "DELETE FROM categories WHERE cat_id = $id ";
     $res = mysqli_query($conn, $sql);
     if ($res) {
-        if (!mysqli_num_rows($res) > 0) {
-            $sql2 = "INSERT INTO categories SET 
-                        category_name = '$category_name',
-                        quantity = '$category_quantity'
-                    ";
-            $res2 = mysqli_query($conn, $sql2) or die(mysqli_error($conn));
+        header("location: " . SUBURL . "admin/categories.php");
+    }
+}
+
+if ($_GET['action'] == "edit") {
+    $id = $_GET['id'];
+    $category_name = $_POST['cat_name'];
+    if (isset($_POST['active'])) {
+        $active = 1;
+    } else {
+        $active = 0;
+    }
+
+    $sql = "SELECT * FROM categories WHERE cat_id = $id";
+    $res = mysqli_query($conn, $sql);
+    if ($res) {
+        if (mysqli_num_rows($res) > 0) {
+            $sql2 = "UPDATE categories SET 
+                category_name = '$category_name',
+                isActive = $active
+                WHERE cat_id = $id
+            ";
+            $res2 = mysqli_query($conn, $sql2);
             if ($res2) {
-                $_SESSION['add'] = "Category has Added";
+                $_SESSION['update'] = "<div class='text-success'>Category has Updated</div>";
                 header("location:" . SUBURL . "admin/categories.php");
             } else {
-                echo 'failed';
+                header("location:" . SUBURL . "admin/categories.php");
+                $_SESSION['update'] = "<div class='text-danger'>SomThing Wrong ,Category has Not Updated</div>";
             }
-        } else {
-            $_SESSION['add'] = "This Category has Exist";
-            header("location:" . SUBURL . "admin/categories.php");
         }
     }
 }

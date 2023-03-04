@@ -28,11 +28,11 @@
     <!-- Chart CSS -->
     <link rel="stylesheet" href="assets/plugins/morris/morris.css">
 
-    <!-- Select2 CSS -->
-    <link rel="stylesheet" href="assets/css/select2.min.css">
-
     <!-- Datatable CSS -->
     <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
 
     <!-- Summernote CSS -->
     <link rel="stylesheet" href="assets/plugins/summernote/dist/summernote-bs4.css">

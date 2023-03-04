@@ -3,7 +3,7 @@
 <?php include('partials/header.php') ?>
 
 <?php include('partials/sidebar.php') ?>
-
+<?php $categoryPath = "admin/controller/manage-categories.php"; ?>
 <!-- Page Wrapper -->
 <div class="page-wrapper">
 
@@ -23,6 +23,16 @@
 				<div class="col-auto float-right ml-auto">
 					<a href="#" class="btn add-btn btn-sm" data-toggle="modal" data-target="#add_categories"><i class="fa fa-plus"></i> Add Categories</a>
 				</div>
+				<div class="col-12">
+					<?php if (isset($_SESSION['add'])) {
+						echo $_SESSION['add'];
+						unset($_SESSION['add']);
+					} ?>
+					<?php if (isset($_SESSION['update'])) {
+						echo $_SESSION['update'];
+						unset($_SESSION['update']);
+					} ?>
+				</div>
 			</div>
 		</div>
 
@@ -37,13 +47,12 @@
 								<th>#</th>
 								<th>Category Name </th>
 								<th>isActive</th>
-								<th>Quantity</th>
 								<th class="text-right">Manage</th>
 							</tr>
 						</thead>
 						<tbody>
 							<?php
-							$sql = "SELECT * FROM categories";
+							$sql = "SELECT * FROM categories ORDER BY cat_id DESC";
 							$res = mysqli_query($conn, $sql);
 							if ($res) {
 								if (mysqli_num_rows($res) > 0) {
@@ -61,14 +70,13 @@
 									<td><?= $cat['category_name'] ?></td>
 									<td>
 										<div class="custom-control custom-switch">
-											<input type="checkbox" class="custom-control-input" id="customSwitch1">
-											<label class="custom-control-label" for="customSwitch1"></label>
+											<input type="checkbox" class="custom-control-input" id="active-<?= $cat['cat_id'] ?>" <?= $cat['isActive'] == 1 ? "checked" : "" ?>>
+											<label class="custom-control-label" for="active-<?= $cat['cat_id'] ?>"></label>
 										</div>
 									</td>
-									<td><?= $cat['quantity'] ?></td>
 									<td class="d-flex align-items-center justify-content-end gap-2">
 										<a class="" href="#" data-toggle="modal" data-target="#edit-categories-<?= $cat['cat_id'] ?>"><i class="fa fa-pencil me-1"></i> Edit</a>
-										<a href="#" class=""><i class="fa fa-trash me-1"></i>Delete</a>
+										<a href="<?= SUBURL . "admin/controller/manage-categories.php?id=" . $cat['cat_id'] ?> &action=delete" class=""><i class="fa fa-trash me-1"></i>Delete</a>
 									</td>
 								</tr>
 							<?php } ?>
@@ -80,7 +88,7 @@
 		</div>
 	</div>
 	<!-- /Page Content -->
-	<!-- Add Holiday Modal -->
+	<!-- Add Category Modal -->
 	<div class="modal custom-modal fade" id="add_categories" role="dialog">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
@@ -91,14 +99,21 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<form action="<?= SUBURL . "admin/controller/manage-categories.php" ?>" method="POST">
-						<div class="form-group">
-							<label>Categories Name <span class="text-danger">*</span></label>
-							<input class="form-control" value="" name="cat_name" type="text">
+					<form action="<?= SUBURL . "admin/controller/manage-categories.php?action=add" ?>" class="row" method="POST">
+						<div class="col-12">
+							<div class="form-group">
+								<label>Categories Name <span class="text-danger">*</span></label>
+								<input class="form-control" value="" name="cat_name" type="text" required>
+							</div>
 						</div>
-						<div class="form-group">
-							<label>Quantity <span class="text-danger">*</span></label>
-							<input class="form-control" min="1" name="cat_quantity" value="1" type="number">
+						<div class="col-12">
+							<div class="form-group">
+								<label>isActive <span class="text-danger">*</span></label>
+								<div class="custom-control custom-switch">
+									<input type="checkbox" name="active" class="custom-control-input" id="add-active-<?= $cat['cat_id'] ?>">
+									<label class="custom-control-label" for="add-active-<?= $cat['cat_id'] ?>"></label>
+								</div>
+							</div>
 						</div>
 
 						<div class="submit-section">
@@ -109,9 +124,9 @@
 			</div>
 		</div>
 	</div>
-	<!-- /Add Holiday Modal -->
+	<!-- /Add Category Modal -->
 
-	<!-- Add Holiday Modal -->
+	<!-- Edit Category Modal -->
 	<?php foreach ($cats as $cat) { ?>
 		<div class="modal custom-modal fade" id="edit-categories-<?= $cat['cat_id'] ?>" role="dialog">
 			<div class="modal-dialog modal-dialog-centered" role="document">
@@ -123,18 +138,21 @@
 						</button>
 					</div>
 					<div class="modal-body">
-						<form>
+						<form action="<?= SUBURL . "admin/controller/manage-categories.php?id=" . $cat['cat_id'] . "&action=edit" ?>" method="POST">
 							<div class="form-group">
 								<label>Categories Name <span class="text-danger">*</span></label>
-								<input class="form-control" type="text" value="<?= $cat['category_name'] ?>">
+								<input class="form-control" name="cat_name" type="text" value="<?= $cat['category_name'] ?>">
 							</div>
 							<div class="form-group">
-								<label>Quantity <span class="text-danger">*</span></label>
-								<input class="form-control" type="text" min="1" value="<?= $cat['quantity'] ?>">
+								<label>isActive <span class="text-danger">*</span></label>
+								<div class="custom-control custom-switch">
+									<input type="checkbox" name="active" class="custom-control-input" id="edit-active-<?= $cat['cat_id'] ?>" <?= $cat['isActive'] == 1 ? "checked" : "" ?>>
+									<label class="custom-control-label" for="edit-active-<?= $cat['cat_id'] ?>"></label>
+								</div>
 							</div>
 
 							<div class="submit-section">
-								<button class="btn btn-primary submit-btn">Submit</button>
+								<input type="submit" name="edit-category" value="Edit Category" class="btn btn-primary submit-btn">
 							</div>
 						</form>
 					</div>
@@ -142,7 +160,7 @@
 			</div>
 		</div>
 	<?php } ?>
-	<!-- /Add Holiday Modal -->
+	<!-- /Edit Category Modal -->
 </div>
 <!-- /Page Wrapper -->
 
