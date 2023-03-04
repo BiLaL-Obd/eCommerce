@@ -4,6 +4,18 @@
 
 <?php include('partials/sidebar.php') ?>
 <?php $categoryPath = "admin/controller/manage-categories.php"; ?>
+<?php
+$sql = "SELECT * FROM categories ORDER BY cat_id DESC";
+$res = mysqli_query($conn, $sql);
+if ($res) {
+	if (mysqli_num_rows($res) > 0) {
+		$cats = mysqli_fetch_all($res, MYSQLI_ASSOC);
+		mysqli_free_result($res);
+	}
+}
+
+?>
+
 <!-- Page Wrapper -->
 <div class="page-wrapper">
 
@@ -35,7 +47,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- /Page Header -->
 
 		<div class="row">
@@ -51,17 +62,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							<?php
-							$sql = "SELECT * FROM categories ORDER BY cat_id DESC";
-							$res = mysqli_query($conn, $sql);
-							if ($res) {
-								if (mysqli_num_rows($res) > 0) {
-									$cats = mysqli_fetch_all($res, MYSQLI_ASSOC);
-									mysqli_free_result($res);
-								}
-							}
 
-							?>
 							<?php
 							$sn = 1;
 							foreach ($cats as $cat) { ?>
@@ -74,13 +75,17 @@
 											<label class="custom-control-label" for="active-<?= $cat['cat_id'] ?>"></label>
 										</div>
 									</td>
-									<td class="d-flex align-items-center justify-content-end gap-2">
-										<a class="" href="#" data-toggle="modal" data-target="#edit-categories-<?= $cat['cat_id'] ?>"><i class="fa fa-pencil me-1"></i> Edit</a>
-										<a href="<?= SUBURL . "admin/controller/manage-categories.php?id=" . $cat['cat_id'] ?> &action=delete" class=""><i class="fa fa-trash me-1"></i>Delete</a>
+									<td class="text-right">
+										<div class="dropdown dropdown-action">
+											<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit-categories-<?= $cat['cat_id'] ?>"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+												<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_category_<?= $cat['cat_id'] ?>"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+											</div>
+										</div>
 									</td>
 								</tr>
 							<?php } ?>
-
 						</tbody>
 					</table>
 				</div>
@@ -125,7 +130,6 @@
 		</div>
 	</div>
 	<!-- /Add Category Modal -->
-
 	<!-- Edit Category Modal -->
 	<?php foreach ($cats as $cat) { ?>
 		<div class="modal custom-modal fade" id="edit-categories-<?= $cat['cat_id'] ?>" role="dialog">
@@ -161,8 +165,60 @@
 		</div>
 	<?php } ?>
 	<!-- /Edit Category Modal -->
+
+	<!-- Delete Estimate Modal -->
+	<?php foreach ($cats as $cat) { ?>
+		<div class="modal custom-modal fade" id="delete_category_<?= $cat['cat_id'] ?>" role="dialog">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="form-header">
+							<h3>Delete Category</h3>
+							<p>Are you sure want to delete <?= $cat['category_name'] ?>?</p>
+						</div>
+						<div class="modal-btn delete-action">
+							<div class="row">
+								<div class="col-6">
+									<a href="<?= SUBURL . "admin/controller/manage-categories.php?id=" . $cat['cat_id'] ?> &action=delete" class="btn btn-primary continue-btn">Delete</a>
+								</div>
+								<div class="col-6">
+									<a href="javascript:void(0);" data-dismiss="modal" class="btn btn-primary cancel-btn">Cancel</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php } ?>
+	<!-- /Delete Estimate Modal -->
+
 </div>
 <!-- /Page Wrapper -->
 
-<?php include('partials/footer.php') ?>
-<?php include('partials/foot.php') ?>
+</div>
+<!-- /Main Wrapper -->
+
+<!-- jQuery -->
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+
+<!-- Bootstrap Core JS -->
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Slimscroll JS -->
+<script src="assets/js/jquery.slimscroll.min.js"></script>
+
+<!-- Slimscroll JS -->
+<script src="assets/js/select2.min.js"></script>
+
+<!-- Datetimepicker JS -->
+<script src="assets/js/moment.min.js"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
