@@ -3,7 +3,8 @@
 <?php include('partials/header.php') ?>
 
 <?php include('partials/sidebar.php') ?>
-<?php $categoryPath = "admin/controller/manage-categories.php"; ?>
+<?php $categoryPath = "admin/controller/Categories.php"; ?>
+
 <?php
 $sql = "SELECT * FROM categories ORDER BY cat_id DESC";
 $res = mysqli_query($conn, $sql);
@@ -104,7 +105,7 @@ if ($res) {
 					</button>
 				</div>
 				<div class="modal-body">
-					<form action="<?= SUBURL . "admin/controller/manage-categories.php?action=add" ?>" class="row" method="POST">
+					<form action="<?= SUBURL . $categoryPath . "?action=add" ?>" class="row" method="POST">
 						<div class="col-12">
 							<div class="form-group">
 								<label>Categories Name <span class="text-danger">*</span></label>
@@ -142,7 +143,7 @@ if ($res) {
 						</button>
 					</div>
 					<div class="modal-body">
-						<form action="<?= SUBURL . "admin/controller/manage-categories.php?id=" . $cat['cat_id'] . "&action=edit" ?>" method="POST">
+						<form action="<?= SUBURL . $categoryPath . "?id=" . $cat['cat_id'] . "&action=edit" ?>" method="POST">
 							<div class="form-group">
 								<label>Categories Name <span class="text-danger">*</span></label>
 								<input class="form-control" name="cat_name" type="text" value="<?= $cat['category_name'] ?>">
@@ -179,7 +180,7 @@ if ($res) {
 						<div class="modal-btn delete-action">
 							<div class="row">
 								<div class="col-6">
-									<a href="<?= SUBURL . "admin/controller/manage-categories.php?id=" . $cat['cat_id'] ?> &action=delete" class="btn btn-primary continue-btn">Delete</a>
+									<a href="<?= SUBURL . $categoryPath . "?id=" . $cat['cat_id'] ?> &action=delete" class="btn btn-primary continue-btn">Delete</a>
 								</div>
 								<div class="col-6">
 									<a href="javascript:void(0);" data-dismiss="modal" class="btn btn-primary cancel-btn">Cancel</a>
