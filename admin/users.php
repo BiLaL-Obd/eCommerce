@@ -11,6 +11,8 @@ if ($res) {
 	if (mysqli_num_rows($res) > 0) {
 		$users = mysqli_fetch_all($res, MYSQLI_ASSOC);
 		mysqli_free_result($res);
+	} else {
+		echo "hhh";
 	}
 }
 ?>
@@ -281,100 +283,102 @@ if ($res) {
 	<!-- /Edit User Modal -->
 
 	<!-- Permission User Modal -->
-	<div id="manage_user" class="modal custom-modal fade" role="dialog">
-		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Permission User John Doe</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="table-responsive m-t-15">
-							<table class="table table-striped custom-table">
-								<thead>
-									<tr>
-										<th>Module Permission</th>
-										<th class="text-center">View</th>
-										<th class="text-center">Create</th>
-										<th class="text-center">Edit</th>
-										<th class="text-center">Delete</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Categories</td>
-										<td class="text-center">
-											<input type="checkbox" checked>
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-									</tr>
-									<tr>
-										<td>Product</td>
-										<td class="text-center">
-											<input type="checkbox" checked>
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-									</tr>
-									<tr>
-										<td>Blogs</td>
-										<td class="text-center">
-											<input type="checkbox" checked>
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-									</tr>
-									<tr>
-										<td>Clients</td>
-										<td class="text-center">
-											<input type="checkbox" checked>
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="submit-section">
-							<input type="submit" name="permission-user" value="Save" class="btn btn-primary submit-btn">
-						</div>
-					</form>
+	<?php foreach ($users as $user) { ?>
+		<div id="manage_user_<?= $user['id'] ?>" class="modal custom-modal fade" role="dialog">
+			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Permission user <?= $user['username'] ?></h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="table-responsive m-t-15">
+								<table class="table table-striped custom-table">
+									<thead>
+										<tr>
+											<th>Module Permission</th>
+											<th class="text-center">View</th>
+											<th class="text-center">Create</th>
+											<th class="text-center">Edit</th>
+											<th class="text-center">Delete</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Categories</td>
+											<td class="text-center">
+												<input type="checkbox" checked>
+											</td>
+											<td class="text-center">
+												<input type="checkbox">
+											</td>
+											<td class="text-center">
+												<input type="checkbox">
+											</td>
+											<td class="text-center">
+												<input type="checkbox">
+											</td>
+										</tr>
+										<tr>
+											<td>Product</td>
+											<td class="text-center">
+												<input type="checkbox" checked>
+											</td>
+											<td class="text-center">
+												<input type="checkbox">
+											</td>
+											<td class="text-center">
+												<input type="checkbox">
+											</td>
+											<td class="text-center">
+												<input type="checkbox">
+											</td>
+										</tr>
+										<tr>
+											<td>Blogs</td>
+											<td class="text-center">
+												<input type="checkbox" checked>
+											</td>
+											<td class="text-center">
+												<input type="checkbox">
+											</td>
+											<td class="text-center">
+												<input type="checkbox">
+											</td>
+											<td class="text-center">
+												<input type="checkbox">
+											</td>
+										</tr>
+										<tr>
+											<td>Clients</td>
+											<td class="text-center">
+												<input type="checkbox" checked>
+											</td>
+											<td class="text-center">
+												<input type="checkbox">
+											</td>
+											<td class="text-center">
+												<input type="checkbox">
+											</td>
+											<td class="text-center">
+												<input type="checkbox">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="submit-section">
+								<input type="submit" name="permission-user" value="Save" class="btn btn-primary submit-btn">
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	<?php } ?>
 	<!-- /Permission User Modal -->
 
 	<!-- Delete User Modal -->
