@@ -289,6 +289,16 @@
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
+									<label>Role</label>
+									<select class="select">
+										<option>Admin</option>
+										<option>Client</option>
+										<option>Employee</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
 									<label>Active</label>
 									<div class="custom-control custom-switch">
 										<input type="checkbox" class="custom-control-input" id="add-active-1">
@@ -406,6 +416,16 @@
 								<div class="form-group">
 									<label>Phone </label>
 									<input class="form-control" value="9876543210" type="text">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Role</label>
+									<select class="select">
+										<option>Admin</option>
+										<option>Client</option>
+										<option>Employee</option>
+									</select>
 								</div>
 							</div>
 							<div class="col-sm-6">
