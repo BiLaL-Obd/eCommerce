@@ -292,8 +292,8 @@
 									<label>Role</label>
 									<select class="select">
 										<option>Admin</option>
-										<option>Client</option>
 										<option>Employee</option>
+										<option>Client</option>
 									</select>
 								</div>
 							</div>
@@ -423,8 +423,8 @@
 									<label>Role</label>
 									<select class="select">
 										<option>Admin</option>
-										<option>Client</option>
 										<option>Employee</option>
+										<option>Client</option>
 									</select>
 								</div>
 							</div>
