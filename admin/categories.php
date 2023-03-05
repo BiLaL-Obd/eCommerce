@@ -166,7 +166,7 @@ if ($res) {
 	<?php } ?>
 	<!-- /Edit Category Modal -->
 
-	<!-- Delete Estimate Modal -->
+	<!-- Delete Category Modal -->
 	<?php foreach ($cats as $cat) { ?>
 		<div class="modal custom-modal fade" id="delete_category_<?= $cat['cat_id'] ?>" role="dialog">
 			<div class="modal-dialog modal-dialog-centered">
@@ -191,7 +191,7 @@ if ($res) {
 			</div>
 		</div>
 	<?php } ?>
-	<!-- /Delete Estimate Modal -->
+	<!-- /Delete Category Modal -->
 
 </div>
 <!-- /Page Wrapper -->
