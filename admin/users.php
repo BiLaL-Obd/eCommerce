@@ -52,9 +52,8 @@
 							<tr>
 								<th>Full Name</th>
 								<th>Username</th>
-								<th>Password</th>
-								<th>Short Name</th>
-								<th>Created Dated</th>
+								<th>Initails</th>
+								<th>Active</th>
 								<th>Role</th>
 								<th class="text-right">Action</th>
 							</tr>
@@ -67,9 +66,13 @@
 									</h2>
 								</td>
 								<td>danielporter@example.com</td>
-								<td>Dreamguy's Technologies</td>
 								<td>DP</td>
-								<td>1 Jan 2013</td>
+								<td>
+									<div class="custom-control custom-switch">
+										<input type="checkbox" disabled class="custom-control-input" id="active-1">
+										<label class="custom-control-label" for="active-1"></label>
+									</div>
+								</td>
 								<td>
 									<span class="badge bg-inverse-danger">Admin</span>
 								</td>
@@ -256,6 +259,18 @@
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
+									<label>Initials <span class="text-danger">*</span></label>
+									<input class="form-control" type="text">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Email <span class="text-danger">*</span></label>
+									<input class="form-control" type="email">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
 									<label>Password</label>
 									<input class="form-control" type="password">
 								</div>
@@ -274,10 +289,10 @@
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>isAdmin</label>
+									<label>Active</label>
 									<div class="custom-control custom-switch">
-										<input type="checkbox" class="custom-control-input" id="active-1">
-										<label class="custom-control-label" for="active-1"></label>
+										<input type="checkbox" class="custom-control-input" id="add-active-1">
+										<label class="custom-control-label" for="add-active-1"></label>
 									</div>
 
 								</div>
@@ -288,8 +303,7 @@
 								<thead>
 									<tr>
 										<th>Module Permission</th>
-										<th class="text-center">Read</th>
-										<th class="text-center">Write</th>
+										<th class="text-center">View</th>
 										<th class="text-center">Create</th>
 										<th class="text-center">Edit</th>
 										<th class="text-center">Delete</th>
@@ -297,28 +311,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Add Categories</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-									</tr>
-									<tr>
-										<td>Employee</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
+										<td>Categories</td>
 										<td class="text-center">
 											<input type="checkbox">
 										</td>
@@ -333,7 +326,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td>Holidays</td>
+										<td>Product</td>
 										<td class="text-center">
 											<input type="checkbox">
 										</td>
@@ -346,28 +339,6 @@
 										<td class="text-center">
 											<input type="checkbox">
 										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-									</tr>
-									<tr>
-										<td>Leaves</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-
 									</tr>
 								</tbody>
 							</table>
@@ -409,6 +380,18 @@
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
+									<label>Initials <span class="text-danger">*</span></label>
+									<input class="form-control" value="JD" type="text">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Emails <span class="text-danger">*</span></label>
+									<input class="form-control" value="johndoe@jodiec.com" type="text">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
 									<label>Password</label>
 									<input class="form-control" type="password">
 								</div>
@@ -427,10 +410,10 @@
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>isAdmin</label>
+									<label>Active</label>
 									<div class="custom-control custom-switch">
-										<input type="checkbox" class="custom-control-input" id="active-1">
-										<label class="custom-control-label" for="active-1"></label>
+										<input type="checkbox" class="custom-control-input" id="edit-active-1">
+										<label class="custom-control-label" for="edit-active-1"></label>
 									</div>
 
 								</div>
@@ -441,8 +424,7 @@
 								<thead>
 									<tr>
 										<th>Module Permission</th>
-										<th class="text-center">Read</th>
-										<th class="text-center">Write</th>
+										<th class="text-center">View</th>
 										<th class="text-center">Create</th>
 										<th class="text-center">Edit</th>
 										<th class="text-center">Delete</th>
@@ -450,28 +432,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Add Categories</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-									</tr>
-									<tr>
-										<td>Employee</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
+										<td>Categories</td>
 										<td class="text-center">
 											<input type="checkbox">
 										</td>
@@ -486,7 +447,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td>Holidays</td>
+										<td>Product</td>
 										<td class="text-center">
 											<input type="checkbox">
 										</td>
@@ -499,28 +460,6 @@
 										<td class="text-center">
 											<input type="checkbox">
 										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-									</tr>
-									<tr>
-										<td>Leaves</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-										<td class="text-center">
-											<input type="checkbox">
-										</td>
-
 									</tr>
 								</tbody>
 							</table>

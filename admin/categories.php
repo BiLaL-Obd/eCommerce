@@ -71,7 +71,7 @@ if ($res) {
 									<td><?= $cat['category_name'] ?></td>
 									<td>
 										<div class="custom-control custom-switch">
-											<input type="checkbox" class="custom-control-input" id="active-<?= $cat['cat_id'] ?>" <?= $cat['isActive'] == 1 ? "checked" : "" ?>>
+											<input type="checkbox" disabled class="custom-control-input" id="active-<?= $cat['cat_id'] ?>" <?= $cat['isActive'] == 1 ? "checked" : "" ?>>
 											<label class="custom-control-label" for="active-<?= $cat['cat_id'] ?>"></label>
 										</div>
 									</td>
