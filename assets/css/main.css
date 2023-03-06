@@ -543,3 +543,12 @@
 .categories .pagination ul li.pagination-next a {
   color: var(--main);
 }
+
+/***************** Categories ***********************/
+.blog-details .form-control {
+  border: 1px solid var(--main);
+}
+.blog-details .form-control:focus {
+  border: 1px solid var(--dark);
+  caret-color: var(--main);
+}

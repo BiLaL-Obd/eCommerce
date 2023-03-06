@@ -294,7 +294,7 @@ if ($res) {
 						</button>
 					</div>
 					<div class="modal-body">
-						<form>
+						<form action="<?= SUBURL . $userPath . "?id=" . $user['id'] . "&action=manage" ?>" method="POST">
 							<div class="table-responsive m-t-15">
 								<table class="table table-striped custom-table">
 									<thead>
@@ -310,7 +310,7 @@ if ($res) {
 										<tr>
 											<td>Categories</td>
 											<td class="text-center">
-												<input type="checkbox" checked>
+												<input type="checkbox" value="cat-view" name="view[]" checked>
 											</td>
 											<td class="text-center">
 												<input type="checkbox">
@@ -325,7 +325,7 @@ if ($res) {
 										<tr>
 											<td>Product</td>
 											<td class="text-center">
-												<input type="checkbox" checked>
+												<input type="checkbox" value="product-view" name="view[]" checked>
 											</td>
 											<td class="text-center">
 												<input type="checkbox">
@@ -340,7 +340,7 @@ if ($res) {
 										<tr>
 											<td>Blogs</td>
 											<td class="text-center">
-												<input type="checkbox" checked>
+												<input type="checkbox" value="blogs-view" name="view[]" checked>
 											</td>
 											<td class="text-center">
 												<input type="checkbox">
@@ -355,10 +355,10 @@ if ($res) {
 										<tr>
 											<td>Clients</td>
 											<td class="text-center">
-												<input type="checkbox" checked>
+												<input type="checkbox" value="clients-view" name="view[]" checked>
 											</td>
 											<td class="text-center">
-												<input type="checkbox">
+												<input type="checkbox" disabled>
 											</td>
 											<td class="text-center">
 												<input type="checkbox">

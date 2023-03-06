@@ -82,7 +82,6 @@
 .cursor-pointer {
   cursor: pointer;
 }
-
 /************** line-clamp ***************/
 .line-clamp-2 {
   display: -webkit-box;

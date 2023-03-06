@@ -95,4 +95,11 @@ if ($_GET['action'] == "edit") {
         }
     }
 }
+
+if ($_GET['action'] == "manage") {
+    if (isset($_POST['view'])) {
+        echo $view = implode(",", $_POST['view']);
+    }
+    // echo "ehllo ";
+}
 ?>

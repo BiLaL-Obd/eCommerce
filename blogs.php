@@ -28,14 +28,14 @@
                     <div class="box rounded-4 overflow-hidden bg-white">
                         <img src="admin/images/blog-2.png" class="img-fluid w-100" alt="">
                         <div class="info p-3">
-                            <h4 class="font-size-20">How to choose perfects gadgets</h4>
+                            <h4 class="font-size-20">How to choose perfects gadgets 1</h4>
                             <p class="text-black-50 font-size-14 line-clamp-3">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, dignissimos, illum
                                 culpa voluptates, quia ex quam quod eius sunt distinctio in repudiandae possimus
                                 odit
                                 doloribus eveniet commodi adipisci ipsam ea.
                             </p>
-                            <a href="#" class="btn btn-main-alt rounded-pill">Read more</a>
+                            <a href="<?= SUBURL . "blog-details.php" ?>" class="btn btn-main-alt rounded-pill">Read more</a>
                         </div>
                     </div>
                 </div>
