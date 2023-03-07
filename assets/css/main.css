@@ -34,7 +34,7 @@
   left: 0;
 }
 .underline-hover:hover {
-  color: var(--main);
+  color: var(--main) !important;
 }
 /***************** Components ****************/
 /* Start Header */

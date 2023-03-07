@@ -8,7 +8,7 @@
               <div class="row">
                   <div class="col-12 col-lg-9">
                       <div class="row">
-                          <div class="col-md-6 mb-3">
+                          <div class="col-md-6 mb-3 d-flex flex-column justify-content-between">
                               <h1>How to choose perfects gadgets 1</h1>
                               <p class="text-black-50">22-11-1999</p>
                           </div>
@@ -24,41 +24,39 @@
                           </div>
                           <div class="col-12 mb-3">
                               <h5 class="mb-3">Overviews</h5>
-                              <div class="row">
-                                  <div class="col-12 mb-2">
-                                      <div class="d-flex align-items-center gap-4">
-                                          <img src="admin/images/user.webp" class="rounded-circle" alt="" style="width: 50px;height:50px;">
-                                          <div class="bg-white p-2 box-shadow rounded-3 row">
-                                              <div class="col-12">
-                                                  <p class="m-0 font-size-14">
-                                                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eligendi dolor perferendis nemo autem provident sint, molestiae nam consectetur qui laborum nesciunt nulla, ad enim, totam facere explicabo harum tenetur?
-                                                  </p>
-                                              </div>
-                                              <div class="col-12 text-end">
-                                                  <span class="text-black-50 font-size-13">22/11/199</span>
-                                              </div>
+                              <div class="col-12 mb-2">
+                                  <div class="d-flex align-items-center gap-4">
+                                      <img src="admin/images/user.webp" class="rounded-circle" alt="" style="width: 50px;height:50px;">
+                                      <div class="bg-white p-2 box-shadow rounded-3">
+                                          <div class="col-12">
+                                              <p class="m-0 font-size-14">
+                                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eligendi dolor perferendis nemo autem provident sint, molestiae nam consectetur qui laborum nesciunt nulla, ad enim, totam facere explicabo harum tenetur?
+                                              </p>
+                                          </div>
+                                          <div class="col-12 text-end">
+                                              <span class="text-black-50 font-size-13">22/11/199</span>
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="col-12 mb-2" dir="rtl">
-                                      <div class="d-flex align-items-center gap-4">
-                                          <img src="admin/images/user.webp" class="rounded-circle" alt="" style="width: 50px;height:50px;">
-                                          <div class="bg-white p-2 box-shadow rounded-3 row">
-                                              <div class="col-12">
-                                                  <p class="m-0 font-size-14" dir="ltr">
-                                                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eligendi dolor perferendis nemo autem provident sint, molestiae nam consectetur qui laborum nesciunt nulla, ad enim, totam facere explicabo harum tenetur?
-                                                  </p>
-                                              </div>
-                                              <div class="col-12 text-end">
-                                                  <span class="text-black-50 font-size-13">22/11/199</span>
-                                              </div>
+                              </div>
+                              <div class="col-12 mb-2" dir="rtl">
+                                  <div class="d-flex align-items-center gap-4">
+                                      <img src="admin/images/user.webp" class="rounded-circle" alt="" style="width: 50px;height:50px;">
+                                      <div class="bg-white p-2 box-shadow rounded-3">
+                                          <div class="col-12">
+                                              <p class="m-0 font-size-14" dir="ltr">
+                                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos eligendi dolor perferendis nemo autem provident sint, molestiae nam consectetur qui laborum nesciunt nulla, ad enim, totam facere explicabo harum tenetur?
+                                              </p>
+                                          </div>
+                                          <div class="col-12 text-end">
+                                              <span class="text-black-50 font-size-13">22/11/199</span>
                                           </div>
                                       </div>
                                   </div>
                               </div>
                           </div>
                           <div class="col-12 mb-3">
-                              <form action="" class="row">
+                              <form action="" class="d-flex gap-2">
                                   <div class="col-9">
                                       <textarea name="" id="" class="form-control rounded-3" rows="1" placeholder="Leave Your Comment"></textarea>
                                   </div>
@@ -71,7 +69,17 @@
 
                   </div>
                   <div class="col-lg-3 d-none d-lg-block">
-                      <h4>Related Blogs</h4>
+                      <div class="related-blogs bg-white h-100 p-3 rounded-3">
+                          <h5 class="mb-4 w-fit-content" style="border-bottom: 1px solid black;">Related Blogs</h5>
+                          <ul class="list-unstyled">
+                              <li class="overflow-hidden py-1">
+                                  <a href="#" class="underline-hover font-size-14 text-black-50">dumy text</a>
+                              </li>
+                              <li class="overflow-hidden py-1">
+                                  <a href="#" class="underline-hover font-size-14 text-black-50">dumy text</a>
+                              </li>
+                          </ul>
+                      </div>
                   </div>
               </div>
           </div>
