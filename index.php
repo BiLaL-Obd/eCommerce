@@ -275,64 +275,7 @@
     </div>
     <!-- End Features -->
     <!-- Start Service -->
-    <div class="services">
-        <div class="container px-4">
-            <div class="row">
-                <div class="col-sm-6 col-lg-3 mb-3 p-3">
-                    <div class="box bg-dark rounded-4 position-relative d-flex align-items-center justify-content-start">
-                        <img src="admin/images/h.png" class="img-fluid position-absolute h-100 end-0" alt="">
-                        <div class="srv position-absolute">
-                            <p class="text-uppercase fw-500 ">Free Endraving</p>
-                        </div>
-                        <div class="content text-white">
-                            <span class="font-size-13">Enjoy</span>
-                            <span class="with">with</span>
-                            <span class="type">Earphones</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-3 p-3">
-                    <div class="box bg-warning rounded-4 position-relative d-flex align-items-center justify-content-start">
-                        <img src="admin/images/w.png" class="img-fluid position-absolute h-75 bottom-0 end-0" alt="">
-                        <div class="srv position-absolute">
-                            <p class="text-uppercase fw-500 ">15% Offers</p>
-                        </div>
-                        <div class="content text-white">
-                            <span class="font-size-13">Enjoy</span>
-                            <span class="with">with</span>
-                            <span class="type">Watchs</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6  col-lg-3 mb-3 p-3">
-                    <div class="box bg-info rounded-4 position-relative d-flex align-items-center justify-content-start">
-                        <img src="admin/images/mus.png" class="img-fluid position-absolute h-75 end-0" alt="">
-                        <div class="srv position-absolute">
-                            <p class="text-uppercase fw-500 ">New Arrivals</p>
-                        </div>
-                        <div class="content text-white">
-                            <span class="font-size-13">Enjoy</span>
-                            <span class="with">with</span>
-                            <span class="type">Speakers</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-3 p-3">
-                    <div class="box bg-main rounded-4 flex-column position-relative d-flex align-items-center justify-content-start">
-                        <img src="admin/images/Laptop.png" class="img-fluid position-absolute h-75 end-0" alt="">
-                        <div class="srv position-absolute">
-                            <p class="text-uppercase fw-500 ">Best Sales</p>
-                        </div>
-                        <div class="content text-white w-100">
-                            <span class="font-size-13">Enjoy</span>
-                            <span class="with">with</span>
-                            <span class="type">Laptops</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include('services.php') ?>
     <!-- End Service -->
     <!-- Start Products -->
     <div class="products inline-swiper py-5">
@@ -927,56 +870,7 @@
     </div>
     <!-- End Products -->
     <!-- Start Client -->
-    <div class="clients">
-        <div class="container">
-            <div class="splide" aria-label="Clients-slide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <a href="https://www.apple.com/" target="_blank">
-                                <img src="admin/images/clients/brand-01.png" alt="">
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="https://www.bose.com/" target="_blank">
-                                <img src="admin/images/clients/brand-02.png" alt="">
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="https://www.camon.com/" target="_blank">
-                                <img src="admin/images/clients/brand-03.png" alt="">
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="https://www.dell.com/" target="_blank">
-                                <img src="admin/images/clients/brand-04.png" alt="">
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="https://www.intel.com/" target="_blank">
-                                <img src="admin/images/clients/brand-05.png" alt="">
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="https://www.lg.com/" target="_blank">
-                                <img src="admin/images/clients/brand-06.png" alt="">
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="https://www.sumsung.com/" target="_blank">
-                                <img src="admin/images/clients/brand-07.png" alt="">
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="https://www.sandisk.com/" target="_blank">
-                                <img src="admin/images/clients/brand-08.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include('clients.php') ?>
     <!-- End Client -->
     <!-- Start Blogs -->
     <div class="blogs py-5">

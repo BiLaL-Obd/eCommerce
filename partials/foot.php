@@ -8,4 +8,4 @@
         AOS.init();
     </script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="assets/js/main.js?v=1.1"></script>
+    <script src="assets/js/main.js?v=1.2"></script>

@@ -55,7 +55,7 @@
                         </div>
                         <div class="content">
                             <p class="text-color-main mb-1">Headphones</p>
-                            <a href="#">
+                            <a href="category-details.php">
                                 <h4 class="font-size-16">Kids Headphone Builk 10 Pack Multi Colored</h4>
                             </a>
                             <div class="d-flex justify-content-between align-items-center">

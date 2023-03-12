@@ -5,7 +5,7 @@
            </a>
            <ul class="navbar-nav flex-row justify-content-end flex-grow-1">
                <li class="nav-item">
-                   <a href="#" class="nav-link p-2 px-1 px-sm-2 d-flex align-items-end position-relative">
+                   <a href="favorites.php" class="nav-link p-2 px-1 px-sm-2 d-flex align-items-end position-relative">
                        <span class="purchase-count font-size-10 d-flex align-items-center justify-content-center text-white bg-main end-0 rounded-circle position-absolute">5</span>
                        <i class="bx bx-heart font-size-26"></i> <span class="d-none d-sm-block">Favorite</span>
                    </a>

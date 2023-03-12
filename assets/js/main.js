@@ -56,6 +56,18 @@ $(".products .box .click-image img").each((i, el) => {
   });
 });
 
+$(".category-details .box .click-image img").each((i, el) => {
+  $(el).on("click", () => {
+    let imgGetsrc = $(el).attr("src");
+    $(el)
+      .parent()
+      .parent()
+      .siblings(".show-image")
+      .children()
+      .attr("src", imgGetsrc);
+  });
+});
+
 // Swiper
 var swiper = new Swiper(".myFeatures", {
   slidesPerView: 1,
