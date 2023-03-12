@@ -26,5 +26,5 @@
 
     <link rel="stylesheet" href="assets/css/component-css.css">
     <link rel="stylesheet" href="assets/css/style-bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/main.css?v=1.2" />
+    <link rel="stylesheet" href="assets/css/main.css?v=1.3" />
 </head>

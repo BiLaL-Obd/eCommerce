@@ -8,6 +8,14 @@
         <div class="container">
             <h1 class="text-uppercase text-center mb-5">Shop Categories</h1>
             <form class="row">
+                <div class="col-12 mb-3 d-flex align-items-center justify-content-end">
+                    <div class="search position-relative">
+                        <input type="text" class="form-control rounded-pill" placeholder="Type To Search Here ..." name="" id="">
+                        <button type="submit" class="position-absolute border-0 rounded-circle d-flex align-items-center justify-content-center">
+                            <i class='bx bx-search-alt font-size-20'></i>
+                        </button>
+                    </div>
+                </div>
                 <div class="col-12">
                     <div class="header bg-white box-shadow p-2 px-4 mb-3 rounded-4 d-flex align-items-center justify-content-center">
                         <ul class="category-filter list-unstyled d-flex align-items-center justify-content-center gap-3 flex-wrap m-0">

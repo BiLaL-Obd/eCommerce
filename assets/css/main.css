@@ -479,13 +479,27 @@
 }
 
 /***************** Categories ***********************/
+.categories .search {
+  width: 300px !important;
+}
 .categories .search .form-control {
   border: 1px solid var(--main);
+  padding: 10px 10px 10px 20px;
 }
-.categories .search span {
+.categories .search button {
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
+  background-color: var(--main);
+  width: 35px;
+  height: 35px;
+  color: white;
+}
+.categories .search button i {
+  transition: var(--transition);
+}
+.categories .search button:hover i {
+  transform: rotate(-360deg);
 }
 .categories .box {
   box-shadow: var(--shadow);
@@ -502,7 +516,7 @@
   text-decoration: underline;
 }
 .categories .category-filter li {
-  cursor:pointer;
+  cursor: pointer;
   font-weight: 500;
   transition: var(--transition);
 }
