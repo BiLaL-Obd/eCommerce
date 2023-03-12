@@ -8,13 +8,28 @@
         <div class="container">
             <h1 class="text-uppercase text-center mb-5">Shop Categories</h1>
             <form class="row">
-
                 <div class="col-12">
-                    <div class="header bg-white box-shadow p-2 px-4 mb-3 rounded-4 d-flex align-items-center justify-content-between">
-                        <h6 class="text-uppercase m-0">All</h6>
+                    <div class="header bg-white box-shadow p-2 px-4 mb-3 rounded-4 d-flex align-items-center justify-content-center">
+                        <ul class="category-filter list-unstyled d-flex align-items-center justify-content-center gap-3 flex-wrap m-0">
+                            <li class="text-uppercase active" data-category=".all">
+                                All
+                            </li>
+                            <li class="text-uppercase" data-category=".phone">
+                                Phones
+                            </li>
+                            <li class="text-uppercase" data-category=".headphone">
+                                Headphones
+                            </li>
+                            <li class="text-uppercase" data-category=".earphone">
+                                Earphones
+                            </li>
+                            <li class="text-uppercase" data-category=".watch">
+                                Watches
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-3 all phone">
                     <div class="box bg-white rounded-4 p-2 py-3 position-relative overflow-hidden">
                         <div class="label d-flex align-items-center justify-content-between flex-row-reverse">
                             <button type="submit" class="bg-transparent border-0">
@@ -53,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-3 all headphone">
                     <div class="box bg-white rounded-4 p-2 py-3 position-relative overflow-hidden">
                         <div class="label d-flex align-items-center justify-content-between flex-row-reverse">
                             <button type="submit" class="bg-transparent border-0">
@@ -92,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-3 all earphone">
                     <div class="box bg-white rounded-4 p-2 py-3 position-relative overflow-hidden">
                         <div class="label d-flex align-items-center justify-content-between flex-row-reverse">
                             <button type="submit" class="bg-transparent border-0">
@@ -131,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-3 all watch">
                     <div class="box bg-white rounded-4 p-2 py-3 position-relative overflow-hidden">
                         <div class="label d-flex align-items-center justify-content-between flex-row-reverse">
                             <button type="submit" class="bg-transparent border-0">
@@ -170,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-3 all phone">
                     <div class="box bg-white rounded-4 p-2 py-3 position-relative overflow-hidden">
                         <div class="label d-flex align-items-center justify-content-between flex-row-reverse">
                             <button type="submit" class="bg-transparent border-0">
@@ -209,7 +224,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-3 all earphone">
                     <div class="box bg-white rounded-4 p-2 py-3 position-relative overflow-hidden">
                         <div class="label d-flex align-items-center justify-content-between flex-row-reverse">
                             <button type="submit" class="bg-transparent border-0">
@@ -248,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-3 all headphone">
                     <div class="box bg-white rounded-4 p-2 py-3 position-relative overflow-hidden">
                         <div class="label d-flex align-items-center justify-content-between flex-row-reverse">
                             <button type="submit" class="bg-transparent border-0">
@@ -288,7 +303,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="pagination bg-white box-shadow p-2 px-4 rounded-4 d-flex align-items-center justify-content-between">
+                    <div class="pagination bg-white box-shadow p-2 px-4 rounded-4 gap-2 flex-column flex-lg-row d-flex align-items-center justify-content-between">
                         <div class="count-products">
                             show 7 products from 50
                         </div>

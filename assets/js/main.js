@@ -13,13 +13,30 @@ $(document).click((e) => {
 });
 
 // Categories pg
-$(".categories .list-filter .category-filter ").click(() => {
-  $(".categories .menu-filter").addClass("active");
+let switchFil = document.querySelectorAll(".categories .category-filter li");
+let imgs = document.querySelectorAll(".categories .all");
+
+switchFil.forEach((li) => {
+  li.addEventListener("click", removeActive);
+  li.addEventListener("click", manaCategory);
 });
-$(".categories .menu-filter .close ").click(() => {
-  if ($(".categories .menu-filter").hasClass("active"))
-    $(".categories .menu-filter").removeClass("active");
-});
+
+function removeActive() {
+  switchFil.forEach((li) => {
+    li.classList.remove("active");
+    this.classList.add("active");
+  });
+}
+
+function manaCategory() {
+  imgs.forEach((img) => {
+    img.style.display = "none";
+  });
+  document.querySelectorAll(this.dataset.category).forEach((el) => {
+    el.style.display = "block";
+  });
+}
+
 // Windows Scroll
 $(document).ready(function () {
   $(window).scroll(function () {
