@@ -11,7 +11,7 @@
                    </a>
                </li>
                <li class="nav-item">
-                   <a href="#" class="nav-link p-2 d-flex align-items-end position-relative">
+                   <a href="carts.php" class="nav-link p-2 d-flex align-items-end position-relative">
                        <span class="purchase-count font-size-10 d-flex align-items-center justify-content-center text-white bg-main end-0 rounded-circle position-absolute">5</span>
                        <i class="bx bx-shopping-bag font-size-26"></i>
                        <span class="d-none d-sm-block">Cart</span>

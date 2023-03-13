@@ -566,3 +566,30 @@
   border: 1px solid var(--dark);
   caret-color: var(--main);
 }
+
+/***************** Favorites ***********************/
+.favorite .container .box {
+  box-shadow: var(--shadow);
+}
+.favorite .container .box a {
+  color: var(--dark);
+}
+.favorite .container .box a:hover {
+  color: var(--main);
+  text-decoration: underline;
+}
+.favorite .container .box img {
+  width: 180px;
+  height: 180px;
+}
+.favorite .container .box .btn-main {
+  right: -100%;
+}
+.favorite .container .box .btn-main:disabled,
+.favorite .container .box:hover .btn-main {
+  right: 10px;
+}
+.favorite .container .box .btn-main:disabled {
+  opacity: 0.85;
+  color: #fff;
+}
