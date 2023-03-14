@@ -24,7 +24,7 @@
     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     " rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/component-css.css">
+    <link rel="stylesheet" href="assets/css/component-css.css?v=1">
     <link rel="stylesheet" href="assets/css/style-bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/main.css?v=1.5" />
+    <link rel="stylesheet" href="assets/css/main.css?v=1.7" />
 </head>

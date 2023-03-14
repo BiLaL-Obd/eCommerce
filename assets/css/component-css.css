@@ -71,6 +71,9 @@ body {
 .modal-header {
   border-color: var(--main) !important;
 }
+.input-group-text {
+  border: 1px solid var(--main-opacity-50);
+}
 a {
   text-decoration: none;
   transition: var(--transition) !important;

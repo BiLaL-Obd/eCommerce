@@ -593,3 +593,33 @@
   opacity: 0.85;
   color: #fff;
 }
+
+/***************** Checkout ***********************/
+.checkout .nav-pills .nav-link.active,
+.checkout .nav-pills .show > .nav-link {
+  background-color: var(--main);
+}
+.checkout .form-label {
+  font-size: 0.875rem;
+}
+.checkout .nav-link {
+  color: var(--main);
+  width: 180px;
+}
+.checkout .box {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .checkout .box {
+    width: 100%;
+  }
+}
+.checkout .form-control {
+  border: 1px solid var(--main-opacity-50);
+  border-radius: 4px;
+  padding: 8px 10px;
+}
+.checkout .form-control:focus {
+  border: 1px solid var(--dark);
+  caret-color: var(--main);
+}
