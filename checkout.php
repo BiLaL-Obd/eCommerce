@@ -9,20 +9,20 @@
                 <div style="background-color: #e7e7e7;" class="p-2 p-md-3 px-md-4 rounded-3">
                     <ul class="nav nav-pills justify-content-center gap-2 mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active d-flex align-items-center gap-2 font-size-15" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <button class="nav-link active d-flex align-items-center gap-2 font-size-15" id="cash-order-tab" data-bs-toggle="pill" data-bs-target="#cash-order" type="button" role="tab" aria-controls="cash-order" aria-selected="true">
                                 <i class='bx bx-credit-card'></i>
                                 Credit Card
                             </button>
                         </li>
                         <li class="nav-item d-flex align-items-center gap-2 font-size-15" role="presentation">
-                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                            <button class="nav-link" id="cash-delivery-tab" data-bs-toggle="pill" data-bs-target="#cash-delivery" type="button" role="tab" aria-controls="cash-delivery" aria-selected="false">
                                 <i class='bx bx-dollar-circle'></i>
                                 Cash On Delivery
                             </button>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="tab-pane fade show active" id="cash-order" role="tabpanel" aria-labelledby="cash-order-tab">
                             <form action="">
                                 <div class="mb-3">
                                     <label for="card-name" class="form-label">Card Owner</label>
@@ -43,10 +43,10 @@
                                     <label for="delivery-address" class="form-label">Delivery Address</label>
                                     <textarea name="" id="delivery-address" placeholder="Delivery Address" class="form-control" rows="2"></textarea>
                                 </div>
-                                <input type="submit" class="btn btn-main-alt rounded-pill" value="Cofirm Order">
+                                <input type="submit" class="btn btn-main-alt rounded-pill" value="Cofirm Payment">
                             </form>
                         </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="tab-pane fade" id="cash-delivery" role="tabpanel" aria-labelledby="cash-delivery-tab">
                             <form action="">
                                 <div class="mb-3">
                                     <label for="cash-address" class="form-label">Delivery Address</label>
@@ -70,4 +70,4 @@
     <?php include('partials/foot.php') ?>
 </body>
 
-</ht
+</html>

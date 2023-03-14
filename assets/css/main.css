@@ -132,41 +132,6 @@
 #profile .nav-link:hover {
   padding-left: 10px;
 }
-.navbar .form {
-  position: absolute;
-  top: 100%;
-  right: -1000%;
-  width: 350px;
-  z-index: 999;
-  background-color: var(--light);
-  transition: var(--transition);
-}
-.navbar .form.active {
-  right: 0;
-}
-@media (max-width: 767px) {
-  .navbar .form {
-    top: -1000%;
-    right: 0;
-  }
-  .navbar .form.active {
-    top: 100%;
-  }
-}
-@media (max-width: 767px) {
-  .navbar .form {
-    width: 320px;
-  }
-  .navbar .form.active {
-    right: -10px;
-  }
-}
-.navbar .form .form-button {
-  font-weight: 600;
-}
-.navbar .form .form-button.active {
-  color: var(--main);
-}
 /* End Header */
 /* Start Footer */
 .footer .social a {
@@ -622,4 +587,73 @@
 .checkout .form-control:focus {
   border: 1px solid var(--dark);
   caret-color: var(--main);
+}
+
+/***************** Login ***********************/
+.login .form {
+  width: 50%;
+}
+.login .form .form-button {
+  font-weight: 600;
+}
+.login .form .form-button.active {
+  color: var(--main);
+}
+
+/***************** Info Accont ***********************/
+.info-account .pers-info {
+  width: 120px;
+  height: 120px;
+}
+.info-account .sub-title {
+  width: 120px;
+}
+.info-account .tab-content span {
+  font-size: 14px;
+}
+.info-account .nav-tabs .nav-item.show .nav-link,
+.info-account .nav-tabs .nav-link.active {
+  color: var(--main);
+}
+.info-account .nav-tabs .nav-link {
+  color: var(--dark);
+  font-weight: 500;
+}
+.info-account .circle-nb {
+  width: 20px;
+  height: 20px;
+  font-size: 12px !important;
+}
+.info-account .form-control {
+  border: 1px solid var(--main-opacity-50);
+  border-radius: 4px;
+  padding: 8px 10px;
+}
+.info-account .form-control:focus {
+  border: 1px solid var(--dark);
+  caret-color: var(--main);
+}
+@media (max-width: 767px) {
+  .info-account .pers-info {
+    width: 80px;
+    height: 80px;
+  }
+  .info-account .edit-info {
+    font-size: 10px;
+  }
+  .info-account .nav-link {
+    font-size: 10px;
+  }
+  .info-account .sub-title {
+    width: 95px;
+  }
+  .info-account .tab-content {
+    overflow-x: scroll;
+  }
+  .info-account .tab-content span {
+    font-size: 12px;
+  }
+  .info-account .table {
+    font-size: 12px;
+  }
 }

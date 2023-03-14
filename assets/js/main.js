@@ -1,16 +1,16 @@
 //Account Menu
-$(".account-menu").click((e) => {
-  $(".navbar .form").toggleClass("active");
-  e.stopPropagation();
-});
-$(".navbar .form").click((e) => {
-  e.stopPropagation();
-});
-$(document).click((e) => {
-  if (e.target !== ".account-menu" && $(".navbar .form").hasClass("active")) {
-    $(".navbar .form").removeClass("active");
-  }
-});
+// $(".account-menu").click((e) => {
+//   $(".navbar .form").toggleClass("active");
+//   e.stopPropagation();
+// });
+// $(".navbar .form").click((e) => {
+//   e.stopPropagation();
+// });
+// $(document).click((e) => {
+//   if (e.target !== ".account-menu" && $(".navbar .form").hasClass("active")) {
+//     $(".navbar .form").removeClass("active");
+//   }
+// });
 
 // Categories pg
 let switchFil = document.querySelectorAll(".categories .category-filter li");
