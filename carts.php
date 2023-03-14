@@ -55,7 +55,7 @@
                         </td>
                     </tr>
                 </tbody>
-                <tfoot class="table-danger">
+                <tfoot>
                     <tr>
                         <td class="text-end" colspan="5">General Total :</td>
                         <td colspan="2">$299.00</td>
@@ -63,9 +63,9 @@
                 </tfoot>
             </table>
             <div class="d-flex align-items-center justify-content-between">
-                <a href="categories.php" class="btn btn-primary d-flex align-items-center gap-2"><i class='bx bxs-left-arrow-circle'></i>Continue Shoping</a>
-                <a href="carts.php" class="btn btn-warning d-flex align-items-center gap-2"><i class='bx bx-refresh bx-rotate-90'></i>Update Cart</a>
-                <a href="checkout.php" class="btn btn-success d-flex align-items-center gap-2">Checkout<i class='bx bxs-right-arrow-circle'></i></a>
+                <a href="categories.php" class="btn btn-sm btn-primary d-flex align-items-center gap-2"><i class='bx bxs-left-arrow-circle'></i>Continue Shoping</a>
+                <a href="carts.php" class="btn btn-sm btn-warning d-flex align-items-center gap-2"><i class='bx bx-refresh bx-rotate-90'></i>Update Cart</a>
+                <a href="checkout.php" class="btn btn-sm btn-success d-flex align-items-center gap-2">Checkout<i class='bx bxs-right-arrow-circle'></i></a>
             </div>
         </div>
     </div>
