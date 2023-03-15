@@ -57,7 +57,8 @@ if ($res) {
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>Category Name </th>
+								<th>En Category Name </th>
+								<th>Ar Category Name </th>
 								<th>isActive</th>
 								<th class="text-right">Manage</th>
 							</tr>
@@ -69,7 +70,8 @@ if ($res) {
 							foreach ($cats as $cat) { ?>
 								<tr>
 									<td><?= $sn++ ?></td>
-									<td><?= $cat['category_name'] ?></td>
+									<td><?= $cat['en_category_name'] ?></td>
+									<td><?= $cat['ar_category_name'] ?></td>
 									<td>
 										<div class="custom-control custom-switch">
 											<input type="checkbox" disabled class="custom-control-input" id="active-<?= $cat['cat_id'] ?>" <?= $cat['isActive'] == 1 ? "checked" : "" ?>>
@@ -108,8 +110,14 @@ if ($res) {
 					<form action="<?= SUBURL . $categoryPath . "?action=add" ?>" class="row" method="POST">
 						<div class="col-12">
 							<div class="form-group">
-								<label>Categories Name <span class="text-danger">*</span></label>
-								<input class="form-control" value="" name="cat_name" type="text" required>
+								<label>EN Categories Name <span class="text-danger">*</span></label>
+								<input class="form-control" value="" name="en_cat_name" type="text" required>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="form-group">
+								<label>AR Categories Name <span class="text-danger">*</span></label>
+								<input class="form-control" value="" name="ar_cat_name" type="text" required>
 							</div>
 						</div>
 						<div class="col-12">
@@ -145,8 +153,12 @@ if ($res) {
 					<div class="modal-body">
 						<form action="<?= SUBURL . $categoryPath . "?id=" . $cat['cat_id'] . "&action=edit" ?>" method="POST">
 							<div class="form-group">
-								<label>Categories Name <span class="text-danger">*</span></label>
-								<input class="form-control" name="cat_name" type="text" value="<?= $cat['category_name'] ?>">
+								<label>EN Categories Name <span class="text-danger">*</span></label>
+								<input class="form-control" name="en_cat_name" type="text" value="<?= $cat['en_category_name'] ?>">
+							</div>
+							<div class="form-group">
+								<label>AR Categories Name <span class="text-danger">*</span></label>
+								<input class="form-control" name="ar_cat_name" type="text" value="<?= $cat['ar_category_name'] ?>">
 							</div>
 							<div class="form-group">
 								<label>isActive <span class="text-danger">*</span></label>

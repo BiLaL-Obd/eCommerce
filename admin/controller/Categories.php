@@ -5,20 +5,22 @@ if ($_GET['action'] == "add") {
     if (isset($_POST['add-category'])) {
 
 
-        $category_name = $_POST['cat_name'];
+        $en_category_name = $_POST['en_cat_name'];
+        $ar_category_name = $_POST['ar_cat_name'];
         if (isset($_POST['active'])) {
             $active = 1;
         } else {
             $active = 0;
         }
 
-        $sql = "SELECT * FROM categories WHERE category_name = '$category_name'";
+        $sql = "SELECT * FROM categories WHERE en_category_name = '$en_category_name' OR ar_category_name = '$ar_category_name'";
         $res = mysqli_query($conn, $sql);
         if ($res) {
             if (!mysqli_num_rows($res) > 0) {
 
                 $sql2 = "INSERT INTO categories SET 
-                            category_name = '$category_name',
+                            en_category_name = '$en_category_name',
+                            ar_category_name = '$ar_category_name',
                             isActive = '$active'
                         ";
                 $res2 = mysqli_query($conn, $sql2) or die(mysqli_error($conn));
@@ -47,7 +49,8 @@ if ($_GET['action'] == "delete") {
 
 if ($_GET['action'] == "edit") {
     $id = $_GET['id'];
-    $category_name = $_POST['cat_name'];
+    $en_category_name = $_POST['en_cat_name'];
+    $ar_category_name = $_POST['ar_cat_name'];
     if (isset($_POST['active'])) {
         $active = 1;
     } else {
@@ -59,7 +62,8 @@ if ($_GET['action'] == "edit") {
     if ($res) {
         if (mysqli_num_rows($res) > 0) {
             $sql2 = "UPDATE categories SET 
-                category_name = '$category_name',
+                en_category_name = '$en_category_name',
+                ar_category_name = '$ar_category_name',
                 isActive = $active
                 WHERE cat_id = $id
             ";

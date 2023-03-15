@@ -591,7 +591,12 @@
 
 /***************** Login ***********************/
 .login .form {
-  width: 50%;
+  width: 40%;
+}
+@media (max-width: 767px) {
+  .login .form {
+    width: 100%;
+  }
 }
 .login .form .form-button {
   font-weight: 600;

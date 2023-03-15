@@ -15,63 +15,29 @@
                     <h3 class="page-title">Blogs</h3>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Users</li>
+                        <li class="breadcrumb-item active">Blogs</li>
                     </ul>
                 </div>
                 <div class="col-auto float-right ml-auto">
-                    <a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_user"><i class="fa fa-plus"></i> Add User</a>
+                    <a href="#" class="btn add-btn btn-sm" data-toggle="modal" data-target="#add_blog"><i class="fa fa-plus"></i> Add Blog</a>
                 </div>
             </div>
         </div>
         <!-- /Page Header -->
 
-        <!-- Search Filter -->
-        <div class="row filter-row">
-            <div class="col-sm-6 col-md-3">
-                <div class="form-group form-focus">
-                    <input type="text" class="form-control floating">
-                    <label class="focus-label">Name</label>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="form-group form-focus select-focus">
-                    <select class="select floating">
-                        <option>Select Company</option>
-                        <option>Global Technologies</option>
-                        <option>Delta Infotech</option>
-                    </select>
-                    <label class="focus-label">Company</label>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="form-group form-focus select-focus">
-                    <select class="select floating">
-                        <option>Select Roll</option>
-                        <option>Web Developer</option>
-                        <option>Web Designer</option>
-                        <option>Android Developer</option>
-                        <option>Ios Developer</option>
-                    </select>
-                    <label class="focus-label">Role</label>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <a href="#" class="btn btn-success btn-block"> Search </a>
-            </div>
-        </div>
-        <!-- /Search Filter -->
 
         <div class="row">
             <div class="col-md-12">
                 <div class="table-responsive">
-                    <table class="table table-striped custom-table datatable">
+                    <table class="table table-striped custom-table">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Company</th>
-                                <th>Created Date</th>
-                                <th>Role</th>
+                                <th>Img</th>
+                                <th>Title</th>
+                                <th>Category Name</th>
+                                <th>Active</th>
+                                <th>Added By</th>
+                                <th>Last Edit By</th>
                                 <th class="text-right">Action</th>
                             </tr>
                         </thead>
@@ -79,153 +45,22 @@
                             <tr>
                                 <td>
                                     <h2 class="table-avatar">
-                                        <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-21.jpg" alt=""></a>
-                                        <a href="profile.html">Daniel Porter <span>Admin</span></a>
+                                        <div class="avatar"><img src="assets/img/profiles/avatar-21.jpg" alt=""></div>
                                     </h2>
                                 </td>
-                                <td>danielporter@example.com</td>
-                                <td>Dreamguy's Technologies</td>
-                                <td>1 Jan 2013</td>
+                                <td>Title </td>
+                                <td>Phone</td>
                                 <td>
-                                    <span class="badge bg-inverse-danger">Admin</span>
-                                </td>
-                                <td class="text-right">
-                                    <div class="dropdown dropdown-action">
-                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_user"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_user"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                        </div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" disabled class="custom-control-input" id="active-1">
+                                        <label class="custom-control-label" for="active-1"></label>
                                     </div>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td>
-                                    <h2 class="table-avatar">
-                                        <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-02.jpg"></a>
-                                        <a href="profile.html">John Doe <span>Web Designer</span></a>
-                                    </h2>
+                                    <span class="badge bg-inverse-danger">BO</span>
                                 </td>
-                                <td>johndoe@example.com</td>
-                                <td>Dreamguy's Technologies</td>
-                                <td>1 Jan 2013</td>
                                 <td>
-                                    <span class="badge bg-inverse-success">Employee</span>
-                                </td>
-                                <td class="text-right">
-                                    <div class="dropdown dropdown-action">
-                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_user"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_user"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 class="table-avatar">
-                                        <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-09.jpg"></a>
-                                        <a href="profile.html">Richard Miles <span>Admin</span></a>
-                                    </h2>
-                                </td>
-                                <td>richardmiles@example.com</td>
-                                <td>Dreamguy's Technologies</td>
-                                <td>1 Jan 2013</td>
-                                <td>
-                                    <span class="badge bg-inverse-success">Employee</span>
-                                </td>
-                                <td class="text-right">
-                                    <div class="dropdown dropdown-action">
-                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_user"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_user"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 class="table-avatar">
-                                        <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-10.jpg"></a>
-                                        <a href="profile.html">John Smith <span>Android Developer</span></a>
-                                    </h2>
-                                </td>
-                                <td>johnsmith@example.com</td>
-                                <td>Dreamguy's Technologies</td>
-                                <td>1 Jan 2013</td>
-                                <td>
-                                    <span class="badge bg-inverse-success">Employee</span>
-                                </td>
-                                <td class="text-right">
-                                    <div class="dropdown dropdown-action">
-                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_user"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_user"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 class="table-avatar">
-                                        <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-05.jpg"></a>
-                                        <a href="profile.html">Mike Litorus <span>IOS Developer</span></a>
-                                    </h2>
-                                </td>
-                                <td>mikelitorus@example.com</td>
-                                <td>Dreamguy's Technologies</td>
-                                <td>1 Jan 2013</td>
-                                <td>
-                                    <span class="badge bg-inverse-success">Employee</span>
-                                </td>
-                                <td class="text-right">
-                                    <div class="dropdown dropdown-action">
-                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_user"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_user"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 class="table-avatar">
-                                        <a href="profile.html" class="avatar"><img alt="" src="assets/img/profiles/avatar-11.jpg"></a>
-                                        <a href="profile.html">Wilmer Deluna <span>Team Leader</span></a>
-                                    </h2>
-                                </td>
-                                <td>wilmerdeluna@example.com</td>
-                                <td>Dreamguy's Technologies</td>
-                                <td>1 Jan 2013</td>
-                                <td>
-                                    <span class="badge bg-inverse-success">Employee</span>
-                                </td>
-                                <td class="text-right">
-                                    <div class="dropdown dropdown-action">
-                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_user"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_user"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 class="table-avatar">
-                                        <a href="profile.html" class="avatar"><img src="assets/img/profiles/avatar-19.jpg" alt=""></a>
-                                        <a href="profile.html">Barry Cuda <span>Global Technologies</span></a>
-                                    </h2>
-                                </td>
-                                <td>barrycuda@example.com</td>
-                                <td>Global Technologies</td>
-                                <td>1 Jan 2013</td>
-                                <td>
-                                    <span class="badge bg-inverse-info">Client</span>
+                                    <span class="badge bg-inverse-danger">BO</span>
                                 </td>
                                 <td class="text-right">
                                     <div class="dropdown dropdown-action">
@@ -246,186 +81,50 @@
     <!-- /Page Content -->
 
     <!-- Add User Modal -->
-    <div id="add_user" class="modal custom-modal fade" role="dialog">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div id="add_blog" class="modal custom-modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Add User</h5>
+                    <h5 class="modal-title">Add Blog</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="" method="POST" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label>First Name <span class="text-danger">*</span></label>
-                                    <input class="form-control" type="text">
+                                    <label>Title <span class="text-danger">*</span></label>
+                                    <input class="form-control" placeholder="Blog Title" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input class="form-control" type="text">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Username <span class="text-danger">*</span></label>
-                                    <input class="form-control" type="text">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Email <span class="text-danger">*</span></label>
-                                    <input class="form-control" type="email">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input class="form-control" type="password">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Confirm Password</label>
-                                    <input class="form-control" type="password">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Phone </label>
-                                    <input class="form-control" type="text">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Role</label>
+                                    <label>Category Name</label>
                                     <select class="select">
-                                        <option>Admin</option>
-                                        <option>Client</option>
-                                        <option>Employee</option>
+                                        <option>Phone</option>
+                                        <option>TV</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label>Company</label>
-                                    <select class="select">
-                                        <option>Global Technologies</option>
-                                        <option>Delta Infotech</option>
-                                    </select>
+                                    <label>Description</label>
+                                    <textarea name="" placeholder="Blog Description" class="form-control" id="" rows="2"></textarea>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Employee ID <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control floating">
+                            <div class="col-sm-8 mb-3">
+                                <label for="">Upload Photo</label>
+                                <input type="file" class="form-control" name="imgBlog" id="">
+                            </div>
+                            <div class="col-sm-4 mb-3">
+                                <label>Visible <span class="text-danger">*</span></label>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" name="active" class="custom-control-input" id="add-active-1">
+                                    <label class="custom-control-label" for="add-active-1"></label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="table-responsive m-t-15">
-                            <table class="table table-striped custom-table">
-                                <thead>
-                                    <tr>
-                                        <th>Module Permission</th>
-                                        <th class="text-center">Read</th>
-                                        <th class="text-center">Write</th>
-                                        <th class="text-center">Create</th>
-                                        <th class="text-center">Delete</th>
-                                        <th class="text-center">Import</th>
-                                        <th class="text-center">Export</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Employee</td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Holidays</td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Leaves</td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Events</td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                        <td class="text-center">
-                                            <input checked="" type="checkbox">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
                         <div class="submit-section">
                             <button class="btn btn-primary submit-btn">Submit</button>
