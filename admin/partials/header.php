@@ -264,7 +264,7 @@
                         <a class="dropdown-item" href="profile.php">My Profile</a>
                         <a class="dropdown-item" href="settings.php">Settings</a>
                         <a class="dropdown-item" href="../index.php" target="_blank">Visite Webs.</a>
-                        <a class="dropdown-item" href="login.php">Logout</a>
+                        <a class="dropdown-item" href="logout.php">Logout</a>
                     </div>
                 </li>
             </ul>
@@ -275,7 +275,7 @@
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <a class="dropdown-item" href="settings.php">Settings</a>
-                    <a class="dropdown-item" href="login.php">Logout</a>
+                    <a class="dropdown-item" href="logout.php">Logout</a>
                 </div>
             </div>
             <!-- /Mobile Menu -->

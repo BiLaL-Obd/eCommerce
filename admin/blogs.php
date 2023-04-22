@@ -35,7 +35,7 @@
                                 <th>Img</th>
                                 <th>Title</th>
                                 <th>Category Name</th>
-                                <th>Active</th>
+                                <th>Visible</th>
                                 <th>Added</th>
                                 <th>Last Edit</th>
                                 <th class="text-right">Action</th>

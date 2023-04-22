@@ -1,4 +1,11 @@
 <?php include('../config/connect.php') ?>
+<?php
+if (!isset($_SESSION['user'])) {
+    // Redirect to login page
+    header("Location:" . SUBURL . "admin/login.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +47,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/admin-style.css?v=1">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0">
+    <link rel="stylesheet" href="assets/css/admin-style.css?v=1.3">
 
 </head>

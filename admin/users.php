@@ -98,7 +98,7 @@ if ($res) {
 										<span class="badge bg-inverse-<?= $user['role'] == "admin" ? "danger" : "success" ?>"><?= $user['role'] ?></span>
 									</td>
 									<td>
-										<?= $user['salery'] ?>
+										$ <?= $user['salery'] ?>
 									</td>
 									<td class="text-right">
 										<div class="dropdown dropdown-action">

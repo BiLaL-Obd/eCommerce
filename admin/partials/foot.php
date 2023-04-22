@@ -3,7 +3,7 @@
 <script>
     $(document).ready(function() {
         setTimeout(() => {
-            $(".msg").addClass("d-none")
+            $(".msg").addClass("d-none").html("")
         }, 1500);
     })
 </script>

@@ -37,14 +37,7 @@ if ($res) {
 					<a href="#" class="btn add-btn btn-sm" data-toggle="modal" data-target="#add_categories"><i class="fa fa-plus"></i> Add Categories</a>
 				</div>
 				<div class="col-12">
-					<?php if (isset($_SESSION['add'])) {
-						echo $_SESSION['add'];
-						unset($_SESSION['add']);
-					} ?>
-					<?php if (isset($_SESSION['update'])) {
-						echo $_SESSION['update'];
-						unset($_SESSION['update']);
-					} ?>
+					<?php include('partials/sessions.php') ?>
 				</div>
 			</div>
 		</div>
@@ -57,9 +50,10 @@ if ($res) {
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>En Category Name </th>
-								<th>Ar Category Name </th>
+								<th>En Name </th>
+								<th>Ar Name </th>
 								<th>isActive</th>
+								<th>Added</th>
 								<th class="text-right">Manage</th>
 							</tr>
 						</thead>
@@ -78,6 +72,7 @@ if ($res) {
 											<label class="custom-control-label" for="active-<?= $cat['cat_id'] ?>"></label>
 										</div>
 									</td>
+									<td><span class="badge bg-inverse-success">BO</span></td>
 									<td class="text-right">
 										<div class="dropdown dropdown-action">
 											<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -131,7 +126,7 @@ if ($res) {
 						</div>
 
 						<div class="submit-section">
-							<input type="submit" name="add-category" value="Add Category" class="btn btn-primary submit-btn">
+							<input type="submit" name="add-category" value="Add Category" class="btn btn-primary btn-sm submit-btn">
 						</div>
 					</form>
 				</div>
@@ -209,29 +204,6 @@ if ($res) {
 </div>
 <!-- /Page Wrapper -->
 
-</div>
-<!-- /Main Wrapper -->
+<?php include('partials/footer.php') ?>
 
-<!-- jQuery -->
-<script src="assets/js/jquery-3.5.1.min.js"></script>
-
-<!-- Bootstrap Core JS -->
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-
-<!-- Slimscroll JS -->
-<script src="assets/js/jquery.slimscroll.min.js"></script>
-
-<!-- Slimscroll JS -->
-<script src="assets/js/select2.min.js"></script>
-
-<!-- Datetimepicker JS -->
-<script src="assets/js/moment.min.js"></script>
-<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
-
-<!-- Custom JS -->
-<script src="assets/js/app.js"></script>
-
-</body>
-
-</html>
+<?php include('partials/foot.php') ?>

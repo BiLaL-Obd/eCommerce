@@ -25,13 +25,13 @@ if ($_GET['action'] == "add") {
                         ";
                 $res2 = mysqli_query($conn, $sql2) or die(mysqli_error($conn));
                 if ($res2) {
-                    $_SESSION['add'] = "<div class='text-success'>Category has Added</div>";
+                    $_SESSION['add'] = "<div class='bg-success'>Category has Added</div>";
                     header("location:" . SUBURL . "admin/categories.php");
                 } else {
                     echo 'failed';
                 }
             } else {
-                $_SESSION['add'] = "<div class='text-danger'>This Category has Exist</div>";
+                $_SESSION['add'] = "<div class='bg-warning'>This Category has Exist</div>";
                 header("location:" . SUBURL . "admin/categories.php");
             }
         }
@@ -43,6 +43,7 @@ if ($_GET['action'] == "delete") {
     $sql = "DELETE FROM categories WHERE cat_id = $id ";
     $res = mysqli_query($conn, $sql);
     if ($res) {
+        $_SESSION['delete'] = '<div class="bg-success">This Category has Deleted</div>';
         header("location: " . SUBURL . "admin/categories.php");
     }
 }
@@ -69,11 +70,11 @@ if ($_GET['action'] == "edit") {
             ";
             $res2 = mysqli_query($conn, $sql2);
             if ($res2) {
-                $_SESSION['update'] = "<div class='text-success'>Category has Updated</div>";
+                $_SESSION['edit'] = "<div class='bg-success'>Category has Updated</div>";
                 header("location:" . SUBURL . "admin/categories.php");
             } else {
                 header("location:" . SUBURL . "admin/categories.php");
-                $_SESSION['update'] = "<div class='text-danger'>SomThing Wrong ,Category has Not Updated</div>";
+                $_SESSION['edit'] = "<div class='bg-danger'>SomThing Wrong ,Category has Not Updated</div>";
             }
         }
     }

@@ -1,10 +1,7 @@
 <?php include('partials/head.php') ?>
-
 <?php include('partials/header.php') ?>
 
 <?php include('partials/sidebar.php') ?>
-
-
 <!-- Page Wrapper -->
 <div class="page-wrapper">
 
@@ -15,7 +12,7 @@
 		<div class="page-header">
 			<div class="row">
 				<div class="col-sm-12">
-					<h3 class="page-title">Welcome Admin!</h3>
+					<h3 class="page-title">Welcome <span class="text-capitalize"><?= $_SESSION['user'] ?></span> !</h3>
 					<ul class="breadcrumb">
 						<li class="breadcrumb-item active">Dashboard</li>
 					</ul>
