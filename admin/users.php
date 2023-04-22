@@ -36,16 +36,7 @@ if ($res) {
 					<a href="#" class="btn add-btn btn-sm" data-toggle="modal" data-target="#add_user"><i class="fa fa-plus"></i> Add User</a>
 				</div>
 				<div class="col-12">
-					<?php
-					if (isset($_SESSION['add'])) {
-						echo $_SESSION['add'];
-						unset($_SESSION['add']);
-					}
-					if (isset($_SESSION['edit'])) {
-						echo $_SESSION['edit'];
-						unset($_SESSION['edit']);
-					}
-					?>
+					<?php include('partials/sessions.php') ?>
 				</div>
 			</div>
 		</div>

@@ -35,7 +35,6 @@
                                 <th>Img</th>
                                 <th>Title</th>
                                 <th>Category Name</th>
-                                <th>Language</th>
                                 <th>Active</th>
                                 <th>Added</th>
                                 <th>Last Edit</th>
@@ -51,7 +50,6 @@
                                 </td>
                                 <td>Title </td>
                                 <td>Phone</td>
-                                <td>ar</td>
                                 <td>
                                     <div class="custom-control custom-switch">
                                         <input type="checkbox" disabled class="custom-control-input" id="active-1">
@@ -116,20 +114,11 @@
                                     <textarea name="" placeholder="Blog Description" class="form-control" id="" rows="2"></textarea>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-8">
                                 <label for="">Upload Photo <span class="text-danger">*</span></label>
                                 <input type="file" class="form-control" name="imgBlog" id="">
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Language <span class="text-danger">*</span></label>
-                                    <select class="select">
-                                        <option>En</option>
-                                        <option>Ar</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 mb-3">
+                            <div class="col-sm-4 mb-3">
                                 <label>Visible <span class="text-danger">*</span></label>
                                 <div class="custom-control custom-switch">
                                     <input type="checkbox" name="active" class="custom-control-input" id="add-active-1">
@@ -181,20 +170,11 @@
                                     <textarea name="" placeholder="Blog Description" class="form-control" id="" rows="2"></textarea>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-8">
                                 <label for="">Upload Photo <span class="text-danger">*</span></label>
                                 <input type="file" class="form-control" name="imgBlog" id="">
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Language <span class="text-danger">*</span></label>
-                                    <select class="select">
-                                        <option>En</option>
-                                        <option>Ar</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 mb-3">
+                            <div class="col-sm-4 mb-3">
                                 <label>Visible <span class="text-danger">*</span></label>
                                 <div class="custom-control custom-switch">
                                     <input type="checkbox" name="active" class="custom-control-input" id="add-active-1">

@@ -52,6 +52,10 @@ if ($_GET['action'] == "delete") {
     $sql = "DELETE FROM crm_users WHERE id =$id";
     $res = mysqli_query($conn, $sql);
     if ($res) {
+        $_SESSION['delete'] = "<div class='text-success'>Username has Deleted</div>";
+        header("location:" . SUBURL . "admin/users.php");
+    }else {
+        $_SESSION['delete'] = "<div class='text-danger'>Something Wrong The Username has not Deleted</div>";
         header("location:" . SUBURL . "admin/users.php");
     }
 }
