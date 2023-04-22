@@ -34,13 +34,13 @@ if ($_GET['action'] == "add") {
                 ";
                 $res2 = mysqli_query($conn, $sql2);
                 if ($res2) {
-                    $_SESSION['add'] = "<div class='text-success'>Username has Added</div>";
+                    $_SESSION['add'] = "<div class='msg bg-success'>Username has Added</div>";
                     header("location:" . SUBURL . "admin/users.php");
                 } else {
                     echo "faild";
                 }
             } else {
-                $_SESSION['add'] = "<div class='text-danger'>This Username has exist please choose another one</div>";
+                $_SESSION['add'] = "<div class='msg bg-danger'>This Username has exist please choose another one</div>";
                 header("location:" . SUBURL . "admin/users.php");
             }
         }
@@ -52,10 +52,10 @@ if ($_GET['action'] == "delete") {
     $sql = "DELETE FROM crm_users WHERE id =$id";
     $res = mysqli_query($conn, $sql);
     if ($res) {
-        $_SESSION['delete'] = "<div class='text-success'>Username has Deleted</div>";
+        $_SESSION['delete'] = "<div class='msg bg-success'>Username has Deleted</div>";
         header("location:" . SUBURL . "admin/users.php");
     }else {
-        $_SESSION['delete'] = "<div class='text-danger'>Something Wrong The Username has not Deleted</div>";
+        $_SESSION['delete'] = "<div class='msg bg-danger'>Something Wrong The Username has not Deleted</div>";
         header("location:" . SUBURL . "admin/users.php");
     }
 }
@@ -95,10 +95,10 @@ if ($_GET['action'] == "edit") {
             ";
             $res2 = mysqli_query($conn, $sql2);
             if ($res2) {
-                $_SESSION['edit'] = "<div class='text-success'>This Username has Edited</div>";
+                $_SESSION['edit'] = "<div class='msg bg-success'>This Username has Edited</div>";
                 header("location:" . SUBURL . "admin/users.php");
             } else {
-                $_SESSION['edit'] = "<div class='text-danger'>Somthing Wrong,This Username has not Edited</div>";
+                $_SESSION['edit'] = "<div class='msg bg-danger'>Somthing Wrong,This Username has not Edited</div>";
                 header("location:" . SUBURL . "admin/users.php");
             }
         }

@@ -2,6 +2,7 @@
 <?php include('partials/header.php') ?>
 
 <?php include('partials/sidebar.php') ?>
+<?php include('partials/sidebar.php') ?>
 <?php $userPath = "admin/controller/Users.php"; ?>
 
 <?php
