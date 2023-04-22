@@ -75,11 +75,13 @@ if ($res) {
 					<table class="table table-striped custom-table ">
 						<thead>
 							<tr>
-								<th>Full Name</th>
+								<th>Full Info</th>
 								<th>Username</th>
 								<th>Initails</th>
+								<th>Phone</th>
 								<th>Active</th>
 								<th>Role</th>
+								<th>Salery</th>
 								<th class="text-right">Action</th>
 							</tr>
 						</thead>
@@ -88,11 +90,12 @@ if ($res) {
 								<tr>
 									<td>
 										<h2 class="table-avatar">
-											<a href="profile.html"><?= $user['fullname'] ?> <span><?= $user['role'] ?></span></a>
+											<a href="profile.html"><?= $user['fullname'] ?> <span><?= $user['email'] ?></span></a>
 										</h2>
 									</td>
 									<td><?= $user['username'] ?></td>
 									<td><?= $user['initials'] ?></td>
+									<td><?= $user['phone'] ?></td>
 									<td>
 										<div class="custom-control custom-switch">
 											<input type="checkbox" disabled class="custom-control-input" id="active-<?= $user['id'] ?>" <?= $user['isActive'] == 1 ? "checked" : "" ?>>
@@ -102,12 +105,14 @@ if ($res) {
 									<td>
 										<span class="badge bg-inverse-<?= $user['role'] == "admin" ? "danger" : "success" ?>"><?= $user['role'] ?></span>
 									</td>
+									<td>
+										<?= $user['salery'] ?>
+									</td>
 									<td class="text-right">
 										<div class="dropdown dropdown-action">
 											<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
 											<div class="dropdown-menu dropdown-menu-right">
 												<a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_user_<?= $user['id'] ?>"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-												<a class="dropdown-item" href="#" data-toggle="modal" data-target="#manage_user_<?= $user['id'] ?>"><i class="fa fa-pencil-square-o m-r-5"></i> Manage</a>
 												<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_user_<?= $user['id'] ?>"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
 											</div>
 										</div>
@@ -155,8 +160,8 @@ if ($res) {
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>Email</label>
-									<input class="form-control" name="email" type="email">
+									<label>Email<span class="text-danger">*</span></label>
+									<input class="form-control" name="email" type="email" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
@@ -167,17 +172,26 @@ if ($res) {
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>Phone </label>
-									<input class="form-control" name="phone" type="text">
+									<label>Phone <span class="text-danger">*</span></label>
+									<input class="form-control" name="phone" type="text" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label>Role</label>
-									<select class="select" name="role">
+									<label>Role<span class="text-danger">*</span></label>
+									<select class="select" name="role" required>
 										<option value="admin">Admin</option>
 										<option value="employee">Employee</option>
 									</select>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<label for="">Salery<span class="text-danger">*</span></label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text">$</span>
+									</div>
+									<input type="number" name="salery" class="form-control" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
@@ -218,46 +232,55 @@ if ($res) {
 								<div class="col-sm-6">
 									<div class="form-group">
 										<label>Full Name <span class="text-danger">*</span></label>
-										<input class="form-control" name="fullname" value="<?= $user['fullname'] ?>" type="text">
+										<input class="form-control" name="fullname" value="<?= $user['fullname'] ?>" type="text" required>
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
 										<label>Username <span class="text-danger">*</span></label>
-										<input class="form-control" name="username" value="<?= $user['username'] ?>" type="text">
+										<input class="form-control" name="username" value="<?= $user['username'] ?>" type="text" required>
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
 										<label>Initials <span class="text-danger">*</span></label>
-										<input class="form-control" name="initials" value="<?= $user['initials'] ?>" type="text">
+										<input class="form-control" name="initials" value="<?= $user['initials'] ?>" type="text" required>
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
 										<label>Emails <span class="text-danger">*</span></label>
-										<input class="form-control" name="email" value="<?= $user['email'] ?>" type="email">
+										<input class="form-control" name="email" value="<?= $user['email'] ?>" type="email" required>
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label>Password</label>
-										<input class="form-control" name="password" value="<?= $user['password'] ?>" type="password">
+										<label>Password<span class="text-danger">*</span></label>
+										<input class="form-control" name="password" value="<?= $user['password'] ?>" type="password" required>
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label>Phone </label>
-										<input class="form-control" name="phone" value="<?= $user['phone'] ?>" type="text">
+										<label>Phone <span class="text-danger">*</span></label>
+										<input class="form-control" name="phone" value="<?= $user['phone'] ?>" type="text" required>
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label>Role</label>
-										<select class="select" name="role">
+										<label>Role<span class="text-danger">*</span></label>
+										<select class="select" name="role" required>
 											<option value="admin" <?= $user['role'] == "admin" ? "selected" : "" ?>>Admin</option>
 											<option value="employee" <?= $user['role'] == "employee" ? "selected" : "" ?>>Employee</option>
 										</select>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<label for="">Salery<span class="text-danger">*</span></label>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text">$</span>
+										</div>
+										<input type="number" name="salery" value="<?= $user['salery'] ?>" class="form-control" required>
 									</div>
 								</div>
 								<div class="col-sm-6">
@@ -282,104 +305,6 @@ if ($res) {
 	<?php } ?>
 	<!-- /Edit User Modal -->
 
-	<!-- Permission User Modal -->
-	<?php foreach ($users as $user) { ?>
-		<div id="manage_user_<?= $user['id'] ?>" class="modal custom-modal fade" role="dialog">
-			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Permission user <?= $user['username'] ?></h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<form action="<?= SUBURL . $userPath . "?id=" . $user['id'] . "&action=manage" ?>" method="POST">
-							<div class="table-responsive m-t-15">
-								<table class="table table-striped custom-table">
-									<thead>
-										<tr>
-											<th>Module Permission</th>
-											<th class="text-center">View</th>
-											<th class="text-center">Create</th>
-											<th class="text-center">Edit</th>
-											<th class="text-center">Delete</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Categories</td>
-											<td class="text-center">
-												<input type="checkbox" value="cat-view" name="view[]" checked>
-											</td>
-											<td class="text-center">
-												<input type="checkbox">
-											</td>
-											<td class="text-center">
-												<input type="checkbox">
-											</td>
-											<td class="text-center">
-												<input type="checkbox">
-											</td>
-										</tr>
-										<tr>
-											<td>Product</td>
-											<td class="text-center">
-												<input type="checkbox" value="product-view" name="view[]" checked>
-											</td>
-											<td class="text-center">
-												<input type="checkbox">
-											</td>
-											<td class="text-center">
-												<input type="checkbox">
-											</td>
-											<td class="text-center">
-												<input type="checkbox">
-											</td>
-										</tr>
-										<tr>
-											<td>Blogs</td>
-											<td class="text-center">
-												<input type="checkbox" value="blogs-view" name="view[]" checked>
-											</td>
-											<td class="text-center">
-												<input type="checkbox">
-											</td>
-											<td class="text-center">
-												<input type="checkbox">
-											</td>
-											<td class="text-center">
-												<input type="checkbox">
-											</td>
-										</tr>
-										<tr>
-											<td>Clients</td>
-											<td class="text-center">
-												<input type="checkbox" value="clients-view" name="view[]" checked>
-											</td>
-											<td class="text-center">
-												<input type="checkbox" disabled>
-											</td>
-											<td class="text-center">
-												<input type="checkbox">
-											</td>
-											<td class="text-center">
-												<input type="checkbox">
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="submit-section">
-								<input type="submit" name="permission-user" value="Save" class="btn btn-primary submit-btn">
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	<?php } ?>
-	<!-- /Permission User Modal -->
 
 	<!-- Delete User Modal -->
 	<?php foreach ($users as $user) { ?>

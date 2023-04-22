@@ -9,6 +9,7 @@ if ($_GET['action'] == "add") {
         $password = $_POST['password'];
         $phone = $_POST['phone'];
         $role = $_POST['role'];
+        $salery=$_POST['salery'];
 
         if (isset($_POST['active'])) {
             $active = 1;
@@ -28,6 +29,7 @@ if ($_GET['action'] == "add") {
                     password = '$password',
                     phone = '$phone',
                     role = '$role',
+                    salery='$salery',
                     isActive = '$active'
                 ";
                 $res2 = mysqli_query($conn, $sql2);
@@ -63,6 +65,8 @@ if ($_GET['action'] == "edit") {
     $password = $_POST['password'];
     $phone = $_POST['phone'];
     $role = $_POST['role'];
+    $salery=$_POST['salery'];
+
     if (isset($_POST['active'])) {
         $active = 1;
     } else {
@@ -81,6 +85,7 @@ if ($_GET['action'] == "edit") {
                 password = '$password',
                 phone = '$phone',
                 role = '$role',
+                salery='$salery',
                 isActive = '$active'
                     WHERE id = $id
             ";
