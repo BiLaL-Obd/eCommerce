@@ -1,4 +1,11 @@
 <?php include('partials/head.php') ?>
+<?php
+if (!isset($_SESSION['user'])) {
+	// Redirect to login page
+	header("Location:" . SUBURL . "admin/login.php");
+	exit;
+}
+?>
 <?php include('partials/header.php') ?>
 
 <?php include('partials/sidebar.php') ?>
