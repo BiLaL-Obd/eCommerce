@@ -7,7 +7,7 @@ if (!isset($_SESSION['user'])) {
 }
 ?>
 <?php include('partials/header.php') ?>
-
+<?php include("controller/Functions.php") ?>
 <?php include('partials/sidebar.php') ?>
 <!-- Page Wrapper -->
 <div class="page-wrapper">
@@ -19,7 +19,7 @@ if (!isset($_SESSION['user'])) {
 		<div class="page-header">
 			<div class="row">
 				<div class="col-sm-12">
-					<h3 class="page-title">Welcome <span class="text-capitalize"><?= $_SESSION['user'] ?></span> !</h3>
+					<h3 class="page-title">Welcome <span class="text-capitalize"><?= $_SESSION['user'] ?></span>!</h3>
 					<ul class="breadcrumb">
 						<li class="breadcrumb-item active">Dashboard</li>
 					</ul>
@@ -34,8 +34,8 @@ if (!isset($_SESSION['user'])) {
 					<div class="card-body">
 						<span class="dash-widget-icon"><i class="fa fa-cubes"></i></span>
 						<div class="dash-widget-info">
-							<h3>112</h3>
-							<span>Projects</span>
+							<h3><?= getCount("categories") ?></h3>
+							<span>Categories</span>
 						</div>
 					</div>
 				</div>
@@ -46,7 +46,7 @@ if (!isset($_SESSION['user'])) {
 						<span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
 						<div class="dash-widget-info">
 							<h3>44</h3>
-							<span>Clients</span>
+							<span>Prodcuts</span>
 						</div>
 					</div>
 				</div>

@@ -41,6 +41,6 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css?v=1.0">
-    <link rel="stylesheet" href="assets/css/admin-style.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/admin-style.css?v=1.4">
 
 </head>

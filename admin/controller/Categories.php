@@ -1,6 +1,6 @@
 <?php include("../../config/connect.php") ?>
 <?php
-
+$userId = $_SESSION['user_id'];
 if ($_GET['action'] == "add") {
     if (isset($_POST['add-category'])) {
 
@@ -21,7 +21,8 @@ if ($_GET['action'] == "add") {
                 $sql2 = "INSERT INTO categories SET 
                             en_category_name = '$en_category_name',
                             ar_category_name = '$ar_category_name',
-                            isActive = '$active'
+                            isActive = '$active',
+                            added_by='$userId'
                         ";
                 $res2 = mysqli_query($conn, $sql2) or die(mysqli_error($conn));
                 if ($res2) {
@@ -40,7 +41,7 @@ if ($_GET['action'] == "add") {
 
 if ($_GET['action'] == "delete") {
     $id = $_GET['id'];
-    $sql = "DELETE FROM categories WHERE cat_id = $id ";
+    $sql = "DELETE FROM categories WHERE id = $id ";
     $res = mysqli_query($conn, $sql);
     if ($res) {
         $_SESSION['delete'] = '<div class="bg-success">This Category has Deleted</div>';
@@ -58,15 +59,16 @@ if ($_GET['action'] == "edit") {
         $active = 0;
     }
 
-    $sql = "SELECT * FROM categories WHERE cat_id = $id";
+    $sql = "SELECT * FROM categories WHERE id = $id";
     $res = mysqli_query($conn, $sql);
     if ($res) {
         if (mysqli_num_rows($res) > 0) {
             $sql2 = "UPDATE categories SET 
                 en_category_name = '$en_category_name',
                 ar_category_name = '$ar_category_name',
-                isActive = $active
-                WHERE cat_id = $id
+                isActive = $active,
+                edit_by ='$userId'
+                WHERE id = $id
             ";
             $res2 = mysqli_query($conn, $sql2);
             if ($res2) {
