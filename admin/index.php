@@ -7,7 +7,6 @@ if (!isset($_SESSION['user'])) {
 }
 ?>
 <?php include('partials/header.php') ?>
-<?php include("controller/Functions.php") ?>
 <?php include('partials/sidebar.php') ?>
 <!-- Page Wrapper -->
 <div class="page-wrapper">

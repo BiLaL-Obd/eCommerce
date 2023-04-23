@@ -27,7 +27,9 @@ function allowed($conn, $data)
                     <a class="active" href="index.php"><i class="la la-dashboard"></i> <span>
                             Dashboard</span></a>
                 </li>
+                <?php allowed($conn, '
                 <li><a href="categories.php"><i class="la la-files-o"></i> <span> Categories </span></a></li>
+                ') ?>
                 <li><a href="projects.php"><i class="la la-rocket"></i> <span> Products</span></a></li>
                 <li>
                     <a href="blogs.php"><i class="la la-file-pdf-o"></i> <span>Blogs</span></a>

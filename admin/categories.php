@@ -1,21 +1,20 @@
 <?php include('partials/head.php') ?>
 
 <?php include('partials/header.php') ?>
-<?php include("controller/Functions.php") ?>
+
 <?php include('partials/sidebar.php') ?>
 <?php $categoryPath = "admin/controller/Categories.php"; ?>
 
 <?php
 $sql = "SELECT categories.*, 
                added_user.initials AS added_by, 
-               edit_user.initials AS edit_by, 
-               crm_users.role 
+               edit_user.initials AS edit_by
         FROM categories 
         INNER JOIN crm_users ON categories.added_by = crm_users.id 
         LEFT JOIN crm_users AS added_user ON categories.added_by = added_user.id 
         LEFT JOIN crm_users AS edit_user ON categories.edit_by = edit_user.id 
         ORDER BY id DESC";
-$cats = getAll($sql);
+$cats = getFetchAll($sql);
 ?>
 
 <!-- Page Wrapper -->
@@ -75,8 +74,8 @@ $cats = getAll($sql);
 												<label class="custom-control-label" for="active-<?= $cat['id'] ?>"></label>
 											</div>
 										</td>
-										<td><span class="badge bg-inverse-<?= $cat['role'] == 'admin' ? "success" : "danger" ?>"><?= $cat['added_by'] ?></span></td>
-										<td><span class="badge bg-inverse-<?= $cat['role'] == 'admin' ? "success" : "danger" ?>"><?= isset($cat['edit_by']) ? $cat['edit_by']:"AD" ?></span></td>
+										<td><span class="badge bg-inverse-success"><?= $cat['added_by'] ?></span></td>
+										<td><span class="badge bg-inverse-success"><?= isset($cat['edit_by']) ? $cat['edit_by']:"AD" ?></span></td>
 										<td class="text-right">
 											<div class="dropdown dropdown-action">
 												<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>

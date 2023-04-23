@@ -1,5 +1,5 @@
 <?php
-function getAll($sql) {
+function getFetchAll($sql) {
     global $conn;
     $res = mysqli_query($conn, $sql);
     if ($res) {

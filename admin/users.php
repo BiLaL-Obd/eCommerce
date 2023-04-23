@@ -6,15 +6,7 @@
 
 <?php
 $sql = "SELECT * FROM crm_users ORDER BY id DESC";
-$res = mysqli_query($conn, $sql);
-if ($res) {
-	if (mysqli_num_rows($res) > 0) {
-		$users = mysqli_fetch_all($res, MYSQLI_ASSOC);
-		mysqli_free_result($res);
-	} else {
-		echo "hhh";
-	}
-}
+$users = getFetchAll($sql);
 ?>
 <!-- Page Wrapper -->
 <div class="page-wrapper">

@@ -44,3 +44,4 @@
     <link rel="stylesheet" href="assets/css/admin-style.css?v=1.4">
 
 </head>
+<?php include('./controller/Functions.php') ?>
