@@ -17,6 +17,12 @@ if ($_GET['action'] == "add") {
             $active = 0;
         }
 
+        if($role == "admin") {
+            $color = "success";
+        }else {
+            $color = "danger";
+        }
+
         $sql = "SELECT * FROM crm_users WHERE username = '$username'";
         $res = mysqli_query($conn, $sql);
         if ($res) {

@@ -74,8 +74,14 @@ $cats = getFetchAll($sql);
 												<label class="custom-control-label" for="active-<?= $cat['id'] ?>"></label>
 											</div>
 										</td>
-										<td><span class="badge bg-inverse-success"><?= $cat['added_by'] ?></span></td>
-										<td><span class="badge bg-inverse-success"><?= isset($cat['edit_by']) ? $cat['edit_by']:"AD" ?></span></td>
+										<td><span class="badge bg-inverse-<?= role($cat['added_by']) ? "success" : "danger" ?>"><?= $cat['added_by'] ?></span></td>
+										<td>
+											<?php if (isset($cat['edit_by'])) { ?>
+												<span class="badge bg-inverse-<?= role($cat["edit_by"]) ? "success" : "danger" ?>"><?=$cat['edit_by']?></span>
+											<?php } else { ?>
+												<span class="badge bg-dark text-white">AD</span>
+											<?php } ?>
+										</td>
 										<td class="text-right">
 											<div class="dropdown dropdown-action">
 												<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>

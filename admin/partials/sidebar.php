@@ -9,18 +9,20 @@
                     <a class="active" href="index.php"><i class="la la-dashboard"></i> <span>
                             Dashboard</span></a>
                 </li>
-                <?php if (isAdmin()) { ?>
-                    <li><a href="categories.php"><i class="la la-files-o"></i> <span> Categories </span></a></li>
-                <?php } ?>
-                <li><a href="projects.php"><i class="la la-rocket"></i> <span> Products</span></a></li>
-                <li>
-                    <a href="blogs.php"><i class="la la-file-pdf-o"></i> <span>Blogs</span></a>
-                </li>
                 <li>
                     <a href="clients.php"><i class="la la-users"></i> <span>Clients</span></a>
                 </li>
 
-                <?php if(isAdmin()) { ?>
+                <li class="menu-title">
+                    <span>Website</span>
+                </li>
+                <li><a href="categories.php"><i class="la la-files-o"></i> <span> Categories </span></a></li>
+                <li><a href="projects.php"><i class="la la-rocket"></i> <span> Products</span></a></li>
+                <li>
+                    <a href="blogs.php"><i class="la la-file-pdf-o"></i> <span>Blogs</span></a>
+                </li>
+
+                <?php if (isAdmin()) { ?>
                     <li class="menu-title">
                         <span>Employees</span>
                     </li>
@@ -49,15 +51,15 @@
                 <li class="menu-title">
                     <span>Pages</span>
                 </li>
-                <?php if(isAdmin()) { ?>
-                <li class="submenu">
-                    <a href="#"><i class="la la-pie-chart"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
-                    <ul style="display: none;">
-                        <li><a href="expense-reports.php"> Sales Report </a></li>
-                        <li><a href="employee-reports.php"> Employee Report </a></li>
-                        <li><a href="daily-reports.php"> Daily Report </a></li>
-                    </ul>
-                </li>
+                <?php if (isAdmin()) { ?>
+                    <li class="submenu">
+                        <a href="#"><i class="la la-pie-chart"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
+                        <ul style="display: none;">
+                            <li><a href="expense-reports.php"> Sales Report </a></li>
+                            <li><a href="employee-reports.php"> Employee Report </a></li>
+                            <li><a href="daily-reports.php"> Daily Report </a></li>
+                        </ul>
+                    </li>
                 <?php } ?>
                 <li class="submenu">
                     <a href="#"><i class="la la-user"></i> <span> Profile </span> <span class="menu-arrow"></span></a>

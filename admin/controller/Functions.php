@@ -1,4 +1,22 @@
 <?php
+function role($data)
+{
+    global $conn;
+    $sql = "SELECT * FROM crm_users WHERE initials = '$data'";
+    $res = mysqli_query($conn, $sql);
+    if ($res) {
+        if (mysqli_num_rows($res) > 0) {
+            $users = mysqli_fetch_all($res, MYSQLI_ASSOC);
+            foreach ($users as $user) {
+                if ($user['role'] == "admin") {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }
+    }
+}
 function isAdmin()
 {
     global $conn;

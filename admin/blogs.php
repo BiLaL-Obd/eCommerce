@@ -2,6 +2,21 @@
 <?php include('partials/header.php') ?>
 <?php include('partials/sidebar.php') ?>
 <?php $blogPath = "admin/controller/Blogs.php"; ?>
+
+<?php
+$sql = "SELECT blogs.*, 
+               added_user.initials AS added_by, 
+               edit_user.initials AS edit_by,
+               categories.en_category_name
+        FROM blogs 
+        INNER JOIN categories ON blogs.cat_id = categories.id
+        INNER JOIN crm_users ON blogs.added_by = crm_users.id 
+        LEFT JOIN crm_users AS added_user ON blogs.added_by = added_user.id 
+        LEFT JOIN crm_users AS edit_user ON blogs.edit_by = edit_user.id 
+        ORDER BY id DESC";
+
+$blogs = getFetchAll($sql);
+?>
 <!-- Page Wrapper -->
 <div class="page-wrapper">
 
@@ -20,6 +35,9 @@
                 </div>
                 <div class="col-auto float-right ml-auto">
                     <a href="#" class="btn add-btn btn-sm" data-toggle="modal" data-target="#add_blog"><i class="fa fa-plus"></i> Add Blog</a>
+                </div>
+                <div class="col-12">
+                    <?php include("partials/sessions.php") ?>
                 </div>
             </div>
         </div>
@@ -42,38 +60,44 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <h2 class="table-avatar">
-                                        <div class="avatar img-blog"><img src="assets/img/profiles/avatar-21.jpg" alt=""></div>
-                                    </h2>
-                                </td>
-                                <td>Title </td>
-                                <td>Phone</td>
-                                <td>
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" disabled class="custom-control-input" id="active-1">
-                                        <label class="custom-control-label" for="active-1"></label>
-                                    </div>
-                                </td>
-                                <td>
-                                    <span class="badge bg-inverse-danger">BO</span>
-                                </td>
-                                <td>
-                                    <span class="badge bg-inverse-danger">BO</span>
-                                </td>
-                                <td class="text-right">
-                                    <div class="dropdown dropdown-action">
-                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_user"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                            <?php if (isAdmin()) { ?>
-                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_user"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                            <?php } ?>
+                            <?php foreach ($blogs as $blog) { ?>
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <div class="avatar img-blog"><img src="assets/img/profiles/avatar-21.jpg" alt=""></div>
+                                        </h2>
+                                    </td>
+                                    <td><?= $blog['title'] ?></td>
+                                    <td><?= $blog["en_category_name"] ?></td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" disabled class="custom-control-input" id="active-<?= $blog['id'] ?>" <?= $blog['isVisible'] == "1" ? "checked" : "" ?>>
+                                            <label class="custom-control-label" for="active-<?= $blog['id'] ?>"></label>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-inverse-<?= role($blog['added_by']) ? 'success' : 'danger' ?>"><?= $blog["added_by"] ?></span>
+                                    </td>
+                                    <td>
+                                        <?php if (isset($blog['edit_by'])) { ?>
+                                            <span class="badge bg-inverse-<?= role($blog['edit_by']) ? "success" : "danger" ?>"><?= $blog['edit_by'] ?></span>
+                                        <?php } else { ?>
+                                            <span class="badge bg-dark text-white">AD</span>
+                                        <?php } ?>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="dropdown dropdown-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_user"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <?php if (isAdmin()) { ?>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_user"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
@@ -104,7 +128,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label>Category Name <span class="text-danger">*</span></label>
-                                    <select class="select">
+                                    <select name="category" class="select">
                                         <?php
                                         $sql = "SELECT * FROM categories WHERE isActive = '1'";
                                         $cats = getFetchAll($sql);
@@ -117,18 +141,18 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label>Description <span class="text-danger">*</span></label>
-                                    <textarea name="" placeholder="Blog Description" class="form-control" id="" rows="2"></textarea>
+                                    <textarea name="description" placeholder="Blog Description" class="form-control" id="" rows="2"></textarea>
                                 </div>
                             </div>
                             <div class="col-sm-8">
                                 <label for="">Upload Photo <span class="text-danger">*</span></label>
-                                <input type="file" class="form-control" name="imgBlog" id="">
+                                <input type="file" class="form-control" name="img" id="">
                             </div>
                             <div class="col-sm-4 mb-3">
                                 <label>Visible <span class="text-danger">*</span></label>
                                 <div class="custom-control custom-switch">
-                                    <input type="checkbox" name="active" class="custom-control-input" id="add-active-1">
-                                    <label class="custom-control-label" for="add-active-1"></label>
+                                    <input type="checkbox" name="visible" class="custom-control-input" id="add-active">
+                                    <label class="custom-control-label" for="add-active"></label>
                                 </div>
                             </div>
                         </div>
