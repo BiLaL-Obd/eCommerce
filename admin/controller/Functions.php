@@ -1,5 +1,5 @@
 <?php
-function allowed($data)
+function isAdmin()
 {
     global $conn;
     $userId = $_SESSION['user_id'];
@@ -10,7 +10,9 @@ function allowed($data)
             $users = mysqli_fetch_all($res, MYSQLI_ASSOC);
             foreach ($users as $user) {
                 if ($user['role'] == "admin") {
-                    echo $data;
+                    return true;
+                }else {
+                    return false;
                 }
             }
         }
