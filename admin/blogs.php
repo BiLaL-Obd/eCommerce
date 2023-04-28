@@ -1,7 +1,7 @@
 <?php include('partials/head.php') ?>
 <?php include('partials/header.php') ?>
 <?php include('partials/sidebar.php') ?>
-
+<?php $blogPath = "admin/controller/Blogs.php"; ?>
 <!-- Page Wrapper -->
 <div class="page-wrapper">
 
@@ -14,7 +14,7 @@
                 <div class="col">
                     <h3 class="page-title">Blogs</h3>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
                         <li class="breadcrumb-item active">Blogs</li>
                     </ul>
                 </div>
@@ -91,20 +91,24 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="" method="POST" enctype="multipart/form-data">
+                    <form action="<?= SUBURL . $blogPath . "?action=add" ?>" method="POST" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label>Title <span class="text-danger">*</span></label>
-                                    <input class="form-control" placeholder="Blog Title" type="text">
+                                    <input class="form-control" placeholder="Blog Title" name="title" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label>Category Name <span class="text-danger">*</span></label>
                                     <select class="select">
-                                        <option>Phone</option>
-                                        <option>TV</option>
+                                        <?php
+                                        $sql = "SELECT * FROM categories WHERE isActive = '1'";
+                                        $cats = getFetchAll($sql);
+                                        foreach ($cats as $cat) { ?>
+                                            <option value="<?= $cat['id'] ?>"><?= $cat['en_category_name'] ?></option>
+                                        <?php } ?>
                                     </select>
                                 </div>
                             </div>
@@ -127,7 +131,7 @@
                             </div>
                         </div>
                         <div class="submit-section">
-                            <button class="btn btn-primary submit-btn">Submit</button>
+                            <button class="btn btn-primary submit-btn" name="add-blog">Submit</button>
                         </div>
                     </form>
                 </div>

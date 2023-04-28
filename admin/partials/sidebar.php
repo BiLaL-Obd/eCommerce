@@ -1,21 +1,3 @@
-<?php
-function allowed($conn, $data)
-{
-    $userId = $_SESSION['user_id'];
-    $sql = "SELECT * FROM crm_users WHERE id = '$userId'";
-    $res = mysqli_query($conn, $sql);
-    if ($res) {
-        if (mysqli_num_rows($res) > 0) {
-            $users = mysqli_fetch_all($res, MYSQLI_ASSOC);
-            foreach ($users as $user) {
-                if ($user['role'] == "admin") {
-                    echo $data;
-                }
-            }
-        }
-    }
-}
-?>
 <div class="sidebar" id="sidebar">
     <div class="sidebar-inner slimscroll">
         <div id="sidebar-menu" class="sidebar-menu">
@@ -27,7 +9,7 @@ function allowed($conn, $data)
                     <a class="active" href="index.php"><i class="la la-dashboard"></i> <span>
                             Dashboard</span></a>
                 </li>
-                <?php allowed($conn, '
+                <?php allowed('
                 <li><a href="categories.php"><i class="la la-files-o"></i> <span> Categories </span></a></li>
                 ') ?>
                 <li><a href="projects.php"><i class="la la-rocket"></i> <span> Products</span></a></li>
@@ -38,7 +20,7 @@ function allowed($conn, $data)
                     <a href="clients.php"><i class="la la-users"></i> <span>Clients</span></a>
                 </li>
 
-                <?php allowed($conn, '
+                <?php allowed('
                     <li class="menu-title">
                         <span>Employees</span>
                     </li>
@@ -61,14 +43,13 @@ function allowed($conn, $data)
                     </li>
                 ') ?>
 
-
-
                 <li>
                     <a href="settings.php"><i class="la la-cog"></i> <span>Settings</span></a>
                 </li>
                 <li class="menu-title">
                     <span>Pages</span>
                 </li>
+                <?php allowed('
                 <li class="submenu">
                     <a href="#"><i class="la la-pie-chart"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
@@ -77,6 +58,7 @@ function allowed($conn, $data)
                         <li><a href="daily-reports.php"> Daily Report </a></li>
                     </ul>
                 </li>
+                ') ?>
                 <li class="submenu">
                     <a href="#"><i class="la la-user"></i> <span> Profile </span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
