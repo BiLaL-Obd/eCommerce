@@ -16,20 +16,15 @@
 						<form action="<?= SUBURL . "admin/controller/Login.php" ?>" method="POST">
 							<div class="form-group">
 								<label>Username </label>
-								<input class="form-control" type="text" name="username" placeholder="Enter your Username here">
+								<input class="form-control" autocomplete="false" required type="text" name="username" placeholder="Enter your Username here">
 							</div>
 							<div class="form-group">
 								<div class="row">
 									<div class="col">
 										<label>Password</label>
 									</div>
-									<div class="col-auto">
-										<a class="text-muted" href="forgot-password.php">
-											Forgot password?
-										</a>
-									</div>
 								</div>
-								<input class="form-control" type="password" name="password" placeholder="Enter your Password here">
+								<input class="form-control" type="password" autocomplete="false" name="password" requred placeholder="Enter your Password here">
 							</div>
 							<div class="form-group text-center">
 								<button class="btn btn-primary account-btn" type="submit" name="login">Login</button>
