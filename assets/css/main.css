@@ -617,9 +617,9 @@
   font-size: 14px;
 }
 .info-account .nav-tabs {
-    border: 2px solid #dee2e6;
-    border-right: 0px;
-    border-left: 0px;
+  border: 2px solid #dee2e6;
+  border-right: 0px;
+  border-left: 0px;
 }
 .info-account .nav-tabs .nav-item.show .nav-link,
 .info-account .nav-tabs .nav-link.active {
@@ -632,7 +632,22 @@
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-.nav-tabs .nav-link:focus:not(.active), .nav-tabs .nav-link:hover:not(.active) {
+.info-account .info-1 {
+  border-bottom: 1px solid #dee2e6;
+}
+@media (min-width: 768px) {
+  .info-account .info-1 {
+    border-right: 2px solid #dee2e6;
+    border-bottom: 0px;
+  }
+}
+.info-account .info-2 span{
+     width: 25%;
+    display: inline-flex;
+    font-weight: 500;
+}
+.nav-tabs .nav-link:focus:not(.active),
+.nav-tabs .nav-link:hover:not(.active) {
   color: var(--dark);
   background-color: #eeeeef;
   border-color: transparent transparent #eeeeef;
@@ -651,13 +666,14 @@
   border: 1px solid var(--dark);
   caret-color: var(--main);
 }
+  .info-account .edit-info {
+    width: 30px;
+    height: 30px;
+  }
 @media (max-width: 767px) {
   .info-account .pers-info {
     width: 80px;
     height: 80px;
-  }
-  .info-account .edit-info {
-    font-size: 10px;
   }
   .info-account .nav-link {
     font-size: 10px;
