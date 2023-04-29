@@ -5,76 +5,48 @@
     <div class="info-account py-5">
         <div class="container">
             <h1 class="text-uppercase mb-4">User Information</h1>
-            <div class="card-info bg-white rounded-3 p-2">
+            <div class="card-info">
                 <div class="row">
-                    <div class="col-5 col-md-2 mb-3">
-                        <img src="admin/images/user.webp" class="mb-3 pers-info" alt="">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-danger edit-info btn-sm d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#modalId">
-                            <i class='bx bx-edit'></i>
-                            Edit Details
-                        </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                            <div class="modal-dialog modal-md modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header p-2 px-3">
-                                        <h5 class="modal-title" id="modalTitleId">Edit Details</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="">
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">Full Name</label>
-                                                <input type="text" name="" class="form-control" value="Bilal Obeid" id="">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">Username</label>
-                                                <input type="text" disabled class="form-control" value="@bilal" name="" id="">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">Email Addr.</label>
-                                                <input type="text" class="form-control" value="bilal@gmail.com" name="" id="">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">Your Photo</label>
-                                                <input type="file" name="" id="">
-                                            </div>
-                                            <div class="d-flex justify-content-end">
-                                                <input type="submit" class="btn btn-sm btn-danger" value="Save Edit">
-                                            </div>
-                                        </form>
+                    <div class="col-12 bg-white rounded-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3 p-3">
+                                <div class="d-flex align-items-start gap-3">
+                                    <img src="admin/images/about-us.png" class="mb-3 pers-info rounded-circle" alt="">
+                                    <div class="info">
+                                        <div class="mb-3 fw-500 font-size-20">
+                                            Bilal Obeid
+                                        </div>
+                                        <div class="mb-3 font-size-13">
+                                            <span>Date of join :</span>
+                                            1st Jan 1999
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="col-12 col-md-6 mb-3 p-3">
 
-                    </div>
-                    <div class="col-7 col-md-10 mb-3">
-                        <div class="mb-3 fw-500 text-color-main">
-                            Bilal Obeid
-                        </div>
-                        <div class="mb-3 font-size-14">
-                            bilal@gmail.com
-                        </div>
-                        <div class="mb-3 font-size-12">
-                            11-22-1999
+                                <div class="mb-3 font-size-14">
+                                    bilal@gmail.com
+                                </div>
+                                <div class="mb-3 font-size-12">
+                                    11-22-1999
+                                </div>
+                            </div>
+                            <div class="col-12 px-0">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <button class="nav-link active d-flex align-items-center gap-2 font-size-14" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                            Basic Info
+                                        </button>
+                                        <button class="nav-link d-flex align-items-center gap-2 font-size-14" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                            Purchase History
+                                        </button>
+                                    </div>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <nav class="mb-3">
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <button class="nav-link active d-flex align-items-center gap-2 font-size-14" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-                                    <i class='bx bxs-id-card'></i>
-                                    Basic Info
-                                </button>
-                                <button class="nav-link d-flex align-items-center gap-2 font-size-14" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-                                    <i class='bx bxs-time'></i>
-                                    Purchase History
-                                </button>
-                            </div>
-                        </nav>
                         <div class="tab-content p-1 p-md-3" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                                 <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
@@ -186,3 +158,43 @@
 </body>
 
 </html>
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-danger edit-info btn-sm d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#modalId">
+                            <i class='bx bx-edit'></i>
+                            Edit Details
+                        </button> -->
+<!-- Modal -->
+<!-- <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                            <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header p-2 px-3">
+                                        <h5 class="modal-title" id="modalTitleId">Edit Details</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Full Name</label>
+                                                <input type="text" name="" class="form-control" value="Bilal Obeid" id="">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Username</label>
+                                                <input type="text" disabled class="form-control" value="@bilal" name="" id="">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Email Addr.</label>
+                                                <input type="text" class="form-control" value="bilal@gmail.com" name="" id="">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Your Photo</label>
+                                                <input type="file" name="" id="">
+                                            </div>
+                                            <div class="d-flex justify-content-end">
+                                                <input type="submit" class="btn btn-sm btn-danger" value="Save Edit">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->

@@ -616,13 +616,26 @@
 .info-account .tab-content span {
   font-size: 14px;
 }
+.info-account .nav-tabs {
+    border: 2px solid #dee2e6;
+    border-right: 0px;
+    border-left: 0px;
+}
 .info-account .nav-tabs .nav-item.show .nav-link,
 .info-account .nav-tabs .nav-link.active {
   color: var(--main);
+  border-color: transparent transparent var(--main);
 }
 .info-account .nav-tabs .nav-link {
-  color: var(--dark);
+  color: rgb(17 17 17 / 60%);
   font-weight: 500;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.nav-tabs .nav-link:focus:not(.active), .nav-tabs .nav-link:hover:not(.active) {
+  color: var(--dark);
+  background-color: #eeeeef;
+  border-color: transparent transparent #eeeeef;
 }
 .info-account .circle-nb {
   width: 20px;
