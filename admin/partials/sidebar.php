@@ -68,10 +68,6 @@
                         <li><a href="client-profile.php"> Client Profile </a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="error-404.php"><i class="la la-exclamation-triangle"></i> <span> Error Pages
-                        </span></a>
-                </li>
 
             </ul>
         </div>

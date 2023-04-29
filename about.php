@@ -58,7 +58,7 @@
 
       <div class="row mb-5">
         <div class="col-md-6 mb-3">
-          <img src="admin/images/about-us.png" class="img-fluid rounded-4" alt="">
+          <img src="<?= SUBURL . "assets/img/about-us.png" ?>" class="img-fluid rounded-4" alt="">
         </div>
         <div class="col-md-6">
           <div class="accordion accordion-flush" id="our-team">

@@ -80,7 +80,7 @@
                                     <span class="rounded-pill bg-main text-white px-2 p-1">-33%</span>
                                 </div>
                                 <div class="image text-center mb-1">
-                                    <img src="admin/images/cat_img1.png" class="img-fluid" alt="">
+                                    <img src="<?= URLIMG . "products/cat_img1.png" ?>" class="img-fluid" alt="">
                                 </div>
                                 <div class="content">
                                     <p class="text-color-main mb-1">Headphones</p>
