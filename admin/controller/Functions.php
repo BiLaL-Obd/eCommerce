@@ -49,9 +49,10 @@ function getFetchAll($sql) {
 function getCount($table)
 {
     global $conn;
-    $sql = "SELECT COUNT(*) FROM $table";
+    $sql = "SELECT COUNT(*) as count FROM $table";
     $res = mysqli_query($conn, $sql);
     if ($res) {
-        return mysqli_fetch_column($res);
+        $row = mysqli_fetch_assoc($res);
+        return $row['count'];
     }
 }

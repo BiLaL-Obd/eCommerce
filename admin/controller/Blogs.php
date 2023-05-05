@@ -36,11 +36,13 @@ if ($_GET['action'] == "add") {
     //         }
     //     }
     // }
-        print_r($_FILES['img']);
     $imgName = $_FILES["img"]["name"];
     $imgTemp = $_FILES["img"]["tmp_name"];
 
-    $img = "Blog" . rand(0, 999) . "_" . $imgName;
-    move_uploaded_file($imgTemp,SUBURL."admin/assets/img/blogs/".$img);
-    // move_uploaded_file($imgTemp,SUBURL."admin/assets/img/clients/".$img);
+    if (isset($_FILES["img"]["name"]) && $_FILES["img"]["error"] == 0) {
+        $img = "Blog" . rand(0, 999) . "_" . $imgName;
+        move_uploaded_file($imgTemp, $UPLOADS . $img);
+    } else {
+        $img = "";
+    }
 }
