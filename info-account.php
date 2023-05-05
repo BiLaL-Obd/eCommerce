@@ -72,45 +72,49 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 px-0 mt-3">
+                    <div class="col-12 px-0">
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                <div class="d-flex align-items-center gap-1">
-                                    <div class="col-12 col-md-6 bg-white rounded-3 p-3">
-                                        <h5 class="mb-4">Personal Inforamtion :</h5>
-                                        <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
-                                            <span class="fw-500 sub-title">Phone :</span> <span>+96178789789</span>
-                                        </div>
-                                        <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
-                                            <span class="fw-500 sub-title">Notionality :</span> <span>Lebanon</span>
-                                        </div>
-                                        <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
-                                            <span class="fw-500 sub-title">Another Addr. :</span> <span>Bakhoun - sir</span>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-2 gap-md-5">
-                                            <span class="fw-500 sub-title">Purchase count :</span> <span>02</span>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 mt-3">
+                                        <div class="bg-white rounded-3 p-3">
+                                            <h5 class="mb-4">Personal Inforamtion :</h5>
+                                            <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
+                                                <span class="fw-500 sub-title">Phone :</span> <span>+96178789789</span>
+                                            </div>
+                                            <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
+                                                <span class="fw-500 sub-title">Notionality :</span> <span>Lebanon</span>
+                                            </div>
+                                            <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
+                                                <span class="fw-500 sub-title">Another Addr. :</span> <span>Bakhoun - sir</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2 gap-md-5">
+                                                <span class="fw-500 sub-title">Purchase count :</span> <span>02</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 bg-white rounded-3 p-3">
-                                        <h5 class="mb-4">Emergency Contact :</h5>
-                                        <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
-                                            <span class="fw-500 sub-title">Name :</span> <span>Sami</span>
-                                        </div>
-                                        <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
-                                            <span class="fw-500 sub-title">Phone :</span> <span>+961789789</span>
-                                        </div>
-                                        <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
-                                            <span class="fw-500 sub-title">Addr. :</span> <span>Bakhoun - sir</span>
-                                        </div>
-                                        <div class="d-flex align-items-center gap-2 gap-md-5">
-                                            <span class="fw-500 sub-title">Relationship :</span> <span>Brother</span>
+                                    <div class="col-12 col-sm-6 mt-3">
+                                        <div class=" bg-white rounded-3 p-3">
+                                            <h5 class="mb-4">Emergency Contact :</h5>
+                                            <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
+                                                <span class="fw-500 sub-title">Name :</span> <span>Sami</span>
+                                            </div>
+                                            <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
+                                                <span class="fw-500 sub-title">Phone :</span> <span>+961789789</span>
+                                            </div>
+                                            <div class="mb-4 d-flex align-items-center gap-2 gap-md-5">
+                                                <span class="fw-500 sub-title">Addr. :</span> <span>Bakhoun - sir</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2 gap-md-5">
+                                                <span class="fw-500 sub-title">Relationship :</span> <span>Brother</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                <div class="mb-3">
-                                    <div class="mb-2 font-size-14">
+                                <div class="my-3">
+                                    <div class="mb-2 px-1 font-size-14">
                                         <span class="rounded-circle circle-nb bg-main d-inline-flex align-items-center justify-content-center text-white">1</span>
                                         Payment Mode : <span class="text-uppercase">Card</span>
                                     </div>
@@ -149,8 +153,8 @@
                                         </tfoot>
                                     </table>
                                 </div>
-                                <div class="mb-3">
-                                    <div class="mb-2 font-size-14">
+                                <div class="my-3">
+                                    <div class="mb-2 px-1 font-size-14">
                                         <span class="rounded-circle circle-nb bg-main d-inline-flex align-items-center justify-content-center text-white">2</span>
                                         Payment Mode : <span class="text-uppercase">On Delivery</span>
                                     </div>

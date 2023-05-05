@@ -146,7 +146,7 @@ $blogs = getFetchAll($sql);
                             </div>
                             <div class="col-sm-8">
                                 <label for="">Upload Photo <span class="text-danger">*</span></label>
-                                <input type="file" class="form-control" name="img" id="">
+                                <input type="file" class="form-control" name="img" id="" accept=".jpg, .jpeg, .png, .webp">
                             </div>
                             <div class="col-sm-4 mb-3">
                                 <label>Visible <span class="text-danger">*</span></label>

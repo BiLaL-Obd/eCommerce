@@ -681,7 +681,7 @@
   .info-account .sub-title {
     width: 95px;
   }
-  .info-account .tab-content {
+  .info-account #nav-profile {
     overflow-x: scroll;
   }
   .info-account .tab-content span {
