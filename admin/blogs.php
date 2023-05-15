@@ -60,44 +60,51 @@ $blogs = getFetchAll($sql);
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($blogs as $blog) { ?>
-                                <tr>
-                                    <td>
-                                        <h2 class="table-avatar">
-                                            <div class="avatar img-blog"><img src="assets/img/profiles/avatar-21.jpg" alt=""></div>
-                                        </h2>
-                                    </td>
-                                    <td><?= $blog['title'] ?></td>
-                                    <td><?= $blog["en_category_name"] ?></td>
-                                    <td>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" disabled class="custom-control-input" id="active-<?= $blog['id'] ?>" <?= $blog['isVisible'] == "1" ? "checked" : "" ?>>
-                                            <label class="custom-control-label" for="active-<?= $blog['id'] ?>"></label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="badge bg-inverse-<?= role($blog['added_by']) ? 'success' : 'danger' ?>"><?= $blog["added_by"] ?></span>
-                                    </td>
-                                    <td>
-                                        <?php if (isset($blog['edit_by'])) { ?>
-                                            <span class="badge bg-inverse-<?= role($blog['edit_by']) ? "success" : "danger" ?>"><?= $blog['edit_by'] ?></span>
-                                        <?php } else { ?>
-                                            <span class="badge bg-dark text-white">AD</span>
-                                        <?php } ?>
-                                    </td>
-                                    <td class="text-right">
-                                        <div class="dropdown dropdown-action">
-                                            <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_user"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                <?php if (isAdmin()) { ?>
-                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_user"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                            <?php if (isset($blogs)) {
+                                foreach ($blogs as $blog) { ?>
+                                    <tr>
+                                        <td>
+                                            <h2 class="table-avatar">
+                                                <?php if (!$blog['image'] == "") { ?>
+                                                    <div class="avatar img-blog"><img src="<?= SUBURL . "admin/assets/img/" . $blog['image'] ?>" alt=""></div>
+                                                <?php } else { ?>
+                                                    <div class="badge bg-inverse-danger">No Image To Set</div>
+
                                                 <?php } ?>
+                                            </h2>
+                                        </td>
+                                        <td><?= $blog['title'] ?></td>
+                                        <td><?= $blog["en_category_name"] ?></td>
+                                        <td>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" disabled class="custom-control-input" id="active-<?= $blog['id'] ?>" <?= $blog['isVisible'] == "1" ? "checked" : "" ?>>
+                                                <label class="custom-control-label" for="active-<?= $blog['id'] ?>"></label>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            <?php } ?>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-inverse-<?= role($blog['added_by']) ? 'success' : 'primary' ?>"><?= $blog["added_by"] ?></span>
+                                        </td>
+                                        <td>
+                                            <?php if (isset($blog['edit_by'])) { ?>
+                                                <span class="badge bg-inverse-<?= role($blog['edit_by']) ? "success" : "primary" ?>"><?= $blog['edit_by'] ?></span>
+                                            <?php } else { ?>
+                                                <span class="badge bg-dark text-white">AD</span>
+                                            <?php } ?>
+                                        </td>
+                                        <td class="text-right">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_user_<?= $blog['id'] ?>"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <?php if (isAdmin()) { ?>
+                                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_user_<?= $blog['id'] ?>"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                    <?php } ?>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                            <?php }
+                            } ?>
                         </tbody>
                     </table>
                 </div>
@@ -122,7 +129,7 @@ $blogs = getFetchAll($sql);
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label>Title <span class="text-danger">*</span></label>
-                                    <input class="form-control" placeholder="Blog Title" name="title" type="text">
+                                    <input class="form-control" placeholder="Blog Title" name="title" type="text" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -141,12 +148,12 @@ $blogs = getFetchAll($sql);
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label>Description <span class="text-danger">*</span></label>
-                                    <textarea name="description" placeholder="Blog Description" class="form-control" id="" rows="2"></textarea>
+                                    <textarea name="description" placeholder="Blog Description" class="form-control" id="" rows="2" required></textarea>
                                 </div>
                             </div>
                             <div class="col-sm-8">
                                 <label for="">Upload Photo <span class="text-danger">*</span></label>
-                                <input type="file" class="form-control" name="img" id="">
+                                <input type="file" class="form-control" name="img" id="" accept=" .png, .jpg, .png, .webp">
                             </div>
                             <div class="col-sm-4 mb-3">
                                 <label>Visible <span class="text-danger">*</span></label>
@@ -167,84 +174,97 @@ $blogs = getFetchAll($sql);
     <!-- /Add User Modal -->
 
     <!-- Edit User Modal -->
-    <div id="edit_user" class="modal custom-modal fade" role="dialog">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Edit User</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Title <span class="text-danger">*</span></label>
-                                    <input class="form-control" placeholder="Blog Title" value="test" type="text">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Category Name <span class="text-danger">*</span></label>
-                                    <select class="select">
-                                        <option>Phone</option>
-                                        <option>TV</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label>Description <span class="text-danger">*</span></label>
-                                    <textarea name="" placeholder="Blog Description" class="form-control" id="" rows="2"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <label for="">Upload Photo <span class="text-danger">*</span></label>
-                                <input type="file" class="form-control" name="imgBlog" id="">
-                            </div>
-                            <div class="col-sm-4 mb-3">
-                                <label>Visible <span class="text-danger">*</span></label>
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" name="active" class="custom-control-input" id="add-active-1">
-                                    <label class="custom-control-label" for="add-active-1"></label>
-                                </div>
-                            </div>
+    <?php if (isset($blogs)) {
+        foreach ($blogs as $blog) { ?>
+            <div id="edit_user_<?= $blog['id'] ?>" class="modal custom-modal fade" role="dialog">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Edit Blog <?= $blog['title'] ?></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
-                        <div class="submit-section">
-                            <button class="btn btn-primary submit-btn">Save</button>
+                        <div class="modal-body">
+                            <form action="<?= SUBURL . $blogPath . "?id=" . $blog['id'] . "&action=edit" ?>" method="POST" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Title <span class="text-danger">*</span></label>
+                                            <input class="form-control" placeholder="Blog Title" name="title" value="<?= $blog['title'] ?>" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Category Name <span class="text-danger">*</span></label>
+                                            <select name="category" class="select">
+
+                                                <?php
+                                                $sql = "SELECT * FROM categories WHERE isActive = '1'";
+                                                $cats = getFetchAll($sql);
+                                                foreach ($cats as $cat) { ?>
+                                                    <option value="<?= $cat['id'] ?>" <?= $cat['id'] == $blog['cat_id'] ? "selected" : "" ?>><?= $cat['en_category_name'] ?></option>
+                                                <?php } ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label>Description <span class="text-danger">*</span></label>
+                                            <textarea name="description" placeholder="Blog Description" value="<?= $blog['description'] ?>" class="form-control" id="" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <label for="">Upload Photo <span class="text-danger">*</span></label>
+                                        <input type="file" class="form-control" name="imgBlog" id="" value="<?= $blog['image'] ?>">
+                                    </div>
+                                    <div class="col-sm-4 mb-3">
+                                        <label>Visible <span class="text-danger">*</span></label>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" name="active" class="custom-control-input" id="edit-active-<?= $blog['id'] ?>" <?= $blog['isVisible'] == 1 ? "checked" : "" ?>>
+                                            <label class="custom-control-label" for="edit-active-<?= $blog['id'] ?>"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="submit-section">
+                                    <button class="btn btn-primary submit-btn" type="submit" name="edit-blog">Save</button>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+    <?php }
+    } ?>
     <!-- /Edit User Modal -->
 
     <!-- Delete User Modal -->
-    <div class="modal custom-modal fade" id="delete_user" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="form-header">
-                        <h3>Delete User</h3>
-                        <p>Are you sure want to delete?</p>
-                    </div>
-                    <div class="modal-btn delete-action">
-                        <div class="row">
-                            <div class="col-6">
-                                <a href="javascript:void(0);" class="btn btn-primary continue-btn">Delete</a>
+    <?php if (isset($blogs)) {
+        foreach ($blogs as $blog) { ?>
+            <div class="modal custom-modal fade" id="delete_user_<?= $blog['id'] ?>" role="dialog">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="form-header">
+                                <h3>Delete User</h3>
+                                <p>Are you sure want to delete <?= $blog['title'] ?>?</p>
                             </div>
-                            <div class="col-6">
-                                <a href="javascript:void(0);" data-dismiss="modal" class="btn btn-primary cancel-btn">Cancel</a>
+                            <div class="modal-btn delete-action">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="<?= SUBURL . $blogPath . "?id=" . $blog['id'] . "&action=delete" ?>" class="btn btn-primary continue-btn">Delete</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="javascript:void(0);" data-dismiss="modal" class="btn btn-primary cancel-btn">Cancel</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+    <?php }
+    } ?>
     <!-- /Delete User Modal -->
 
 </div>

@@ -55,7 +55,7 @@ if (!isset($_SESSION['user'])) {
 					<div class="card-body">
 						<span class="dash-widget-icon"><i class="fa fa-diamond"></i></span>
 						<div class="dash-widget-info">
-							<h3>37</h3>
+							<h3><?=getCount("blogs")?></h3>
 							<span>Blogs</span>
 						</div>
 					</div>

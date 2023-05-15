@@ -11,8 +11,12 @@ a {
 .custom-control-label::before {
   height: 0.8rem;
 }
+.msg {
+  display: none;
+}
 @media (min-width: 768px) {
   .msg {
+    display: block;
     max-width: 300px;
     margin-left: -125px;
     color: #fff;

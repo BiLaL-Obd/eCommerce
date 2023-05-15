@@ -14,15 +14,15 @@
 				<div class="col">
 					<h3 class="page-title">Projects</h3>
 					<ul class="breadcrumb">
-						<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+						<li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
 						<li class="breadcrumb-item active">Projects</li>
 					</ul>
 				</div>
-				<div class="col-auto float-right ml-auto">
+				<div class="col-auto float-right ml-auto d-flex align-items-center flex-row-reverse">
 					<a href="#" class="btn add-btn" data-toggle="modal" data-target="#create_project"><i class="fa fa-plus"></i> Create Project</a>
 					<div class="view-icons">
-						<a href="projects.html" class="grid-view btn btn-link"><i class="fa fa-th"></i></a>
-						<a href="project-list.html" class="list-view btn btn-link active"><i class="fa fa-bars"></i></a>
+						<a href="projects.php" class="grid-view btn btn-link"><i class="fa fa-th"></i></a>
+						<a href="project-list.php" class="list-view btn btn-link active"><i class="fa fa-bars"></i></a>
 					</div>
 				</div>
 			</div>
